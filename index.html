@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mae-Bara Project - Arctic AI Optimization</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        /* 짙은 남색 배경 */
+        .bg-navy { background-color: #073763; } 
+        /* 밝은 흰색/회색 텍스트 */
+        .text-offwhite { color: #eeeeee; }
+        /* 포인트 컬러 (아이스 블루) */
+        .text-ice { color: #00E6FF; } 
+        .border-ice { border-color: #00E6FF; }
+        .bg-ice-100 { background-color: rgba(0, 230, 255, 0.1); }
+    </style>
+</head>
+<body class="bg-navy text-offwhite min-h-screen">
+
+    <!-- Header & Hero Section -->
+    <header id="home" class="py-12 md:py-24 border-b border-ice/30">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <!-- Logo Placeholder -->
+            <div class="mb-4">
+                <svg class="w-16 h-16 mx-auto text-ice" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <!-- 'C' Shape for Mae-Bara (Contained/Course/Connect) -->
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21C6.477 21 2 16.523 2 11C2 5.477 6.477 1 12 1"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M22 12h-8M18 8l4 4-4 4"></path>
+                </svg>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-offwhite">
+                Mae-Bara
+            </h1>
+            <p class="mt-3 text-xl md:text-2xl font-light text-ice">
+                The Hawk's Eye on the Arctic.
+            </p>
+            <p class="mt-2 text-lg text-offwhite/80">
+                짧은 길, 긴 성과. | Maximum Margin, Minimum Mile.
+            </p>
+        </div>
+    </header>
+
+    <!-- Section 1: The Problem (문제 인식) -->
+    <section id="problem" class="py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold border-b border-ice pb-2 text-offwhite">1. 북극항로의 난제 (The Arctic Challenge)</h2>
+            <div class="mt-8 space-y-6 text-lg text-offwhite/90">
+                <p>북극항로(NSR)는 수에즈 운하 대비 거리를 혁신적으로 단축하지만, **'예측 불가능한 빙해 환경'**으로 인해 물류사와 보험사가 높은 리스크를 감수하고 있습니다.</p>
+                <ul class="list-disc list-inside space-y-2 pl-4">
+                    <li>**비용 유출:** 예측 불가능한 해빙으로 인한 운항 지연은 **연료 소비 및 리스크 비용의 막대한 유출**을 야기합니다.</li>
+                    <li>**기술 공백:** 기존 항해 시스템은 유빙의 **비선형적 움직임**을 예측하지 못해, 최적 경로 결정에 실패하고 있습니다.</li>
+                    <li>**국가적 기회:** 2026년 정부 예산 증액에 맞춰, 이 문제를 해결할 **지능형 AI 인프라** 구축이 시급합니다.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: The Solution & MVP (솔루션 및 기술력) -->
+    <section id="solution" class="py-16 bg-ice-100">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold border-b border-ice pb-2 text-offwhite">2. Mae-Bara AI 솔루션 (NSR-OptiNav MVP)</h2>
+            <p class="mt-4 text-xl text-offwhite/80">Mae-Bara는 **강화 학습(RL) 기반 최적화 엔진**으로 불확실성을 수익으로 전환합니다.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-navy p-6 rounded-lg shadow-lg border border-ice/50">
+                    <h3 class="text-xl font-bold text-ice">핵심 엔진: RL 기반 최적화</h3>
+                    <p class="mt-2 text-sm">복합적인 해양 데이터를 학습하여, **최소 비용과 최대 안전**을 위한 선박의 최적 행동(경로/선속)을 실시간으로 결정합니다.</p>
+                </div>
+                <div class="bg-navy p-6 rounded-lg shadow-lg border border-ice/50">
+                    <h3 class="text-xl font-bold text-ice">가치 1: 연료 효율 극대화</h3>
+                    <p class="mt-2 text-sm">유빙의 움직임에 따른 **경제 선속(Economic Speed)**을 정밀하게 권고하여, 운항 비용을 5% 이상 절감합니다.</p>
+                </div>
+                <div class="bg-navy p-6 rounded-lg shadow-lg border border-ice/50">
+                    <h3 class="text-xl font-bold text-ice">가치 2: 리스크 스코어링</h3>
+                    <p class="mt-2 text-sm">AI가 계산한 **빙해 위험 지수(Risk Score)**를 제공하여, 해운사의 보험료 산정 및 운항 리스크 관리를 지원합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: The Architect (창업가 역량) -->
+    <section id="architect" class="py-16">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold border-b border-ice pb-2 text-offwhite">3. 실행 주체: Principal AI Architect</h2>
+            <div class="mt-8 space-y-4">
+                <p class="text-2xl font-bold text-ice">한 상 도 (Sangdo Han)</p>
+                <p class="text-lg text-offwhite/90">Mae-Bara Project Lead</p>
+                
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
+                    <div class="w-full md:w-1/2">
+                        <h4 class="font-bold text-offwhite/90 mt-4 border-l-4 border-ice pl-2">핵심 역량 및 성과</h4>
+                        <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm">
+                            <li>🏆 **OpenAI GPT-5 Hackathon Global Winner** (최고 기술력 증명)</li>
+                            <li>POSTECH 컴퓨터공학 석사 / 박사 수료 (NLP, 강화 학습)</li>
+                            <li>前 TmaxAI 연구본부장 (기술 리더십 및 관리 경험)</li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2">
+                        <h4 class="font-bold text-offwhite/90 mt-4 border-l-4 border-ice pl-2">창업 자금 및 계획</h4>
+                        <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm">
+                            <li>자체 시드 확보: **1억 5천만 원** (18개월 Runway 확보)</li>
+                            <li>법적 안정: 'Mae-Bara' 상표권 (9, 42류) **우선심사 출원 완료.**</li>
+                            <li>주요 목표: 2026년 2월 **예비창업패키지 합격** 및 자금 증폭.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Call to Action & Contact (협력 요청) -->
+    <section id="partnering" class="py-16 bg-navy">
+        <div class="max-w-4xl mx-auto px-4 text-center border border-ice p-8 rounded-lg">
+            <h2 class="text-3xl font-bold text-ice">협력 요청: 당신의 지혜가 AI를 완성합니다.</h2>
+            <p class="mt-4 text-lg text-offwhite/80">
+                저희 Mae-Bara는 **최고 수준의 AI 기술**을 보유하고 있으나, **항만 운영 및 북극 항해의 현장 지혜(경험)**가 절실합니다.
+            </p>
+            <p class="mt-4 text-xl font-semibold text-offwhite">
+                유료 자문 또는 파트너십을 통해 북극항로의 새로운 시대를 함께 열 전문가를 모십니다.
+            </p>
+            
+            <div class="mt-8 space-y-4 md:space-y-0 md:space-x-8 flex flex-col md:flex-row justify-center">
+                <a href="mailto:hansd410@gmail.com" class="bg-ice text-navy font-bold py-3 px-6 rounded-lg transition duration-300 hover:bg-offwhite hover:text-navy shadow-md">
+                    미팅 및 자문 요청 (이메일)
+                </a>
+                <p class="text-sm mt-3 md:mt-0 text-offwhite/70">
+                    전화: (+82) 10-3331-8745
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-offwhite/50 text-sm">
+        <p>&copy; 2025 Mae-Bara Project. All Rights Reserved. | Busan Base: 부산광역시 해운대구 센텀북대로 60, 센텀아이에스타워 1710호</p>
+        <p class="mt-1">GitHub: <a href="https://github.com/hansd410" class="text-ice hover:text-offwhite underline">https://github.com/hansd410</a></p>
+    </footer>
+
+</body>
+</html>
