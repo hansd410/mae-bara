@@ -66,6 +66,104 @@
                     <p class="mt-2 text-sm text-offwhite">AI가 계산한 <strong>빙해 위험 지수(Risk Score)</strong>를 제공하여, 해운사의 보험료 산정 및 운항 리스크 관리를 지원합니다.</p>
                 </div>
             </div>
+            
+            <!-- Mae-Bara AI 경제성 분석 -->
+            <div class="mt-12 bg-ice-100 p-8 rounded-lg border-2 border-ice/30">
+                <h3 class="text-2xl font-bold text-offwhite mb-2">🚢 Mae-Bara Project (V0.1.5) 초기 성능 분석 보고</h3>
+                <p class="text-base text-offwhite mb-6">
+                    Principal AI Architect <strong class="text-ice">한상도</strong>가 직접 구축한 Mae-Bara의 초기 시뮬레이션 환경(V0.1.5)을 기반으로, 
+                    AI 의사결정이 창출할 수 있는 잠재적 경제성을 분석했습니다.
+                </p>
+                
+                <!-- 1. 분석 대상 -->
+                <div class="bg-navy/40 p-6 rounded-lg mb-6 border border-ice/20">
+                    <h4 class="text-lg font-bold text-ice mb-3">1. 분석 대상</h4>
+                    <ul class="space-y-3 text-offwhite">
+                        <li>
+                            <strong class="text-ice">Baseline 모델 (V0.1.1):</strong> 
+                            지형 장애물만 회피하는 가장 기본적인 최단 경로 탐색 알고리즘. (경쟁력 없는 초기 기준점)
+                        </li>
+                        <li>
+                            <strong class="text-ice">Mae-Bara 모델 (V0.1.5):</strong> 
+                            Baseline 알고리즘을 지능적으로 개선하여 경로의 효율성을 높인 초기 버전.
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- 2. 초기 분석 결과 -->
+                <div class="bg-navy/40 p-6 rounded-lg mb-6 border border-ice/20">
+                    <h4 class="text-lg font-bold text-ice mb-4">2. 초기 분석 결과 (V0.1.5 vs. Baseline)</h4>
+                    
+                    <!-- 성능 비교 표 -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm text-offwhite border-collapse">
+                            <thead>
+                                <tr class="bg-ice/20 border-b-2 border-ice">
+                                    <th class="px-4 py-3 text-left font-bold text-ice">Metric</th>
+                                    <th class="px-4 py-3 text-center font-bold text-ice">Baseline (V0.1.1)</th>
+                                    <th class="px-4 py-3 text-center font-bold text-ice">Mae-Bara (V0.1.5)</th>
+                                    <th class="px-4 py-3 text-center font-bold text-ice">초기 절감 효과</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-ice/30">
+                                    <td class="px-4 py-3 font-semibold">총 운항 시간 (Days)</td>
+                                    <td class="px-4 py-3 text-center">14.30 Days</td>
+                                    <td class="px-4 py-3 text-center">13.79 Days</td>
+                                    <td class="px-4 py-3 text-center text-ice font-bold">0.51 days ↓</td>
+                                </tr>
+                                <tr class="border-b border-ice/30">
+                                    <td class="px-4 py-3 font-semibold">연료 소모 (Tons)</td>
+                                    <td class="px-4 py-3 text-center">2,145 tons</td>
+                                    <td class="px-4 py-3 text-center">2,068 tons</td>
+                                    <td class="px-4 py-3 text-center text-ice font-bold">77.0 tons ↓ (약 3.6%)</td>
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3 font-semibold">운영 비용 (USD)</td>
+                                    <td class="px-4 py-3 text-center">$1,287,269</td>
+                                    <td class="px-4 py-3 text-center">$1,241,038</td>
+                                    <td class="px-4 py-3 text-center text-ice font-bold">약 $46,231 ↓</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Dashboard 이미지 -->
+                <div class="bg-white p-4 rounded-lg shadow-xl mb-6">
+                    <img src="v0.1.1_vs_v0.1.5_dashboard.png" alt="Mae-Bara V0.1.5 vs Baseline Performance Dashboard" class="w-full h-auto rounded-lg">
+                </div>
+                
+                <!-- 3. Mae-Bara의 궁극적인 비전 -->
+                <div class="bg-navy/40 p-6 rounded-lg mb-4 border border-ice/20">
+                    <h4 class="text-lg font-bold text-ice mb-3">3. Mae-Bara의 궁극적인 비전과 다음 단계</h4>
+                    <div class="space-y-3 text-offwhite leading-relaxed">
+                        <p>
+                            Mae-Bara는 이 <strong class="text-ice">3.6% 절감 효과가 AI 기술의 시작점</strong>임을 명확히 합니다.
+                        </p>
+                        <p>
+                            현재 이 결과는 빙하의 움직임, 해류의 저항, 선박의 동역학과 같은 북극항로의 핵심 변수들을 제외하고 
+                            <strong class="text-ice">순수 경로 최적화만으로 달성된 수치</strong>입니다.
+                        </p>
+                        <p>
+                            우리의 Principal AI Architect는 현재 <strong class="text-ice">강화 학습(RL) 엔진</strong>을 통해 
+                            이 V0.1.5 Mae-Bara 모델을 압도적으로 뛰어넘는 <strong class="text-ice">'빙해 환경의 경제적 지능'</strong>을 구현하고 있습니다.
+                        </p>
+                        <p class="pt-2 border-t border-ice/30 font-semibold">
+                            <strong class="text-ice">Mae-Bara의 최종 목표:</strong> 
+                            RL 모델을 활용하여 3.6%의 절감 효과를 <strong class="text-ice">10% 이상으로 끌어올리고</strong>, 
+                            Maximum Margin, Minimum Mile의 가치를 실현하여 부산을 북극항로의 지능형 거점으로 완성하는 것입니다.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- 슬로건 -->
+                <div class="text-center mt-6">
+                    <p class="text-2xl font-bold text-ice italic">
+                        "Maximum Margin, Minimum Mile."
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
