@@ -79,11 +79,111 @@
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-ice font-bold">📅 Last Update:</span>
-                        <span class="text-offwhite font-semibold">2025.11.03 (V0.2.0)</span>
+                        <span class="text-offwhite font-semibold">2025.11.04 (V0.2.2)</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <span class="text-ice font-bold">⚡ 개발 속도:</span>
-                        <span class="text-offwhite font-semibold">4일 만에 환경 모델 통합 완료</span>
+                        <span class="text-offwhite font-semibold">5일 만에 실 데이터 통합 완료</span>
+                    </div>
+                </div>
+                
+                <!-- V0.2.2 Release Note -->
+                <div class="bg-ice-100 rounded-lg border-2 border-ice/30 mb-4">
+                    <!-- 토글 헤더 -->
+                    <button onclick="toggleRelease('v0_2_2')" class="w-full px-8 py-6 flex items-center justify-between hover:bg-ice-100/80 transition-colors rounded-lg">
+                        <div class="flex flex-col items-start gap-2 flex-1">
+                            <div class="flex items-center gap-3 flex-wrap">
+                                <span class="text-2xl font-bold text-offwhite">🚢 Mae-Bara Project (V0.2.2) - 실시간 데이터 적용 및 적응형 루팅 구현</span>
+                                <span class="px-3 py-1 bg-yellow-400 text-navy text-sm font-bold rounded-full shadow-lg">NEW</span>
+                            </div>
+                            <div class="flex items-center gap-4 text-sm">
+                                <span class="text-offwhite font-semibold">📅 2025.11.04</span>
+                                <span class="px-2 py-1 bg-ice/20 text-ice font-bold rounded">⚡ 연속 업데이트</span>
+                            </div>
+                        </div>
+                        <svg id="icon-v0_2_2" class="w-6 h-6 text-ice transform transition-transform duration-300 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- 토글 콘텐츠 -->
+                    <div id="content-v0_2_2" class="px-8 pb-8">
+                        <p class="text-base text-offwhite mb-6 leading-relaxed">
+                            Principal AI Architect <strong class="text-ice">한상도</strong>가 이끄는 Mae-Bara Project가 
+                            <strong class="text-ice">5일 만에 V0.2.0을 넘어</strong> 새로운 기술적 진보를 이뤘습니다.
+                        </p>
+                        
+                        <!-- 1. V0.2.2 핵심 업데이트 내용 -->
+                        <div class="bg-navy/40 p-6 rounded-lg mb-6 border border-ice/20">
+                            <h4 class="text-lg font-bold text-ice mb-4">1. V0.2.2 핵심 업데이트 내용</h4>
+                            
+                            <div class="space-y-4">
+                                <!-- 극지 실 관측 데이터 통합 -->
+                                <div class="bg-navy/60 p-4 rounded-lg">
+                                    <h5 class="font-bold text-ice mb-2">🌐 극지 실 관측 데이터 통합</h5>
+                                    <p class="text-sm text-offwhite leading-relaxed">
+                                        <strong class="text-ice">NSIDC (미국 국립 빙설 센터)</strong>의 해빙/기상 데이터 및 
+                                        <strong class="text-ice">NOAA</strong> 등 국제 기관의 공신력 있는 관측 데이터를 시뮬레이터 환경에 성공적으로 연동했습니다.
+                                    </p>
+                                </div>
+                                
+                                <!-- 적응형 루팅 로직 구현 -->
+                                <div class="bg-navy/60 p-4 rounded-lg">
+                                    <h5 class="font-bold text-ice mb-2">🧭 적응형 루팅 로직 구현</h5>
+                                    <p class="text-sm text-offwhite leading-relaxed">
+                                        단순 최단 경로를 넘어, 해류, 바람, 해빙의 농도 변화를 실시간으로 분석하여 
+                                        운항 환경에 <strong class="text-ice">'적응적'</strong>으로 경로를 수정하는 로직을 통합했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 적응형 루팅 시각화 이미지 -->
+                        <div class="bg-white p-4 rounded-lg shadow-xl mb-6">
+                            <h5 class="text-navy font-bold mb-3 text-center">실 데이터 기반 적응형 루팅 결과</h5>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
+                                <div>
+                                    <img src="release_note/0.2.2/route_20251104_115111_azimuthal.png" alt="Mae-Bara V0.2.2 Adaptive Routing 1" class="w-full h-auto rounded-lg border-2 border-ice/20">
+                                </div>
+                                <div>
+                                    <img src="release_note/0.2.2/route_20251104_123819_azimuthal.png" alt="Mae-Bara V0.2.2 Adaptive Routing 2" class="w-full h-auto rounded-lg border-2 border-ice/20">
+                                </div>
+                            </div>
+                            <p class="text-xs text-navy/70 mt-2 text-center italic">
+                                NSIDC/NOAA 실 관측 데이터 기반 적응형 경로 계획 (Azimuthal Projection)
+                            </p>
+                        </div>
+                        
+                        <!-- 2. Mae-Bara의 비전 -->
+                        <div class="bg-navy/40 p-6 rounded-lg mb-4 border border-ice/20">
+                            <h4 class="text-lg font-bold text-ice mb-4">2. Mae-Bara의 비전</h4>
+                            <div class="space-y-4 text-offwhite leading-relaxed">
+                                <p>
+                                    이 업데이트는 Mae-Bara가 <strong class="text-ice">'가상 북극해'가 아닌 '실제 북극 환경'</strong> 위에서 
+                                    작동함을 증명합니다.
+                                </p>
+                                <div class="bg-ice/10 p-4 rounded-lg border-l-4 border-ice">
+                                    <p class="font-semibold text-ice text-lg">
+                                        실제 관측 데이터 + 적응형 로직 = DRL Agent의 완벽한 트레이닝 환경 완성
+                                    </p>
+                                </div>
+                                <p>
+                                    우리의 다음 목표는 <strong class="text-ice">DRL Agent (V0.3.0)</strong>을 투입하여 
+                                    이 복합 환경에서 <strong class="text-ice">'Maximum Margin'</strong>을 달성하는 것입니다.
+                                </p>
+                                <p class="pt-2 border-t border-ice/30 font-semibold text-center text-lg">
+                                    <strong class="text-ice">"Maximum Margin, Minimum Mile"</strong> - 
+                                    실제 데이터로 검증된 가치 실현
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <!-- 슬로건 -->
+                        <div class="text-center mt-6">
+                            <p class="text-2xl font-bold text-ice italic">
+                                "Maximum Margin, Minimum Mile."
+                            </p>
+                        </div>
                     </div>
                 </div>
                 
@@ -94,7 +194,6 @@
                         <div class="flex flex-col items-start gap-2 flex-1">
                             <div class="flex items-center gap-3 flex-wrap">
                                 <span class="text-2xl font-bold text-offwhite">🚢 Mae-Bara Project (V0.2.0) - 환경 모델 통합 완료</span>
-                                <span class="text-offwhite font-semibold">NEW</span>
                             </div>
                             <div class="flex items-center gap-4 text-sm">
                                 <span class="text-offwhite font-semibold">📅 2025.11.03</span>
@@ -405,12 +504,20 @@
         
         // 페이지 로드 시 초기 상태 설정
         document.addEventListener('DOMContentLoaded', function() {
-            // V0.2.0은 기본적으로 열린 상태
+            // V0.2.2은 기본적으로 열린 상태
+            const contentV022 = document.getElementById('content-v0_2_2');
+            const iconV022 = document.getElementById('icon-v0_2_2');
+            if (contentV022 && iconV022) {
+                contentV022.style.display = 'block';
+                iconV022.style.transform = 'rotate(0deg)';
+            }
+            
+            // V0.2.0은 기본적으로 닫힌 상태
             const contentV020 = document.getElementById('content-v0_2_0');
             const iconV020 = document.getElementById('icon-v0_2_0');
             if (contentV020 && iconV020) {
-                contentV020.style.display = 'block';
-                iconV020.style.transform = 'rotate(0deg)';
+                contentV020.style.display = 'none';
+                iconV020.style.transform = 'rotate(-90deg)';
             }
             
             // V0.1.5는 기본적으로 닫힌 상태
