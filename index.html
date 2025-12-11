@@ -16,6 +16,7 @@
         /* 포인트 컬러 (아이스 블루) */
         .text-ice { color: #00E6FF; } 
         .border-ice { border-color: #00E6FF; }
+        .border-navy { border-color: #073763; }
         .bg-ice-100 { background-color: rgba(0, 230, 255, 0.1); }
     </style>
 </head>
@@ -65,7 +66,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <!-- T-CAG Core Engine (3x5x5 모듈) 강조 -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-black hover:bg-gray-100 transition-all">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-navy hover:bg-gray-100 transition-all">
                     <h3 class="text-2xl font-extrabold text-navy mb-2">1. T-CAG Core Engine</h3>
                     <p class="mt-2 text-sm text-navy">
                         <strong class="text-navy">재처리 최소화 AI 로직.</strong> 컨테이너의 미래 출항 우선순위를 예측하여 현재의 최적 적재 위치를 결정하는 핵심 알고리즘입니다. (Reprocessing Minimum Heuristic)
@@ -73,7 +74,7 @@
                     <div class="mt-4">
                         <h4 class="text-navy font-bold mb-3 text-center text-lg">AI 기반 컨테이너 스태킹 검증</h4>
                         <a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="block relative group">
-                            <img src="t-cag_core_engine.png" alt="AI Container Stacking Simulator" class="w-full h-auto rounded-lg border-2 border-black shadow-lg group-hover:opacity-90 transition-opacity">
+                            <img src="t-cag_core_engine.png" alt="AI Container Stacking Simulator" class="w-full h-auto rounded-lg border-2 border-navy shadow-lg group-hover:opacity-90 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="bg-red-600 rounded-full p-3 shadow-lg group-hover:bg-red-500 transition-colors">
                                     <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -89,7 +90,7 @@
                 </div>
                 
                 <!-- T-CAG Digital Twin (항만 시뮬레이터) -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-black hover:bg-gray-100 transition-all">
+                <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-navy hover:bg-gray-100 transition-all">
                     <h3 class="text-2xl font-extrabold text-navy mb-2">2. T-CAG Digital Twin</h3>
                     <p class="mt-2 text-sm text-navy">
                         <strong class="text-navy">AI 학습 및 운영 환경.</strong> 야드 전체(크레인, ITT 스케줄링)의 복잡한 운영 제약을 모델링하고, T-CAG Core Engine을 지속적으로 학습시키는 디지털 트윈 환경입니다.
@@ -97,37 +98,37 @@
                     <div class="mt-4">
                         <h4 class="text-navy font-bold mb-3 text-center text-lg">전략적 의사결정을 위한 항만 시뮬레이터</h4>
                         <div class="space-y-4">
-                            <div>
-                                <img src="t-cag_digital_twin_3d.png" alt="Port Digital Twin 3D View" class="w-full h-auto rounded-lg border-2 border-black shadow-md">
+                                        <div>
+                                <img src="t-cag_digital_twin_3d.png" alt="Port Digital Twin 3D View" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
                                 <p class="text-xs text-navy mt-2 text-center">3D 인터랙티브 뷰</p>
                             </div>
-                            <div>
-                                <img src="t-cag_digital_twin_flat.png" alt="Port Digital Twin Top View" class="w-full h-auto rounded-lg border-2 border-black shadow-md">
+                                <div>
+                                <img src="t-cag_digital_twin_flat.png" alt="Port Digital Twin Top View" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
                                 <p class="text-xs text-navy mt-2 text-center">평면 뷰 (실시간 상태 표시)</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                            </div>
+                        </div>
 
             <!-- T-CAG 핵심 성과 섹션 -->
-            <div class="mt-16 bg-gray-50 p-8 rounded-xl shadow-2xl border-4 border-black">
+            <div class="mt-16 bg-gray-50 p-8 rounded-xl shadow-2xl border-4 border-navy">
                 <h3 class="text-3xl font-bold text-navy mb-6 text-center">T-CAG 핵심 성과: 재처리 횟수 32.4% 절감</h3>
                 <p class="text-xl text-navy text-center mb-6">
                     T-CAG Core Engine은 기존 Greedy 정책 대비 재처리 횟수를 혁신적으로 절감합니다.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center gap-8">
-                    <div class="bg-white p-6 rounded-lg border-4 border-black border-l-8 border-l-red-500">
+                    <div class="bg-white p-6 rounded-lg border-4 border-navy border-l-8 border-l-red-500">
                         <h4 class="text-lg font-bold text-navy mb-3">정량적 절감 효과</h4>
                         <ul class="list-disc list-inside pl-4 text-sm font-semibold text-navy space-y-2">
                             <li>총 이동 횟수: <strong class="text-red-600">186 to 175 (-5.9%)</strong></li>
                             <li>재처리 횟수: <strong class="text-red-600">34 to 23 (-32.4%)</strong></li>
                         </ul>
-                        <p class="text-sm font-bold text-navy pt-3 border-t border-black mt-3">
+                        <p class="text-sm font-bold text-navy pt-3 border-t border-navy mt-3">
                             <strong class="text-navy">OPEX 절감</strong> 및 <strong class="text-navy">터미널 CAPA 증대</strong>를 즉시 실현합니다.
-                        </p>
-                    </div>
-                    <div class="bg-white p-6 rounded-lg border-4 border-black border-l-8 border-l-navy">
+                                    </p>
+                                </div>
+                    <div class="bg-white p-6 rounded-lg border-4 border-navy border-l-8 border-l-navy">
                         <h4 class="text-lg font-bold text-navy mb-3">비즈니스 임팩트 전망</h4>
                         <ul class="list-disc list-inside pl-4 text-sm text-navy space-y-2">
                             <li>연간 절감 잠재력: <strong class="text-navy">약 551억원</strong></li>
@@ -136,8 +137,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-        </div>
+                            </div>
+                        </div>
     </section>
 
     <!-- Section 3: AI Pipeline (기술력 및 비전) -->
@@ -153,28 +154,28 @@
                 <div class="p-6 rounded-xl shadow-lg border-4 border-ice bg-navy">
                     <span class="text-2xl font-bold text-offwhite mb-2 block">V1.0.0 (MVP)</span>
                     <h3 class="text-xl font-extrabold text-ice mb-2">T-CAG Platform</h3>
-                    <p class="text-sm text-offwhite">
+                                    <p class="text-sm text-offwhite">
                         OPEX 절감을 위한 <strong class="text-ice">항만 최적화(Rehandle Minimum)</strong> 핵심 기술 완성.
-                    </p>
+                                    </p>
                     <span class="inline-block mt-3 px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full">CURRENT</span>
-                </div>
+                                </div>
                 <!-- V2: Logistics Optimization (물류 최적화) -->
                 <div class="p-6 rounded-xl shadow-lg border-4 border-ice bg-navy/50">
                     <span class="text-2xl font-bold text-offwhite mb-2 block">V2.0.0</span>
                     <h3 class="text-xl font-extrabold text-ice mb-2">물류 최적화 솔루션</h3>
-                    <p class="text-sm text-offwhite">
+                                    <p class="text-sm text-offwhite">
                         T-CAG 데이터 기반의 <strong class="text-ice">SCM 효율화</strong> 및 <strong class="text-ice">글로벌 수요 예측</strong> 연계.
-                    </p>
-                </div>
+                                    </p>
+                                </div>
                 <!-- V3: Route Optimization (항로 최적화) -->
                 <div class="p-6 rounded-xl shadow-lg border-4 border-ice bg-navy/50">
                     <span class="text-2xl font-bold text-offwhite mb-2 block">V3.0.0 (Ultimate)</span>
                     <h3 class="text-xl font-extrabold text-ice mb-2">항로 최적화 솔루션</h3>
-                    <p class="text-sm text-offwhite">
+                                    <p class="text-sm text-offwhite">
                         DRL 기반 <strong class="text-ice">북극항로 및 해양 운송의 경제적 경로 결정</strong> 시스템 완성.
-                    </p>
-                </div>
-            </div>
+                                </p>
+                            </div>
+                        </div>
                         
             <!-- 기술적 깊이 강조 (NSR 이미지 활용) -->
             <div class="mt-12 p-6 rounded-xl shadow-2xl border-4 border-ice bg-navy/50">
@@ -213,8 +214,8 @@
                 </div>
                 
                 <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                    <div class="w-full md:w-1/2 bg-gray-50 p-4 rounded-lg border-4 border-black">
-                        <h4 class="font-bold text-navy mt-2 border-l-4 border-black pl-2">핵심 역량 및 성과</h4>
+                    <div class="w-full md:w-1/2 bg-gray-50 p-4 rounded-lg border-4 border-navy">
+                        <h4 class="font-bold text-navy mt-2 border-l-4 border-navy pl-2">핵심 역량 및 성과</h4>
                         <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm text-navy">
                             <li><strong class="text-navy">OpenAI GPT-5 Hackathon Global Winner</strong> (최고 기술력 증명)</li>
                             <li>AI/ML 기반의 전문 <strong class="text-navy">기술 자문 및 프로젝트 개발</strong> 수행 (건축/토목 구조 최적화 등 B2B 프로젝트 다수)</li>
@@ -222,8 +223,8 @@
                             <li>前 TmaxAI 연구본부장 (기술 리더십 및 관리 경험)</li>
                         </ul>
                     </div>
-                    <div class="w-full md:w-1/2 bg-gray-50 p-4 rounded-lg border-4 border-black">
-                        <h4 class="font-bold text-navy mt-2 border-l-4 border-black pl-2">계획</h4>
+                    <div class="w-full md:w-1/2 bg-gray-50 p-4 rounded-lg border-4 border-navy">
+                        <h4 class="font-bold text-navy mt-2 border-l-4 border-navy pl-2">계획</h4>
                         <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm text-navy">
                             <li>DRL 모델 학습 및 고도화를 위한 부산항 T/O 작업 레벨 운용 데이터 독점적 확보 및 프로토콜 체계 완성</li>
                             <li>국내 주요 터미널 확장: 부산항 내 복수 터미널에 MaeBara AI 솔루션 정식 도입 및 연간 551억 원 손실 절감 효과를 넘어, <strong class="text-navy">9.3M TEU CAPA 증가</strong>를 통한 추가 수익 창출 모델(Rev-Share) 확립.</li>
@@ -264,29 +265,29 @@
 
     <!-- Section 6: Call to Action & Contact (협력 요청) -->
     <section id="partnering" class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-black p-10 rounded-xl bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-navy p-10 rounded-xl bg-gray-50">
             <h2 class="text-3xl font-bold text-navy">부산을 세계 AI 항만의 표준으로!</h2>
             <p class="mt-4 text-xl font-semibold text-navy">
                 MaeBara의 T-CAG 기술로 당신의 터미널 운영 비용을 혁신적으로 절감하십시오.
             </p>
             
             <div class="mt-8 space-y-4 md:space-y-0 md:space-x-8 flex flex-col md:flex-row justify-center items-center">
-                <a href="mailto:hansd410@gmail.com" class="bg-navy text-white font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-black shadow-lg border-2 border-black text-lg">
+                <a href="mailto:hansd410@gmail.com" class="bg-navy text-white font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-black shadow-lg border-2 border-navy text-lg">
                     미팅 및 도입 문의 (파트너링)
                 </a>
             </div>
             
-            <div class="mt-6 pt-6 border-t border-black/30">
+            <div class="mt-6 pt-6 border-t border-navy/30">
                 <p class="text-base text-navy">
                     이메일: <a href="mailto:hansd410@gmail.com" class="text-navy hover:text-black underline">hansd410@gmail.com</a> | 전화: (+82) 10-3331-8745
                 </p>
             </div>
             
             <!-- QR 코드 섹션 -->
-            <div class="mt-12 pt-8 border-t border-black/30">
+            <div class="mt-12 pt-8 border-t border-navy/30">
                 <div class="flex flex-col items-center">
                     <h3 class="text-xl font-bold text-navy mb-4">모바일 간편 접속</h3>
-                    <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-black">
+                    <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-navy">
                         <img src="mae-bara-qr.png" alt="MaeBara Homepage QR Code" class="w-48 h-48 md:w-56 md:h-56">
                     </div>
                     <p class="text-sm text-navy mt-4 italic">QR 코드를 스캔하여 MaeBara 홈페이지에 접속하세요</p>
