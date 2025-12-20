@@ -8,16 +8,32 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        /* 짙은 남색 배경 */
+        
+        /* ========================================
+           BLOCK COLOR SYSTEM (white-navy alternating)
+           ========================================
+           Block 0 (Header):      WHITE  - text: navy,     border: navy
+           Block 1 (Problem):     NAVY   - text: offwhite, border: ice
+           Block 2 (Solution):    WHITE  - text: navy,     border: navy
+           Block 3 (Progress):    NAVY   - text: offwhite, border: ice
+           Block 4 (Architect):   WHITE  - text: navy,     border: navy
+           Block 5 (Whitepaper):  NAVY   - text: offwhite, border: ice
+           Block 6 (Media):       WHITE  - text: navy,     border: navy
+           Block 7 (Partnering):  NAVY   - text: offwhite, border: ice
+           Footer:                NAVY   - text: offwhite, border: ice
+           ======================================== */
+        
+        /* Navy background (#073763) */
         .bg-navy { background-color: #073763; } 
-        /* 텍스트 색상 (남색) */
+        /* Text colors */
         .text-navy { color: #073763; }
         .text-offwhite { color: #eeeeee; }
-        /* 포인트 컬러 (아이스 블루) */
+        /* Accent color (ice blue) */
         .text-ice { color: #00E6FF; } 
         .border-ice { border-color: #00E6FF; }
         .border-navy { border-color: #073763; }
         .bg-ice-100 { background-color: rgba(0, 230, 255, 0.1); }
+        .bg-ice { background-color: #00E6FF; }
     </style>
 </head>
 <body class="bg-white text-navy min-h-screen">
@@ -30,7 +46,7 @@
         </button>
     </div>
 
-    <!-- Header & Hero Section (New Narrative) -->
+    <!-- Block 0: Header (WHITE) -->
     <header id="home" class="py-12 md:py-24 bg-white border-b border-navy/30">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <!-- Logo -->
@@ -47,7 +63,7 @@
         </div>
     </header>
 
-    <!-- Section 1: The Problem (항만 비효율성) -->
+    <!-- Block 1: The Problem (NAVY) -->
     <section id="problem" class="py-16 bg-navy">
         <div class="max-w-4xl mx-auto px-4 text-offwhite">
             <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite" data-i18n="section1_title">1. 항만 및 물류 비효율성의 도전</h2>
@@ -64,7 +80,7 @@
         </div>
     </section>
 
-    <!-- Section 2: T-CAG Platform (New MVP - T-CAG) -->
+    <!-- Block 2: T-CAG Platform (WHITE) -->
     <section id="solution" class="py-16 bg-white">
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold border-b-4 border-navy pb-4 text-navy text-center" data-i18n="section2_title">2. T-CAG Platform: 항만 최적화 MVP</h2>
@@ -75,18 +91,18 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <!-- T-CAG Core Engine (3x5x5 모듈) 강조 -->
                 <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-navy hover:bg-gray-100 transition-all">
-                    <h3 class="text-2xl font-extrabold text-navy mb-2" data-i18n="core_engine_title">1. T-CAG Core Engine</h3>
-                    <p class="mt-2 text-sm text-navy leading-relaxed" data-i18n="core_engine_desc1">
+                    <h3 class="text-2xl font-extrabold text-navy mb-2" data-i18n="tyo_title">1. T-CAG Yard Orchestrator (TYO)</h3>
+                    <p class="mt-2 text-sm text-navy leading-relaxed" data-i18n="tyo_desc1">
                         <strong class="text-navy">컨테이너 재처리(Rehandle) 최소화 AI.</strong> 터미널 운영의 핵심 난제인 불필요한 재처리 작업을 줄여 운영 비용(OPEX)을 절감합니다.
                     </p>
-                    <p class="mt-2 text-sm text-navy leading-relaxed" data-i18n="core_engine_desc2">
+                    <p class="mt-2 text-sm text-navy leading-relaxed" data-i18n="tyo_desc2">
                         <strong class="text-red-600">'레고 블록 정리 문제'</strong>처럼, 입고되는 컨테이너들의 출고 우선순위를 분석하여 <strong class="text-red-600">가장 먼저 출고될 컨테이너가 밑에 깔리지 않도록</strong> 최적의 적재 위치를 결정합니다.
                     </p>
-                    <p class="mt-2 text-sm text-navy leading-relaxed" data-i18n="core_engine_desc3">
+                    <p class="mt-2 text-sm text-navy leading-relaxed" data-i18n="tyo_desc3">
                         단순히 현재 위치만 고려하는 것이 아니라, <strong class="text-navy">미래의 비용(재처리 페널티)을 예측하는 AI 의사결정 방식(Cost Function)</strong>을 사용하여 불필요한 작업을 미리 방지합니다.
                     </p>
                     <div class="mt-4">
-                        <h4 class="text-navy font-bold mb-3 text-center text-lg" data-i18n="core_engine_validation">AI 기반 컨테이너 스태킹 검증</h4>
+                        <h4 class="text-navy font-bold mb-3 text-center text-lg" data-i18n="tyo_validation">AI 기반 컨테이너 스태킹 검증</h4>
                         <a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="block relative group">
                             <img src="t-cag_core_engine.png" alt="AI Container Stacking Simulator" class="w-full h-auto rounded-lg border-2 border-navy shadow-lg group-hover:opacity-90 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center">
@@ -94,20 +110,20 @@
                                     <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M8 5v14l11-7z"/>
                                     </svg>
-                                </div>
-                            </div>
+                        </div>
+                    </div>
                         </a>
                         <p class="text-xs text-navy mt-3 text-center italic">
-                            <span data-i18n="core_engine_caption">3x5x5 환경에서 재처리 횟수 32.4% 절감 입증 | </span><a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="text-navy hover:text-black underline" data-i18n="youtube_link">YouTube 영상 보기</a>
-                        </p>
-                    </div>
-                </div>
-                
+                            <span data-i18n="tyo_caption">3x5x5 환경에서 재처리 횟수 32.4% 절감 입증 | </span><a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="text-navy hover:text-black underline" data-i18n="youtube_link">YouTube 영상 보기</a>
+                                </p>
+                            </div>
+                        </div>
+                        
                 <!-- T-CAG Digital Twin (항만 시뮬레이터) -->
                 <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-navy hover:bg-gray-100 transition-all">
                     <h3 class="text-2xl font-extrabold text-navy mb-2" data-i18n="digital_twin_title">2. T-CAG Digital Twin</h3>
                     <p class="mt-2 text-sm text-navy" data-i18n="digital_twin_desc">
-                        <strong class="text-navy">AI 학습 및 운영 환경.</strong> 야드 전체(크레인, ITT 스케줄링)의 복잡한 운영 제약을 모델링하고, T-CAG Core Engine을 지속적으로 학습시키는 디지털 트윈 환경입니다.
+                        <strong class="text-navy">AI 학습 및 운영 환경.</strong> 야드 전체(크레인, ITT 스케줄링)의 복잡한 운영 제약을 모델링하고, T-CAG TYO를 지속적으로 학습시키는 디지털 트윈 환경입니다.
                     </p>
                     <div class="mt-4">
                         <h4 class="text-navy font-bold mb-3 text-center text-lg" data-i18n="digital_twin_subtitle">전략적 의사결정을 위한 항만 시뮬레이터</h4>
@@ -115,21 +131,21 @@
                                         <div>
                                 <img src="t-cag_digital_twin_3d.png" alt="Port Digital Twin 3D View" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
                                 <p class="text-xs text-navy mt-2 text-center" data-i18n="view_3d">3D 인터랙티브 뷰</p>
-                            </div>
+                                </div>
                                 <div>
                                 <img src="t-cag_digital_twin_flat.png" alt="Port Digital Twin Top View" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
                                 <p class="text-xs text-navy mt-2 text-center" data-i18n="view_flat">평면 뷰 (실시간 상태 표시)</p>
-                            </div>
                         </div>
                     </div>
+                                </div>
                             </div>
                         </div>
-
+                        
             <!-- T-CAG 핵심 성과 섹션 -->
             <div class="mt-16 bg-gray-50 p-8 rounded-xl shadow-2xl border-4 border-navy">
                 <h3 class="text-3xl font-bold text-navy mb-6 text-center" data-i18n="result_title">T-CAG 핵심 성과: 재처리 횟수 32.4% 절감</h3>
                 <p class="text-xl text-navy text-center mb-6" data-i18n="result_desc">
-                    T-CAG Core Engine은 기존 Greedy 정책 대비 재처리 횟수를 혁신적으로 절감합니다.
+                    T-CAG TYO는 기존 Greedy 정책 대비 재처리 횟수를 혁신적으로 절감합니다.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center gap-8">
                     <div class="bg-white p-6 rounded-lg border-4 border-navy border-l-8 border-l-red-500">
@@ -149,13 +165,13 @@
                             <li data-i18n="biz_capa">CAPA 증가 잠재력: <strong class="text-navy">+9.3M TEU</strong></li>
                             <li data-i18n="biz_model">수익 모델: OPEX 절감 기반 <strong class="text-navy">Rev-Share</strong></li>
                         </ul>
+                        </div>
                     </div>
                 </div>
                             </div>
-                        </div>
     </section>
 
-    <!-- Section 3: AI Pipeline (기술력 및 비전) -->
+    <!-- Block 3: AI Pipeline (NAVY) -->
     <section id="progress" class="py-16 bg-navy">
         <div class="max-w-6xl mx-auto px-4 text-offwhite">
             <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite" data-i18n="section3_title">3. AI 파이프라인 및 미래 비전</h2>
@@ -199,9 +215,9 @@
                         <img src="release_note/0.3.0/251114_a_star.png" alt="MaeBara V0.3.0 A* Route Optimization" class="w-full h-auto rounded-lg border-2 border-ice shadow-md">
                         <p class="text-xs text-offwhite mt-3 text-center italic" data-i18n="drl_caption">
                             최고 난이도 환경(북극항로)에서 459.3 km 단축을 입증한 DRL Agent 트레이닝 환경
-                        </p>
+                            </p>
+                        </div>
                     </div>
-                </div>
                 <p class="text-base text-offwhite mt-6 text-center" data-i18n="drl_desc">
                     MaeBara의 DRL 기술은 이미 최고 난이도의 환경(항로 최적화)에서 검증되었습니다. 이 기술력은 T-CAG Platform에 적용되어 압도적인 성능을 보장합니다.
                 </p>
@@ -209,7 +225,7 @@
         </div>
     </section>
 
-    <!-- Section 4: The Architect (창업가 역량) -->
+    <!-- Block 4: The Architect (WHITE) -->
     <section id="architect" class="py-16 bg-white">
         <div class="max-w-4xl mx-auto px-4">
             <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy" data-i18n="section4_title">4. 실행 주체</h2>
@@ -250,67 +266,104 @@
         </div>
     </section>
 
-    <!-- Section 5: Media -->
-    <section id="media" class="py-16 bg-navy">
+    <!-- Block 5: White Paper (NAVY) -->
+    <section id="whitepaper" class="py-16 bg-navy">
         <div class="max-w-4xl mx-auto px-4 text-offwhite">
-            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite" data-i18n="section5_title">5. Media Coverage</h2>
-            <div class="mt-8 space-y-4">
-                <div class="bg-navy/50 p-6 rounded-lg border-2 border-ice hover:bg-navy/30 transition-colors">
-                    <a href="https://www.ceoeconomy.com/news/articleView.html?idxno=14532" target="_blank" class="block">
-                        <h3 class="text-lg font-bold text-ice">[CEO경제-사설] 흑선처럼 다가온 바이브코딩: 당신의 전략은?</h3>
-                        <p class="text-sm text-offwhite mt-2">CEO경제신문 | 2025.12.04</p>
-                    </a>
+            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite" data-i18n="wp_section_title">5. Technical White Paper</h2>
+            <div class="mt-8 bg-navy/50 p-8 rounded-xl border-4 border-ice">
+                <h3 class="text-2xl font-bold text-ice mb-4" data-i18n="wp_title">[MaeBara White Paper] Northern Sea Route Era: Charting a New Map for Korean Maritime Logistics</h3>
+                <p class="text-base text-offwhite leading-relaxed" data-i18n="wp_desc1">
+                    MaeBara's vision for maritime logistics goes beyond simple efficiency improvement - it aims to set the standard for 'Intelligent Infrastructure'.
+                </p>
+                <p class="text-base text-offwhite leading-relaxed mt-4" data-i18n="wp_desc2">
+                    We release Technical White Paper v1.0.0, containing MaeBara's core technologies and empirical data to solve the ~500 billion KRW annual operational inefficiency at Busan Port and seize leadership in the upcoming Northern Sea Route era.
+                </p>
+                <div class="mt-6 bg-navy p-6 rounded-lg border-2 border-ice">
+                    <h4 class="text-lg font-bold text-ice mb-4" data-i18n="wp_highlights">Key Highlights:</h4>
+                    <ul class="list-disc list-inside space-y-2 pl-4 text-offwhite">
+                        <li data-i18n="wp_highlight1"><strong class="text-ice">T-CAG TYO:</strong> Deep Reinforcement Learning (DRL) based port stacking optimization (32.4% rehandling reduction)</li>
+                        <li data-i18n="wp_highlight2"><strong class="text-ice">NSR-OptiNav:</strong> Northern Sea Route intelligent navigation (459.3km route reduction)</li>
+                        <li data-i18n="wp_highlight3"><strong class="text-ice">Global Vision:</strong> Realizing the 'Tesla Model' of maritime logistics connecting ports and seas</li>
+                    </ul>
                 </div>
-                <div class="bg-navy/50 p-6 rounded-lg border-2 border-ice hover:bg-navy/30 transition-colors">
-                    <a href="https://www.ceoeconomy.com/news/articleView.html?idxno=14531" target="_blank" class="block">
-                        <h3 class="text-lg font-bold text-ice">[유망스타트업] OpenAI 해커톤 세계 1위 우승자, 한상도 CEO, AI 북극항로 기업 창업</h3>
-                        <p class="text-sm text-offwhite mt-2">CEO경제신문 | 2025.12.03</p>
+                <p class="text-base text-offwhite leading-relaxed mt-6" data-i18n="wp_cta">
+                    See how the overwhelming technical capability proven by OpenAI Hackathon victory solves real industry challenges.
+                </p>
+                <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="MaeBara_WhitePaper_KO_1_0_0.pdf" target="_blank" class="bg-ice text-navy font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-white shadow-lg text-center flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
+                        <span data-i18n="wp_download_ko">White Paper (KO)</span>
                     </a>
-                </div>
-                <div class="bg-navy/50 p-6 rounded-lg border-2 border-ice hover:bg-navy/30 transition-colors">
-                    <a href="https://contents.premium.naver.com/ceoedu/ceocare/contents/251119075414242jt" target="_blank" class="block">
-                        <h3 class="text-lg font-bold text-ice">[CEO비즈니스스쿨] 1호 교수 영입 안내 (OpenAI GPT-5 해커톤 '세계 1위' 개발자, 한상도 교수 합류)</h3>
-                        <p class="text-sm text-offwhite mt-2">네이버 프리미엄콘텐츠 | 2025.11.19</p>
+                    <a href="MaeBara_WhitePaper_EN_1_0_0.pdf" target="_blank" class="bg-ice text-navy font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-white shadow-lg text-center flex items-center justify-center gap-2">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
+                        <span data-i18n="wp_download_en">White Paper (EN)</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 6: Call to Action & Contact (협력 요청) -->
-    <section id="partnering" class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-navy p-10 rounded-xl bg-gray-50">
-            <h2 class="text-3xl font-bold text-navy" data-i18n="cta_title">부산을 세계 AI 항만의 표준으로!</h2>
-            <p class="mt-4 text-xl font-semibold text-navy" data-i18n="cta_desc">
+    <!-- Block 6: Media (WHITE) -->
+    <section id="media" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-navy">
+            <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy" data-i18n="section6_title">6. Media Coverage</h2>
+            <div class="mt-8 space-y-4">
+                <div class="bg-gray-50 p-6 rounded-lg border-4 border-navy hover:bg-gray-100 transition-colors">
+                    <a href="https://www.ceoeconomy.com/news/articleView.html?idxno=14532" target="_blank" class="block">
+                        <h3 class="text-lg font-bold text-navy">[CEO Economic-Editorial] Vibe Coding Approaches Like the Black Ships: What's Your Strategy?</h3>
+                        <p class="text-sm text-navy mt-2">CEO Economic News | 2025.12.04</p>
+                    </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-4 border-navy hover:bg-gray-100 transition-colors">
+                    <a href="https://www.ceoeconomy.com/news/articleView.html?idxno=14531" target="_blank" class="block">
+                        <h3 class="text-lg font-bold text-navy">[Promising Startup] OpenAI Hackathon Global Winner, CEO Sangdo Han, Launches AI Arctic Route Company</h3>
+                        <p class="text-sm text-navy mt-2">CEO Economic News | 2025.12.03</p>
+                    </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg border-4 border-navy hover:bg-gray-100 transition-colors">
+                    <a href="https://contents.premium.naver.com/ceoedu/ceocare/contents/251119075414242jt" target="_blank" class="block">
+                        <h3 class="text-lg font-bold text-navy">[CEO Business School] First Professor Announcement (OpenAI GPT-5 Hackathon Global Winner, Prof. Sangdo Han Joins)</h3>
+                        <p class="text-sm text-navy mt-2">Naver Premium Content | 2025.11.19</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 7: Call to Action & Contact (NAVY) -->
+    <section id="partnering" class="py-16 bg-navy">
+        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-ice p-10 rounded-xl bg-navy/50">
+            <h2 class="text-3xl font-bold text-ice" data-i18n="cta_title">부산을 세계 AI 항만의 표준으로!</h2>
+            <p class="mt-4 text-xl font-semibold text-offwhite" data-i18n="cta_desc">
                 MaeBara의 T-CAG 기술로 당신의 터미널 운영 비용을 혁신적으로 절감하십시오.
             </p>
             
             <div class="mt-8 space-y-4 md:space-y-0 md:space-x-8 flex flex-col md:flex-row justify-center items-center">
-                <a href="mailto:hansd410@gmail.com" class="bg-navy text-white font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-black shadow-lg border-2 border-navy text-lg" data-i18n="cta_button">
+                <a href="mailto:hansd410@gmail.com" class="bg-ice text-navy font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-white shadow-lg text-lg" data-i18n="cta_button">
                     미팅 및 도입 문의 (파트너링)
                 </a>
             </div>
             
-            <div class="mt-6 pt-6 border-t border-navy/30">
-                <p class="text-base text-navy" data-i18n="contact_info">
-                    이메일: <a href="mailto:hansd410@gmail.com" class="text-navy hover:text-black underline">hansd410@gmail.com</a> | 전화: (+82) 10-3331-8745
+            <div class="mt-6 pt-6 border-t border-ice/30">
+                <p class="text-base text-offwhite" data-i18n="contact_info">
+                    이메일: <a href="mailto:hansd410@gmail.com" class="text-ice hover:text-white underline">hansd410@gmail.com</a> | 전화: (+82) 10-3331-8745
                 </p>
             </div>
             
-            <!-- QR 코드 섹션 -->
-            <div class="mt-12 pt-8 border-t border-navy/30">
+            <!-- QR Code Section -->
+            <div class="mt-12 pt-8 border-t border-ice/30">
                 <div class="flex flex-col items-center">
-                    <h3 class="text-xl font-bold text-navy mb-4" data-i18n="qr_title">모바일 간편 접속</h3>
-                    <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-navy">
+                    <h3 class="text-xl font-bold text-ice mb-4" data-i18n="qr_title">모바일 간편 접속</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-ice">
                         <img src="mae-bara-qr.png" alt="MaeBara Homepage QR Code" class="w-48 h-48 md:w-56 md:h-56">
                     </div>
-                    <p class="text-sm text-navy mt-4 italic" data-i18n="qr_desc">QR 코드를 스캔하여 MaeBara 홈페이지에 접속하세요</p>
+                    <p class="text-sm text-offwhite mt-4 italic" data-i18n="qr_desc">QR 코드를 스캔하여 MaeBara 홈페이지에 접속하세요</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (NAVY) -->
     <footer class="py-8 text-center text-offwhite text-sm bg-navy border-t border-ice/30">
         <p data-i18n="footer_info">&copy; 2025 MaeBara Corporation. All Rights Reserved. | 부산 거점: 부산광역시 해운대구 센텀북대로 60, 센텀아이에스타워 1710호</p>
         <p class="mt-1">GitHub: <a href="https://github.com/hansd410" class="text-ice hover:text-white underline">https://github.com/hansd410</a></p>
@@ -331,20 +384,20 @@
                 section1_item3: '<strong class="text-ice">미래 대응:</strong> 북극항로와 같은 새로운 물동량 증가에 대비하기 위한 <strong class="text-ice">지능형 AI 인프라</strong> 구축이 시급합니다.',
                 section2_title: '2. T-CAG Platform: 항만 최적화 MVP',
                 section2_intro: '<strong class="text-navy">T-CAG (Terminal Capacity And Gain)</strong> 플랫폼은 AI를 통해 터미널 운영의 비효율을 제거하고 <strong class="text-navy">운영 이익(OPEX 절감)</strong>을 창출합니다.',
-                core_engine_title: '1. T-CAG Core Engine',
-                core_engine_desc1: '<strong class="text-navy">컨테이너 재처리(Rehandle) 최소화 AI.</strong> 터미널 운영의 핵심 난제인 불필요한 재처리 작업을 줄여 운영 비용(OPEX)을 절감합니다.',
-                core_engine_desc2: '<strong class="text-red-600">\'레고 블록 정리 문제\'</strong>처럼, 입고되는 컨테이너들의 출고 우선순위를 분석하여 <strong class="text-red-600">가장 먼저 출고될 컨테이너가 밑에 깔리지 않도록</strong> 최적의 적재 위치를 결정합니다.',
-                core_engine_desc3: '단순히 현재 위치만 고려하는 것이 아니라, <strong class="text-navy">미래의 비용(재처리 페널티)을 예측하는 AI 의사결정 방식(Cost Function)</strong>을 사용하여 불필요한 작업을 미리 방지합니다.',
-                core_engine_validation: 'AI 기반 컨테이너 스태킹 검증',
-                core_engine_caption: '3x5x5 환경에서 재처리 횟수 32.4% 절감 입증 | ',
+                tyo_title: '1. T-CAG Yard Orchestrator (TYO)',
+                tyo_desc1: '<strong class="text-navy">컨테이너 재처리(Rehandle) 최소화 AI.</strong> 터미널 운영의 핵심 난제인 불필요한 재처리 작업을 줄여 운영 비용(OPEX)을 절감합니다.',
+                tyo_desc2: '<strong class="text-red-600">\'레고 블록 정리 문제\'</strong>처럼, 입고되는 컨테이너들의 출고 우선순위를 분석하여 <strong class="text-red-600">가장 먼저 출고될 컨테이너가 밑에 깔리지 않도록</strong> 최적의 적재 위치를 결정합니다.',
+                tyo_desc3: '단순히 현재 위치만 고려하는 것이 아니라, <strong class="text-navy">미래의 비용(재처리 페널티)을 예측하는 AI 의사결정 방식(Cost Function)</strong>을 사용하여 불필요한 작업을 미리 방지합니다.',
+                tyo_validation: 'AI 기반 컨테이너 스태킹 검증',
+                tyo_caption: '3x5x5 환경에서 재처리 횟수 32.4% 절감 입증 | ',
                 youtube_link: 'YouTube 영상 보기',
                 digital_twin_title: '2. T-CAG Digital Twin',
-                digital_twin_desc: '<strong class="text-navy">AI 학습 및 운영 환경.</strong> 야드 전체(크레인, ITT 스케줄링)의 복잡한 운영 제약을 모델링하고, T-CAG Core Engine을 지속적으로 학습시키는 디지털 트윈 환경입니다.',
+                digital_twin_desc: '<strong class="text-navy">AI 학습 및 운영 환경.</strong> 야드 전체(크레인, ITT 스케줄링)의 복잡한 운영 제약을 모델링하고, T-CAG TYO를 지속적으로 학습시키는 디지털 트윈 환경입니다.',
                 digital_twin_subtitle: '전략적 의사결정을 위한 항만 시뮬레이터',
                 view_3d: '3D 인터랙티브 뷰',
                 view_flat: '평면 뷰 (실시간 상태 표시)',
                 result_title: 'T-CAG 핵심 성과: 재처리 횟수 32.4% 절감',
-                result_desc: 'T-CAG Core Engine은 기존 Greedy 정책 대비 재처리 횟수를 혁신적으로 절감합니다.',
+                result_desc: 'T-CAG TYO는 기존 Greedy 정책 대비 재처리 횟수를 혁신적으로 절감합니다.',
                 quant_title: '정량적 절감 효과',
                 quant_move: '총 이동 횟수: <strong class="text-red-600">186 to 175 (-5.9%)</strong>',
                 quant_rehandle: '재처리 횟수: <strong class="text-red-600">34 to 23 (-32.4%)</strong>',
@@ -380,11 +433,22 @@
                 plan_1: 'DRL 모델 학습 및 고도화를 위한 부산항 T/O 작업 레벨 운용 데이터 독점적 확보 및 프로토콜 체계 완성',
                 plan_2: '국내 주요 터미널 확장: 부산항 내 복수 터미널에 MaeBara AI 솔루션 정식 도입 및 연간 551억 원 손실 절감 효과를 넘어, <strong class="text-navy">9.3M TEU CAPA 증가</strong>를 통한 추가 수익 창출 모델(Rev-Share) 확립.',
                 plan_3: '2030년 전망되는 북극항로 물동량 (1억 5000만 톤) 시대에 맞춰, 축적된 항로 위험 데이터와 연계된 물류 최적화 솔루션을 선제적으로 출시하여 글로벌 <strong class="text-navy">\'정책 우위(Policy Advantage)\'</strong> 선점.',
-                section5_title: '5. Media Coverage',
+                wp_section_title: '5. Technical White Paper',
+                wp_title: '[MaeBara White Paper] 북극항로 시대, 대한민국 해양 물류의 새로운 지도를 그리다',
+                wp_desc1: '매바라가 지향하는 해양 물류의 미래는 단순한 효율 개선을 넘어 \'지능형 인프라의 표준\'을 세우는 데 있습니다.',
+                wp_desc2: '매년 부산항에서 발생하는 약 500억 원 규모의 운영 비효율을 해결하고, 다가올 북극항로 시대의 주도권을 선점하기 위한 매바라의 핵심 기술력과 실증 데이터를 담은 기술 백서 v1.0.0를 공개합니다.',
+                wp_highlights: '핵심 내용:',
+                wp_highlight1: '<strong class="text-ice">T-CAG TYO:</strong> 심층 강화학습(DRL) 기반 항만 적재 최적화 (재처리 32.4% 절감)',
+                wp_highlight2: '<strong class="text-ice">NSR-OptiNav:</strong> 북극항로 지능형 내비게이션 (운항 거리 459.3km 단축)',
+                wp_highlight3: '<strong class="text-ice">글로벌 비전:</strong> 항만과 해상을 잇는 해양 물류의 \'테슬라 모델\' 실현',
+                wp_cta: 'OpenAI 해커톤 우승으로 증명된 압도적 기술력이 어떻게 실제 산업의 난제를 해결하는지 지금 확인해 보십시오.',
+                wp_download_ko: 'White Paper (KO)',
+                wp_download_en: 'White Paper (EN)',
+                section6_title: '6. Media Coverage',
                 cta_title: '부산을 세계 AI 항만의 표준으로!',
                 cta_desc: 'MaeBara의 T-CAG 기술로 당신의 터미널 운영 비용을 혁신적으로 절감하십시오.',
                 cta_button: '미팅 및 도입 문의 (파트너링)',
-                contact_info: '이메일: <a href="mailto:hansd410@gmail.com" class="text-navy hover:text-black underline">hansd410@gmail.com</a> | 전화: (+82) 10-3331-8745',
+                contact_info: '이메일: <a href="mailto:hansd410@gmail.com" class="text-ice hover:text-white underline">hansd410@gmail.com</a> | 전화: (+82) 10-3331-8745',
                 qr_title: '모바일 간편 접속',
                 qr_desc: 'QR 코드를 스캔하여 MaeBara 홈페이지에 접속하세요',
                 footer_info: '&copy; 2025 MaeBara Corporation. All Rights Reserved. | 부산 거점: 부산광역시 해운대구 센텀북대로 60, 센텀아이에스타워 1710호'
@@ -399,20 +463,20 @@
                 section1_item3: '<strong class="text-ice">Future Readiness:</strong> Urgent need for <strong class="text-ice">Intelligent AI Infrastructure</strong> to prepare for increased cargo volume from Arctic routes.',
                 section2_title: '2. T-CAG Platform: Port Optimization MVP',
                 section2_intro: '<strong class="text-navy">T-CAG (Terminal Capacity And Gain)</strong> platform eliminates terminal inefficiencies through AI and generates <strong class="text-navy">OPEX savings</strong>.',
-                core_engine_title: '1. T-CAG Core Engine',
-                core_engine_desc1: '<strong class="text-navy">Container Rehandle Minimization AI.</strong> Reduces unnecessary rehandling operations, a core challenge in terminal operations, to cut OPEX.',
-                core_engine_desc2: 'Like a <strong class="text-red-600">\'Lego Block Sorting Problem\'</strong>, it analyzes container departure priorities to determine optimal stacking positions so that <strong class="text-red-600">containers leaving first are not buried underneath</strong>.',
-                core_engine_desc3: 'Instead of just considering current positions, it uses an <strong class="text-navy">AI decision-making approach (Cost Function) that predicts future costs (rehandle penalties)</strong> to prevent unnecessary work in advance.',
-                core_engine_validation: 'AI-based Container Stacking Validation',
-                core_engine_caption: '32.4% rehandling reduction proven in 3x5x5 environment | ',
+                tyo_title: '1. T-CAG Yard Orchestrator (TYO)',
+                tyo_desc1: '<strong class="text-navy">Container Rehandle Minimization AI.</strong> Reduces unnecessary rehandling operations, a core challenge in terminal operations, to cut OPEX.',
+                tyo_desc2: 'Like a <strong class="text-red-600">\'Lego Block Sorting Problem\'</strong>, it analyzes container departure priorities to determine optimal stacking positions so that <strong class="text-red-600">containers leaving first are not buried underneath</strong>.',
+                tyo_desc3: 'Instead of just considering current positions, it uses an <strong class="text-navy">AI decision-making approach (Cost Function) that predicts future costs (rehandle penalties)</strong> to prevent unnecessary work in advance.',
+                tyo_validation: 'AI-based Container Stacking Validation',
+                tyo_caption: '32.4% rehandling reduction proven in 3x5x5 environment | ',
                 youtube_link: 'Watch on YouTube',
                 digital_twin_title: '2. T-CAG Digital Twin',
-                digital_twin_desc: '<strong class="text-navy">AI Training & Operations Environment.</strong> Models complex operational constraints across the entire yard (cranes, ITT scheduling) and continuously trains the T-CAG Core Engine.',
+                digital_twin_desc: '<strong class="text-navy">AI Training & Operations Environment.</strong> Models complex operational constraints across the entire yard (cranes, ITT scheduling) and continuously trains the T-CAG TYO.',
                 digital_twin_subtitle: 'Port Simulator for Strategic Decision Making',
                 view_3d: '3D Interactive View',
                 view_flat: 'Top View (Real-time Status)',
                 result_title: 'T-CAG Key Achievement: 32.4% Rehandling Reduction',
-                result_desc: 'T-CAG Core Engine dramatically reduces rehandling compared to existing Greedy policies.',
+                result_desc: 'T-CAG TYO dramatically reduces rehandling compared to existing Greedy policies.',
                 quant_title: 'Quantitative Savings',
                 quant_move: 'Total Moves: <strong class="text-red-600">186 to 175 (-5.9%)</strong>',
                 quant_rehandle: 'Rehandles: <strong class="text-red-600">34 to 23 (-32.4%)</strong>',
@@ -448,11 +512,22 @@
                 plan_1: 'Exclusive acquisition of Busan Port T/O operational data for DRL model training',
                 plan_2: 'Domestic terminal expansion: Deploy MaeBara AI across multiple Busan Port terminals with <strong class="text-navy">55.1B KRW annual savings</strong> and <strong class="text-navy">+9.3M TEU CAPA increase</strong> via Rev-Share model.',
                 plan_3: 'Pre-emptive global <strong class="text-navy">\'Policy Advantage\'</strong> for projected 2030 Arctic route volume (150M tons) through integrated risk data and logistics optimization.',
-                section5_title: '5. Media Coverage',
+                wp_section_title: '5. Technical White Paper',
+                wp_title: '[MaeBara White Paper] Northern Sea Route Era: Charting a New Map for Korean Maritime Logistics',
+                wp_desc1: 'MaeBara\'s vision for maritime logistics goes beyond simple efficiency improvement - it aims to set the standard for \'Intelligent Infrastructure\'.',
+                wp_desc2: 'We release Technical White Paper v1.0.0, containing MaeBara\'s core technologies and empirical data to solve the ~500 billion KRW annual operational inefficiency at Busan Port and seize leadership in the upcoming Northern Sea Route era.',
+                wp_highlights: 'Key Highlights:',
+                wp_highlight1: '<strong class="text-ice">T-CAG TYO:</strong> Deep Reinforcement Learning (DRL) based port stacking optimization (32.4% rehandling reduction)',
+                wp_highlight2: '<strong class="text-ice">NSR-OptiNav:</strong> Northern Sea Route intelligent navigation (459.3km route reduction)',
+                wp_highlight3: '<strong class="text-ice">Global Vision:</strong> Realizing the \'Tesla Model\' of maritime logistics connecting ports and seas',
+                wp_cta: 'See how the overwhelming technical capability proven by OpenAI Hackathon victory solves real industry challenges.',
+                wp_download_ko: 'White Paper (KO)',
+                wp_download_en: 'White Paper (EN)',
+                section6_title: '6. Media Coverage',
                 cta_title: 'Busan: The Global AI Port Standard!',
                 cta_desc: 'Transform your terminal operations with MaeBara\'s T-CAG technology.',
                 cta_button: 'Meeting & Partnership Inquiry',
-                contact_info: 'Email: <a href="mailto:hansd410@gmail.com" class="text-navy hover:text-black underline">hansd410@gmail.com</a> | Phone: (+82) 10-3331-8745',
+                contact_info: 'Email: <a href="mailto:hansd410@gmail.com" class="text-ice hover:text-white underline">hansd410@gmail.com</a> | Phone: (+82) 10-3331-8745',
                 qr_title: 'Quick Mobile Access',
                 qr_desc: 'Scan QR code to access MaeBara homepage',
                 footer_info: '&copy; 2025 MaeBara Corporation. All Rights Reserved. | Busan Base: 60 Centum Buk-daero, Haeundae-gu, Busan, Centum IS Tower #1710'
