@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaeBara Labs - AI-Powered App Development</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        
+        .bg-dark { background-color: #111111; }
+        .bg-orange { background-color: #FC8E00; }
+        .text-dark { color: #111111; }
+        .text-orange { color: #FC8E00; }
+        .text-light { color: #f5f5f5; }
+        .border-orange { border-color: #FC8E00; }
+        .border-dark { border-color: #111111; }
+        
+        .section-title-link {
+            text-decoration: none;
+            color: inherit;
+        }
+        .section-title-link:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+    </style>
+</head>
+<body class="bg-white text-dark min-h-screen">
+
+    <!-- Language Toggle Button -->
+    <div class="fixed top-4 right-4 z-50">
+        <div class="bg-dark text-white px-4 py-2 rounded-lg shadow-lg font-bold text-sm border-2 border-orange flex items-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <a href="index.html" class="hover:underline">KO</a><span class="text-white/50">|</span><span class="underline">EN</span>
+        </div>
+    </div>
+
+    <!-- Back to Main Site -->
+    <div class="fixed top-4 left-4 z-50">
+        <a href="../index_en.html" class="bg-dark text-white px-4 py-2 rounded-lg shadow-lg font-bold text-sm border-2 border-orange hover:bg-dark/80 transition-colors flex items-center gap-2">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+            <span>MaeBara</span>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header id="home" class="py-12 md:py-24 bg-white border-b border-dark/30">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="mb-6 flex justify-center">
+                <img src="Logo_eng.png" alt="MaeBara Labs Logo" class="max-w-xs md:max-w-md h-auto">
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-extrabold text-dark leading-tight mb-4">
+                Empowering Business through AI Innovation
+            </h1>
+            <p class="text-xl md:text-2xl text-dark font-light mt-6">
+                Bridging advanced AI and practical business success
+            </p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-dark">
+        <div class="max-w-4xl mx-auto px-4 text-light">
+            <h2 class="text-3xl font-bold border-b-4 border-orange pb-2 text-light"><a href="#about" class="section-title-link">Welcome to MaeBara Labs</a></h2>
+            <div class="mt-8 space-y-6 text-lg">
+                <p>
+                    <strong class="text-orange">MaeBara Labs</strong> is dedicated to bridging the gap between advanced Artificial Intelligence and practical business success.
+                </p>
+                <p>
+                    We build intuitive, high-performance AI tools that empower merchants and enterprises of all sizes to thrive in the era of intelligent search and discovery.
+                </p>
+                <p>
+                    Our mission is to democratize cutting-edge technology, ensuring that every business can leverage the power of AI to optimize data, enhance visibility, and achieve sustainable growth.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-dark">
+            <h2 class="text-3xl font-bold border-b-4 border-dark pb-2 text-dark text-center"><a href="#privacy" class="section-title-link">Privacy Policy</a></h2>
+            <p class="mt-6 text-lg text-dark text-center">
+                Select your platform to view the relevant privacy policy
+            </p>
+            
+            <div class="mt-10 flex flex-wrap justify-center gap-6">
+                <!-- Shopify Privacy Policy -->
+                <a href="privacy_shopify_en.html" class="group flex flex-col items-center bg-white p-8 rounded-2xl shadow-xl border-4 border-dark hover:border-orange transition-all hover:scale-105">
+                    <img src="shopify_logo.png" alt="Shopify" class="w-24 h-24 mb-4">
+                    <span class="text-xl font-bold text-dark group-hover:text-orange transition-colors">Shopify Apps</span>
+                    <span class="text-sm text-dark/60 mt-2">View Privacy Policy</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-dark">
+        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-orange p-10 rounded-xl bg-dark/50">
+            <h2 class="text-3xl font-bold text-orange">Get in Touch</h2>
+            <p class="mt-4 text-xl font-semibold text-light">
+                Want to learn more about MaeBara Labs solutions?
+            </p>
+            
+            <div class="mt-8">
+                <a href="mailto:hansd410@gmail.com" class="bg-orange text-dark font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-orange/80 shadow-lg text-lg">
+                    Contact Us
+                </a>
+            </div>
+            
+            <div class="mt-6 pt-6 border-t border-orange/30">
+                <p class="text-base text-light">
+                    Email: <a href="mailto:hansd410@gmail.com" class="text-orange hover:text-orange/80 underline">hansd410@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-light text-sm bg-dark border-t border-orange/30">
+        <p>&copy; 2025 MaeBara Labs. A project of MaeBara Corporation. All Rights Reserved.</p>
+        <p class="mt-1"><a href="../index_en.html" class="text-orange hover:text-orange/80 underline">Back to MaeBara Corporation</a></p>
+    </footer>
+
+</body>
+</html>
