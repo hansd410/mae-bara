@@ -50,10 +50,18 @@
 
     <!-- Language Toggle Button -->
     <div class="fixed top-4 right-4 z-50">
-        <div class="bg-navy text-white px-4 py-2 rounded-lg shadow-lg font-bold text-sm border-2 border-white flex items-center gap-2">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        <div class="bg-navy text-white px-3 py-2 rounded-lg shadow-lg font-bold text-sm border-2 border-white flex items-center gap-2">
             <a href="index.html" class="hover:underline">KO</a><span class="text-white/50">|</span><span class="underline">EN</span>
         </div>
+    </div>
+
+    <!-- Labs CTA Button -->
+    <div class="fixed top-4 left-4 z-50">
+        <a href="labs/index_en.html" class="px-3 py-2 rounded-lg shadow-lg font-bold text-xs md:text-sm border-2 flex items-center gap-1.5 transition-all hover:scale-105" style="background-color: #FC8E00; color: #111111; border-color: #FC8E00;">
+            <span class="text-lg">💻</span>
+            <span class="hidden sm:inline">Dev Request (Labs)</span>
+            <span class="sm:hidden">Labs</span>
+        </a>
     </div>
 
     <!-- Block 0: Header (WHITE) -->
@@ -373,16 +381,33 @@
         </div>
     </section>
 
+    <!-- Labs CTA Section (ORANGE/WHITE) -->
+    <section class="py-16 border-t-4" style="background: linear-gradient(135deg, #FFF5EB 0%, #FFFFFF 100%);">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="p-10 rounded-2xl shadow-2xl border-4" style="background-color: #FFFFFF; border-color: #FC8E00;">
+                <div class="mb-6">
+                    <img src="labs/Logo_eng.png" alt="MaeBara Labs" class="h-16 mx-auto">
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold mb-4" style="color: #111111;">
+                    Need AI, App, or Outsourced Development?
+                </h2>
+                <p class="text-lg mb-8 leading-relaxed" style="color: #111111;">
+                    We support digital transformation <strong style="color: #111111;">across all industries</strong> backed by MaeBara's proven expertise.<br/>
+                    <span style="color: #666666;">From planning to launch and operations — Your business partner, MaeBara Labs</span>
+                </p>
+                <a href="labs/index_en.html" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl shadow-lg font-bold text-lg transition-all hover:scale-105 hover:shadow-2xl" style="background-color: #FC8E00; color: #111111;">
+                    <span class="text-2xl">💻</span>
+                    <span>Visit MaeBara Labs</span>
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer (NAVY) -->
     <footer class="py-8 text-center text-offwhite text-sm bg-navy border-t border-ice/30">
         <p>&copy; 2025 MaeBara Corporation. All Rights Reserved. | Busan Base: 60 Centum Buk-daero, Haeundae-gu, Busan, Centum IS Tower #1710</p>
         <p class="mt-1">GitHub: <a href="https://github.com/hansd410" class="text-ice hover:text-white underline">https://github.com/hansd410</a></p>
-        <p class="mt-3 text-xs">
-            <a href="labs/index_en.html" class="inline-flex items-center gap-1 px-3 py-1 rounded-full transition-colors" style="background-color: #FC8E00; color: #111111;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                <span>MaeBara Labs</span>
-                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
-            </a>
-        </p>
     </footer>
 
 </body>
