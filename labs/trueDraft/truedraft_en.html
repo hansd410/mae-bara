@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>True Draft | AI Universal Document Auditor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #1A237E;
+        }
+
+        .bg-td-navy { background-color: #1A237E; }
+        .text-td-navy { color: #1A237E; }
+        .bg-td-emerald { background-color: #2E7D32; }
+        .text-td-emerald { color: #2E7D32; }
+        .border-td-emerald { border-color: #2E7D32; }
+        .border-td-navy { border-color: #1A237E; }
+
+        .block-white { background-color: #FFFFFF; color: #1A237E; }
+        .block-navy { background-color: #1A237E; color: #F8F9FA; }
+        .block-offwhite { background-color: #F8F9FA; color: #1A237E; }
+        .block-emerald-light { background-color: #ECFDF5; color: #064E3B; }
+
+        .fade-in {
+            animation: fadeIn 1.2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-link:hover {
+            color: #2E7D32;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Global Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="../index_en.html" class="text-xs font-bold text-white hover:opacity-80 flex items-center gap-2 px-4 py-2 rounded-lg transition-all" style="background-color: #FC8E00;">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                    <span>Labs</span>
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-12 font-bold text-sm tracking-tight">
+                <a href="#about" class="nav-link uppercase">About</a>
+                <a href="#demo" class="nav-link uppercase">Demo</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <div class="text-[10px] font-black uppercase tracking-widest text-td-navy/60 text-right hidden sm:block">
+                    Powered by<br><span class="text-td-navy">MaeBara Labs</span>
+                </div>
+                <div class="bg-td-navy text-white px-3 py-1.5 rounded-lg font-bold text-xs flex items-center gap-2">
+                    <a href="truedraft.html" class="hover:text-td-emerald transition-colors">KO</a>
+                    <span class="opacity-30">|</span>
+                    <span class="underline">EN</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        
+        <!-- Block 1: Hero -->
+        <section id="about" class="block-white py-24 md:py-32 flex flex-col items-center justify-center text-center px-6">
+            <div class="fade-in max-w-4xl mx-auto">
+                <div class="mb-10">
+                    <img src="logo_mini.png" alt="True Draft" class="h-40 md:h-48 mx-auto">
+                </div>
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-6">
+                    Precision. Integrity.<br><span class="text-td-emerald">Universal Audit.</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-light text-gray-500 max-w-2xl mx-auto leading-relaxed">
+                    AI Visual Auditor for perfect verification<br>of all specification documents, <strong class="text-td-navy font-extrabold">True Draft</strong>
+                </p>
+                <div class="mt-12">
+                    <a href="#demo" class="bg-td-navy text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#121858] transition-all inline-flex items-center gap-3">
+                        Watch Free Demo <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 2: Vision-AI -->
+        <section class="block-navy py-24 px-6 overflow-hidden">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8 border-b-4 border-td-emerald pb-4 inline-block">
+                        AI That Reads with Eyes, Vision Parsing
+                    </h2>
+                    <p class="text-lg md:text-xl leading-relaxed opacity-90 mb-8">
+                        The era of simple text matching is over. True Draft perfectly performs everything from <strong>numerical analysis of tables</strong> to <strong>contextual interpretation of figures</strong> through MaeBara Labs' multimodal AI.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-double text-td-emerald mt-1"></i>
+                            <span>Numerical integrity verification of complex grid structure table data</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-double text-td-emerald mt-1"></i>
+                            <span>Detection of visual guideline violations in drawings and graphs</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-double text-td-emerald mt-1"></i>
+                            <span>High-dimensional logical comparison based on page context</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1 bg-white/5 border border-white/10 rounded-[40px] p-8 relative">
+                    <div class="aspect-square flex items-center justify-center bg-white/10 rounded-3xl">
+                        <i class="fa-solid fa-eye text-9xl text-td-emerald/30 animate-pulse"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-td-emerald text-white px-6 py-4 rounded-2xl font-bold shadow-xl">
+                        Multimodal Engine v2.5
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 3: Use Cases -->
+        <section class="block-white py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black mb-4">Universal Applicability Across Industries</h2>
+                    <p class="text-gray-500 text-lg">Beyond construction - reviewing documents across all industries.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-td-emerald transition-all hover:shadow-2xl hover:shadow-emerald-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">🏗️</div>
+                        <h4 class="text-xl font-extrabold mb-4">Construction & Engineering</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Automatic analysis of safety compliance and numerical adherence in field reports vs. design guidelines</p>
+                    </div>
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-td-emerald transition-all hover:shadow-2xl hover:shadow-emerald-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">⚖️</div>
+                        <h4 class="text-xl font-extrabold mb-4">Legal & Audit</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Immediate detection of toxic clauses and regulatory violations in individual contracts vs. standard terms</p>
+                    </div>
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-td-emerald transition-all hover:shadow-2xl hover:shadow-emerald-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">📊</div>
+                        <h4 class="text-xl font-extrabold mb-4">Finance & Disclosure</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Numerical integrity and error verification of internal accounting reports vs. financial authority guidelines</p>
+                    </div>
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-td-emerald transition-all hover:shadow-2xl hover:shadow-emerald-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">🏥</div>
+                        <h4 class="text-xl font-extrabold mb-4">Medical & Pharmaceutical</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Integrity check and missing data verification of research result reports vs. clinical protocols</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 4: The Architect -->
+        <section class="block-navy py-24 px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black mb-8">Made by MaeBara Labs</h2>
+                <p class="text-xl leading-relaxed opacity-80 mb-12">
+                    True Draft was born from the unparalleled engineering capabilities of MaeBara Labs, winner of the <strong>OpenAI GPT-5 Hackathon Global Winner</strong>. The technical expertise that has solved the most challenging industrial problems adds trust to your data.
+                </p>
+                <div class="flex justify-center">
+                    <div class="px-8 py-3 bg-white/10 rounded-full border border-white/20 text-sm font-bold tracking-widest uppercase">
+                        AI Excellence & Engineering Authority
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Section -->
+        <section id="demo" class="block-white py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-black mb-6">Experience True Draft</h2>
+                    <p class="text-gray-500 text-xl max-w-2xl mx-auto">Watch the demo video that reduces<br>complex review processes to under 1 minute.</p>
+                </div>
+
+                <div class="bg-td-navy rounded-[50px] overflow-hidden shadow-2xl border-8 border-gray-50">
+                    <div class="aspect-video bg-gray-900 relative">
+                        <iframe 
+                            width="100%" 
+                            height="100%" 
+                            src="https://www.youtube.com/embed/lGm4cQGegss" 
+                            title="True Draft Demo Video" 
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enterprise Security -->
+        <section class="block-emerald-light py-20 px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="text-5xl shrink-0">🔒</div>
+                <div class="flex-1">
+                    <h2 class="text-3xl font-black mb-4">Enterprise Security Solutions</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        We provide <strong>dedicated security solutions (On-premise/Isolated Cloud)</strong> that can be independently deployed within your corporate infrastructure without external cloud exposure. Build a secure review environment without data leakage concerns.
+                    </p>
+                    <p class="font-bold text-td-emerald">Inquiries about security solution deployment are always welcome.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POC Request -->
+        <section class="block-offwhite py-24 px-6">
+            <div class="max-w-4xl mx-auto bg-white p-12 md:p-20 rounded-[50px] shadow-xl border border-gray-100 text-center">
+                <h2 class="text-4xl font-black mb-6">Start Your Customized Document Audit</h2>
+                <p class="text-gray-500 mb-12 text-lg">
+                    Apply for a free POC (Proof of Concept),<br>and we'll provide a customized demo report using your actual document samples.
+                </p>
+                
+                <div class="flex flex-col gap-4 max-w-2xl mx-auto">
+                    <p class="text-lg font-bold text-td-navy mb-4">Contact Us</p>
+                    <a href="mailto:hansd410@gmail.com" class="bg-td-emerald text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#25632a] transition-all shadow-lg shadow-emerald-100 inline-flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hansd410@gmail.com</span>
+                    </a>
+                </div>
+                <p class="mt-6 text-xs text-gray-400 italic">An expert will contact you within 24 hours.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="block-navy py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <div class="mb-10">
+                <img src="../Logo_eng.png" alt="MaeBara Labs Logo" class="h-12 opacity-80">
+            </div>
+            
+            <div class="mb-8 flex flex-col items-center gap-2">
+                <p class="text-sm font-bold tracking-[0.4em] text-td-emerald uppercase mb-2">Leading the Future of AI Auditing</p>
+                <p class="text-2xl font-black">TRUE DRAFT</p>
+            </div>
+            
+            <div class="w-full max-w-2xl border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-40 gap-4">
+                <p>&copy; 2025 MaeBara Corporation. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="../index_en.html" class="hover:text-td-emerald transition-colors">Back to Labs</a>
+                    <a href="../privacy_shop_ify_en.html" class="hover:text-td-emerald transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#about" class="fixed bottom-10 right-10 w-14 h-14 bg-td-navy text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-td-emerald transition-all z-40">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+</body>
+</html>
+
