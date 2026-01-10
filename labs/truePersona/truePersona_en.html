@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>True Persona | Hyper-Personalization Engine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #4C1D95;
+        }
+
+        .bg-persona-primary { background-color: #4C1D95; }
+        .text-persona-primary { color: #4C1D95; }
+        .bg-persona-point { background-color: #8B5CF6; }
+        .text-persona-point { color: #8B5CF6; }
+        .border-persona-point { border-color: #8B5CF6; }
+        .border-persona-primary { border-color: #4C1D95; }
+
+        .block-white { background-color: #FFFFFF; color: #4C1D95; }
+        .block-primary { background-color: #4C1D95; color: #F8F9FA; }
+        .block-offwhite { background-color: #F5F3FF; color: #4C1D95; }
+        .block-point-light { background-color: #EDE9FE; color: #4C1D95; }
+
+        .fade-in {
+            animation: fadeIn 1.2s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .nav-link:hover {
+            color: #8B5CF6;
+            transition: color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Global Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-4">
+                <a href="../index_en.html" class="text-xs font-bold text-white hover:opacity-80 flex items-center gap-2 px-4 py-2 rounded-lg transition-all" style="background-color: #FC8E00;">
+                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+                    <span>Labs</span>
+                </a>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-12 font-bold text-sm tracking-tight">
+                <a href="#about" class="nav-link uppercase">About</a>
+                <a href="#demo" class="nav-link uppercase">Features</a>
+                <a href="#partner" class="nav-link uppercase text-persona-point">Partner</a>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <div class="text-[10px] font-black uppercase tracking-widest text-persona-primary/60 text-right hidden sm:block">
+                    Powered by<br><span class="text-persona-primary">MaeBara Labs</span>
+                </div>
+                <div class="bg-persona-primary text-white px-3 py-1.5 rounded-lg font-bold text-xs flex items-center gap-2">
+                    <a href="truePersona.html" class="hover:text-persona-point transition-colors">KO</a>
+                    <span class="opacity-30">|</span>
+                    <span class="underline">EN</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        
+        <!-- Block 1: Hero -->
+        <section id="about" class="block-white py-24 md:py-32 flex flex-col items-center justify-center text-center px-6">
+            <div class="fade-in max-w-5xl mx-auto">
+                <div class="mb-10 flex justify-center">
+                    <svg width="180" height="180" viewBox="0 0 80 80">
+                        <circle cx="40" cy="25" r="12" fill="#4C1D95" />
+                        <path d="M20 55 Q40 35 60 55" stroke="#4C1D95" stroke-width="8" fill="none" stroke-linecap="round" />
+                        <circle cx="25" cy="20" r="5" fill="#8B5CF6" />
+                        <circle cx="55" cy="20" r="5" fill="#8B5CF6" />
+                        <circle cx="65" cy="35" r="4" fill="#8B5CF6" />
+                    </svg>
+                </div>
+                <p class="text-persona-point font-black tracking-[0.3em] mb-6 text-sm uppercase">Hyper-Personalized Future</p>
+                <h1 class="text-5xl md:text-7xl font-black tracking-tighter mb-8 leading-[1.1]">
+                    Deliver Unique Experiences<br>
+                    <span class="text-persona-point">to Thousands of Customers</span>
+                </h1>
+                <p class="text-xl md:text-2xl font-light text-gray-500 max-w-3xl mx-auto leading-relaxed mb-12">
+                    Simple name-replacement marketing is over.<br>
+                    Analyze customer behavior and preferences in real-time to create experiences for each individual.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#demo" class="bg-persona-primary text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#3d1777] transition-all flex items-center justify-center gap-3 shadow-xl shadow-purple-900/20">
+                        <i class="fa-solid fa-users-viewfinder"></i> Personalization Engine
+                    </a>
+                    <a href="#partner" class="border-2 border-persona-primary text-persona-primary px-10 py-5 rounded-2xl font-black text-lg hover:bg-gray-50 transition-all flex items-center justify-center gap-3">
+                        Marketing Innovation
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 2: Vision -->
+        <section class="block-primary py-24 px-6 overflow-hidden">
+            <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8 border-b-4 border-persona-point pb-4 inline-block">
+                        1:1 AI Psychology
+                    </h2>
+                    <p class="text-lg md:text-xl leading-relaxed opacity-90 mb-8">
+                        MaeBara Labs' hyper-personalization engine knows what customers want before they say it. Comprehensively analyze <strong>purchase history, browsing patterns, and time-based activities</strong> to deliver optimized content to each customer.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-double text-persona-point mt-1"></i>
+                            <span>Optimal timing prediction for highest purchase probability</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-double text-persona-point mt-1"></i>
+                            <span>Context-optimized personalized recommendation messages</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-check-double text-persona-point mt-1"></i>
+                            <span>Dynamic content adaptation based on individual preferences</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-1 bg-white/5 border border-white/10 rounded-[40px] p-8 relative">
+                    <div class="aspect-square flex items-center justify-center bg-white/10 rounded-3xl">
+                        <i class="fa-solid fa-users-viewfinder text-9xl text-persona-point/30 animate-pulse"></i>
+                    </div>
+                    <div class="absolute -bottom-4 -right-4 bg-persona-point text-white px-6 py-4 rounded-2xl font-bold shadow-xl">
+                        Persona Engine v2.8
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 3: Use Cases -->
+        <section class="block-white py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-black mb-4">Every Customer Feels Like the Only One</h2>
+                    <p class="text-gray-500 text-lg">E-commerce, Media, Education, Finance</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-persona-point transition-all hover:shadow-2xl hover:shadow-purple-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">🛍️</div>
+                        <h4 class="text-xl font-extrabold mb-4">E-commerce</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Product recommendations and pricing strategies tailored to individual purchase patterns</p>
+                    </div>
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-persona-point transition-all hover:shadow-2xl hover:shadow-purple-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">🎬</div>
+                        <h4 class="text-xl font-extrabold mb-4">Media & Content</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Content curation and push notification optimization based on viewing habits</p>
+                    </div>
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-persona-point transition-all hover:shadow-2xl hover:shadow-purple-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">📚</div>
+                        <h4 class="text-xl font-extrabold mb-4">Education & EdTech</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Personalized learning paths and difficulty adjustment based on individual progress</p>
+                    </div>
+                    <div class="group p-10 border-2 border-gray-100 rounded-[40px] hover:border-persona-point transition-all hover:shadow-2xl hover:shadow-purple-100 bg-gray-50/30">
+                        <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">💳</div>
+                        <h4 class="text-xl font-extrabold mb-4">Finance & Banking</h4>
+                        <p class="text-sm text-gray-500 leading-relaxed">Custom financial product recommendations and personalized wealth management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Block 4: The Architect -->
+        <section class="block-primary py-24 px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-black mb-8">Made by MaeBara Labs</h2>
+                <p class="text-xl leading-relaxed opacity-80 mb-12">
+                    True Persona was born from MaeBara Labs' AI psychological analysis technology. Accurately identify each customer's needs to maximize conversion rates and improve customer lifetime value (LTV).
+                </p>
+                <div class="flex justify-center">
+                    <div class="px-8 py-3 bg-white/10 rounded-full border border-white/20 text-sm font-bold tracking-widest uppercase">
+                        AI Excellence & Engineering Authority
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="demo" class="block-white py-24 px-6">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-5xl font-black mb-6">Experience True Persona</h2>
+                    <p class="text-gray-500 text-xl max-w-2xl mx-auto">Mass Marketing meets Individual Touch</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-persona-primary/5 p-12 rounded-[40px] border-2 border-persona-primary/20">
+                        <div class="text-5xl mb-6">🎯</div>
+                        <h3 class="text-2xl font-black mb-4 text-persona-primary">Behavioral Intelligence</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Analyze every click, scroll, and pause to understand customer intent. Our AI predicts what customers want before they even search for it, creating seamless shopping experiences.
+                        </p>
+                    </div>
+                    <div class="bg-persona-primary/5 p-12 rounded-[40px] border-2 border-persona-primary/20">
+                        <div class="text-5xl mb-6">⚡</div>
+                        <h3 class="text-2xl font-black mb-4 text-persona-primary">Dynamic Segmentation</h3>
+                        <p class="text-gray-600 leading-relaxed">
+                            Move beyond static customer segments. Our real-time clustering adapts to changing behaviors, ensuring your messaging always stays relevant and timely.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-persona-primary to-persona-point p-12 rounded-[50px] text-white text-center">
+                    <p class="text-3xl font-black mb-4">
+                        <i class="fa-solid fa-bolt text-yellow-300 mr-2"></i>
+                        Average 3.5x increase in conversion rates
+                    </p>
+                    <p class="text-lg opacity-80">Based on e-commerce and media platform deployment cases</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enterprise Security -->
+        <section class="block-point-light py-20 px-6">
+            <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="text-5xl shrink-0">🔒</div>
+                <div class="flex-1">
+                    <h2 class="text-3xl font-black mb-4">Privacy-First Personalization</h2>
+                    <p class="text-lg leading-relaxed mb-6">
+                        All customer data is processed within your secure infrastructure. We support <strong>GDPR, CCPA, and Korean Personal Information Protection Act</strong> compliance with end-to-end encryption and anonymization.
+                    </p>
+                    <p class="font-bold text-persona-point">Privacy-compliant solution inquiries are always welcome.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- POC Request -->
+        <section id="partner" class="block-offwhite py-24 px-6">
+            <div class="max-w-4xl mx-auto bg-white p-12 md:p-20 rounded-[50px] shadow-xl border border-gray-100 text-center">
+                <h2 class="text-4xl font-black mb-6">Transform Every Customer into a VIP</h2>
+                <p class="text-gray-500 mb-12 text-lg">
+                    Apply for a free POC (Proof of Concept),<br>and we'll demonstrate personalization impact using your customer data.
+                </p>
+                
+                <div class="flex flex-col gap-4 max-w-2xl mx-auto">
+                    <p class="text-lg font-bold text-persona-primary mb-4">Contact Us</p>
+                    <a href="mailto:hansd410@gmail.com" class="bg-persona-point text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-[#7c4ee4] transition-all shadow-lg shadow-purple-100 inline-flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hansd410@gmail.com</span>
+                    </a>
+                </div>
+                <p class="mt-6 text-xs text-gray-400 italic">An expert will contact you within 24 hours.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="block-primary py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col items-center">
+            <div class="mb-10 flex items-center gap-4">
+                <img src="../labs_Logo_only.png" alt="MaeBara Labs Logo" class="h-12 opacity-80">
+                <span class="text-2xl font-black text-white">MaeBara Labs</span>
+            </div>
+            
+            <div class="mb-8 flex flex-col items-center gap-2">
+                <p class="text-sm font-bold tracking-[0.4em] text-persona-point uppercase mb-2">Hyper-Personalized Future</p>
+                <p class="text-2xl font-black">TRUE PERSONA</p>
+            </div>
+            
+            <div class="w-full max-w-2xl border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-40 gap-4">
+                <p>&copy; 2025 MaeBara Corporation. All Rights Reserved.</p>
+                <div class="flex gap-8">
+                    <a href="../index_en.html" class="hover:text-persona-point transition-colors">Back to Labs</a>
+                    <a href="../privacy_shop_ify_en.html" class="hover:text-persona-point transition-colors">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#about" class="fixed bottom-10 right-10 w-14 h-14 bg-persona-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-persona-point transition-all z-40">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+</body>
+</html>
+
