@@ -3,38 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaeBara Corporation - AI Port Optimization Platform</title>
+    <title>MaeBara One - Autonomous Maritime AI Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
         body { font-family: 'Inter', sans-serif; }
-        
+
         /* ========================================
            BLOCK COLOR SYSTEM (white-navy alternating)
            ========================================
            Block 0 (Header):      WHITE  - text: navy,     border: navy
-           Block 1 (Problem):     NAVY   - text: offwhite, border: ice
-           Block 2 (Solution):    WHITE  - text: navy,     border: navy
-           Block 3 (Progress):    NAVY   - text: offwhite, border: ice
-           Block 4 (Architect):   WHITE  - text: navy,     border: navy
-           Block 5 (Whitepaper):  NAVY   - text: offwhite, border: ice
-           Block 6 (Media):       WHITE  - text: navy,     border: navy
-           Block 7 (Partnering):  NAVY   - text: offwhite, border: ice
+           Block A (MaeBara One): NAVY   - text: offwhite, border: ice
+           Block 1 (Problem):     WHITE  - text: navy,     border: navy
+           Block 2 (Solution):    NAVY   - text: offwhite, border: ice
+           Block 3 (Progress):    WHITE  - text: navy,     border: navy
+           Block 4 (Architect):   NAVY   - text: offwhite, border: ice
+           Block 5 (Whitepaper):  WHITE  - text: navy,     border: navy
+           Block 6 (Media):       NAVY   - text: offwhite, border: ice
+           Block 7 (Partnering):  WHITE  - text: navy,     border: navy
            Footer:                NAVY   - text: offwhite, border: ice
            ======================================== */
-        
+
         /* Navy background (#073763) */
-        .bg-navy { background-color: #073763; } 
+        .bg-navy { background-color: #073763; }
         /* Text colors */
         .text-navy { color: #073763; }
         .text-offwhite { color: #eeeeee; }
         /* Accent color (ice blue) */
-        .text-ice { color: #00E6FF; } 
+        .text-ice { color: #00E6FF; }
         .border-ice { border-color: #00E6FF; }
         .border-navy { border-color: #073763; }
         .bg-ice-100 { background-color: rgba(0, 230, 255, 0.1); }
         .bg-ice { background-color: #00E6FF; }
-        
+
         /* Section title link styles */
         .section-title-link {
             text-decoration: none;
@@ -69,60 +70,107 @@
         <div class="max-w-6xl mx-auto px-4 text-center">
             <!-- Logo -->
             <div class="mb-6 flex justify-center">
-                <img src="mae-bara-logo-no-hypen.png" alt="MaeBara Logo" class="max-w-xs md:max-w-sm h-auto">
+                <img src="images/mae-bara-logo-no-hypen.png" alt="MaeBara Logo" class="max-w-xs md:max-w-sm h-auto">
             </div>
-            
+
             <h1 class="text-3xl md:text-5xl font-extrabold text-navy leading-tight mb-4">
-                Making Busan the World's Best AI Port.
+                The Autonomous Maritime AI Platform
             </h1>
-            <p class="text-xl md:text-2xl text-navy font-light mt-6">
-                Deep Reinforcement Learning-based <strong class="text-navy">T-CAG Port Optimization Platform</strong>
+            <p class="text-xl md:text-2xl text-navy font-semibold mt-4">
+                <strong class="text-navy">MaeBara One</strong> — No humans needed. Code optimizes the port by itself.
+            </p>
+            <p class="text-base md:text-lg mt-3" style="color: #073763; opacity: 0.6;">
+                Deep Reinforcement Learning-based T-CAG Port Optimization Platform | Making Busan the World's Best AI Port
             </p>
         </div>
     </header>
 
-    <!-- Block 1: The Problem (NAVY) -->
-    <section id="problem" class="py-16 bg-navy">
-        <div class="max-w-4xl mx-auto px-4 text-offwhite">
-            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite"><a href="#problem" class="section-title-link">1. Port & Logistics Inefficiency Challenge</a></h2>
+    <!-- Block A: MaeBara One Platform (NAVY) -->
+    <section id="maebara-one" class="py-16 bg-navy">
+        <div class="max-w-6xl mx-auto px-4 text-offwhite">
+            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite text-center">MaeBara One: The Autonomous Maritime Platform</h2>
+            <p class="mt-6 text-xl text-offwhite text-center">
+                24/7, 365 days — <strong class="text-ice">without human intervention</strong>, an autonomous AI platform that optimizes port operations.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <div class="rounded-xl overflow-hidden border-4 border-ice shadow-2xl aspect-video cursor-pointer group relative" onclick="openLightbox('images/maebara_one_img1.png', 'MaeBara One Platform Screenshot 1')">
+                    <img src="images/maebara_one_img1.png" alt="MaeBara One Platform Screenshot 1" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="bg-black/60 rounded-full p-3">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden border-4 border-ice shadow-2xl aspect-video cursor-pointer group relative" onclick="openLightbox('images/maebara_one_img2.png', 'MaeBara One Platform Screenshot 2')">
+                    <img src="images/maebara_one_img2.png" alt="MaeBara One Platform Screenshot 2" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity">
+                    <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="bg-black/60 rounded-full p-3">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="p-6 rounded-xl border-2 border-ice bg-navy/50">
+                    <div class="text-4xl font-extrabold text-ice mb-2">Automated</div>
+                    <p class="text-offwhite text-sm">AI judges and executes on its own — a truly autonomous operations platform</p>
+                </div>
+                <div class="p-6 rounded-xl border-2 border-ice bg-navy/50">
+                    <div class="text-4xl font-extrabold text-ice mb-2">32.4%</div>
+                    <p class="text-offwhite text-sm">Container rehandling reduction — immediate OPEX savings realized</p>
+                </div>
+                <div class="p-6 rounded-xl border-2 border-ice bg-navy/50">
+                    <div class="text-4xl font-extrabold text-ice mb-2">55.1B KRW</div>
+                    <p class="text-offwhite text-sm">Annual savings potential at Busan Port — Rev-Share revenue model</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 1: The Problem (WHITE) -->
+    <section id="problem" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-navy">
+            <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy"><a href="#problem" class="section-title-link">1. Port & Logistics Inefficiency Challenge</a></h2>
             <div class="mt-8 space-y-6 text-lg">
                 <p>
-                    Busan Port is a world-class transshipment hub, but <strong class="text-red-400">Container Rehandling and Yard Congestion</strong> cause massive annual OPEX leakage.
+                    Busan Port is a world-class transshipment hub, but <strong class="text-red-600">Container Rehandling and Yard Congestion</strong> cause massive annual OPEX leakage.
                 </p>
                 <ul class="list-disc list-inside space-y-2 pl-4">
-                    <li><strong class="text-ice">Cost Leakage:</strong> Billions of KRW wasted annually on unnecessary rehandling movements.</li>
-                    <li><strong class="text-ice">Productivity Limits:</strong> Inefficient container stacking policies restrict <strong class="text-red-400">terminal CAPA.</strong></li>
-                    <li><strong class="text-ice">Future Readiness:</strong> Urgent need for <strong class="text-ice">Intelligent AI Infrastructure</strong> to prepare for increased cargo volume from Arctic routes.</li>
+                    <li><strong class="text-navy">Cost Leakage:</strong> Billions of KRW wasted annually on unnecessary rehandling movements.</li>
+                    <li><strong class="text-navy">Productivity Limits:</strong> Inefficient container stacking policies restrict <strong class="text-red-600">terminal CAPA.</strong></li>
+                    <li><strong class="text-navy">Future Readiness:</strong> Urgent need for <strong class="text-navy">Intelligent AI Infrastructure</strong> to prepare for increased cargo volume from Arctic routes.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Block 2: T-CAG Platform (WHITE) -->
-    <section id="solution" class="py-16 bg-white">
+    <!-- Block 2: T-CAG Platform (NAVY) -->
+    <section id="solution" class="py-16 bg-navy">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-3xl font-bold border-b-4 border-navy pb-4 text-navy text-center"><a href="#solution" class="section-title-link">2. T-CAG Platform: Port Optimization MVP</a></h2>
-            <p class="mt-6 text-xl text-navy text-center">
-                <strong class="text-navy">T-CAG (Terminal Capacity And Gain)</strong> platform eliminates terminal inefficiencies through AI and generates <strong class="text-navy">OPEX savings</strong>.
+            <h2 class="text-3xl font-bold border-b-4 border-ice pb-4 text-offwhite text-center"><a href="#solution" class="section-title-link">2. T-CAG Platform: Port Optimization MVP</a></h2>
+            <p class="mt-6 text-xl text-offwhite text-center">
+                <strong class="text-ice">T-CAG (Terminal Capacity And Gain)</strong> platform eliminates terminal inefficiencies through AI and generates <strong class="text-ice">OPEX savings</strong>.
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
                 <!-- T-CAG Core Engine -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-navy hover:bg-gray-100 transition-all">
-                    <h3 class="text-2xl font-extrabold text-navy mb-2">1. T-CAG Yard Orchestrator (TYO)</h3>
-                    <p class="mt-2 text-sm text-navy leading-relaxed">
-                        <strong class="text-navy">Container Rehandle Minimization AI.</strong> Reduces unnecessary rehandling operations, a core challenge in terminal operations, to cut OPEX.
+                <div class="bg-navy/50 p-6 rounded-xl shadow-2xl border-4 border-ice hover:bg-navy/70 transition-all">
+                    <h3 class="text-2xl font-extrabold text-ice mb-2">1. T-CAG Yard Orchestrator (TYO)</h3>
+                    <p class="mt-2 text-sm text-offwhite leading-relaxed">
+                        <strong class="text-ice">Container Rehandle Minimization AI.</strong> Reduces unnecessary rehandling operations, a core challenge in terminal operations, to cut OPEX.
                     </p>
-                    <p class="mt-2 text-sm text-navy leading-relaxed">
-                        Like a <strong class="text-red-600">'Lego Block Sorting Problem'</strong>, it analyzes container departure priorities to determine optimal stacking positions so that <strong class="text-red-600">containers leaving first are not buried underneath</strong>.
+                    <p class="mt-2 text-sm text-offwhite leading-relaxed">
+                        Like a <strong class="text-red-400">'Lego Block Sorting Problem'</strong>, it analyzes container departure priorities to determine optimal stacking positions so that <strong class="text-red-400">containers leaving first are not buried underneath</strong>.
                     </p>
-                    <p class="mt-2 text-sm text-navy leading-relaxed">
-                        Instead of just considering current positions, it uses an <strong class="text-navy">AI decision-making approach (Cost Function) that predicts future costs (rehandle penalties)</strong> to prevent unnecessary work in advance.
+                    <p class="mt-2 text-sm text-offwhite leading-relaxed">
+                        Instead of just considering current positions, it uses an <strong class="text-ice">AI decision-making approach (Cost Function) that predicts future costs (rehandle penalties)</strong> to prevent unnecessary work in advance.
                     </p>
                     <div class="mt-4">
-                        <h4 class="text-navy font-bold mb-3 text-center text-lg">AI-based Container Stacking Validation</h4>
+                        <h4 class="text-offwhite font-bold mb-3 text-center text-lg">AI-based Container Stacking Validation</h4>
                         <a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="block relative group">
-                            <img src="t-cag_core_engine.png" alt="AI Container Stacking Simulator" class="w-full h-auto rounded-lg border-2 border-navy shadow-lg group-hover:opacity-90 transition-opacity">
+                            <img src="images/t-cag_core_engine.png" alt="AI Container Stacking Simulator" class="w-full h-auto rounded-lg border-2 border-ice shadow-lg group-hover:opacity-90 transition-opacity">
                             <div class="absolute inset-0 flex items-center justify-center">
                                 <div class="bg-red-600 rounded-full p-3 shadow-lg group-hover:bg-red-500 transition-colors">
                                     <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
@@ -131,57 +179,57 @@
                                 </div>
                             </div>
                         </a>
-                        <p class="text-xs text-navy mt-3 text-center italic">
-                            32.4% rehandling reduction proven in 3x5x5 environment | <a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="text-navy hover:text-black underline">Watch on YouTube</a>
+                        <p class="text-xs text-offwhite mt-3 text-center italic">
+                            32.4% rehandling reduction proven in 3x5x5 environment | <a href="https://www.youtube.com/watch?v=IIa90V5pB-o" target="_blank" class="text-ice hover:text-white underline">Watch on YouTube</a>
                         </p>
                     </div>
                 </div>
-                        
+
                 <!-- T-CAG Digital Twin -->
-                <div class="bg-gray-50 p-6 rounded-xl shadow-2xl border-4 border-navy hover:bg-gray-100 transition-all">
-                    <h3 class="text-2xl font-extrabold text-navy mb-2">2. T-CAG Digital Twin</h3>
-                    <p class="mt-2 text-sm text-navy">
-                        <strong class="text-navy">AI Training & Operations Environment.</strong> Models complex operational constraints across the entire yard (cranes, ITT scheduling) and continuously trains the T-CAG TYO.
+                <div class="bg-navy/50 p-6 rounded-xl shadow-2xl border-4 border-ice hover:bg-navy/70 transition-all">
+                    <h3 class="text-2xl font-extrabold text-ice mb-2">2. T-CAG Digital Twin</h3>
+                    <p class="mt-2 text-sm text-offwhite">
+                        <strong class="text-ice">AI Training & Operations Environment.</strong> Models complex operational constraints across the entire yard (cranes, ITT scheduling) and continuously trains the T-CAG TYO.
                     </p>
                     <div class="mt-4">
-                        <h4 class="text-navy font-bold mb-3 text-center text-lg">Port Simulator for Strategic Decision Making</h4>
+                        <h4 class="text-offwhite font-bold mb-3 text-center text-lg">Port Simulator for Strategic Decision Making</h4>
                         <div class="space-y-4">
                             <div>
-                                <img src="t-cag_digital_twin_3d.png" alt="Port Digital Twin 3D View" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
-                                <p class="text-xs text-navy mt-2 text-center">3D Interactive View</p>
+                                <img src="images/t-cag_digital_twin_3d.png" alt="Port Digital Twin 3D View" class="w-full h-auto rounded-lg border-2 border-ice shadow-md">
+                                <p class="text-xs text-offwhite mt-2 text-center">3D Interactive View</p>
                             </div>
                             <div>
-                                <img src="t-cag_digital_twin_flat.png" alt="Port Digital Twin Top View" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
-                                <p class="text-xs text-navy mt-2 text-center">Top View (Real-time Status)</p>
+                                <img src="images/t-cag_digital_twin_flat.png" alt="Port Digital Twin Top View" class="w-full h-auto rounded-lg border-2 border-ice shadow-md">
+                                <p class="text-xs text-offwhite mt-2 text-center">Top View (Real-time Status)</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                        
+
             <!-- T-CAG Key Results -->
-            <div class="mt-16 bg-gray-50 p-8 rounded-xl shadow-2xl border-4 border-navy">
-                <h3 class="text-3xl font-bold text-navy mb-6 text-center">T-CAG Key Achievement: 32.4% Rehandling Reduction</h3>
-                <p class="text-xl text-navy text-center mb-6">
+            <div class="mt-16 bg-navy/50 p-8 rounded-xl shadow-2xl border-4 border-ice">
+                <h3 class="text-3xl font-bold text-offwhite mb-6 text-center">T-CAG Key Achievement: 32.4% Rehandling Reduction</h3>
+                <p class="text-xl text-offwhite text-center mb-6">
                     T-CAG TYO dramatically reduces rehandling compared to existing Greedy policies.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center gap-8">
-                    <div class="bg-white p-6 rounded-lg border-4 border-navy border-l-8 border-l-red-500">
-                        <h4 class="text-lg font-bold text-navy mb-3">Quantitative Savings</h4>
-                        <ul class="list-disc list-inside pl-4 text-sm font-semibold text-navy space-y-2">
-                            <li>Total Moves: <strong class="text-red-600">186 to 175 (-5.9%)</strong></li>
-                            <li>Rehandles: <strong class="text-red-600">34 to 23 (-32.4%)</strong></li>
+                    <div class="bg-navy p-6 rounded-lg border-4 border-ice border-l-8 border-l-red-500">
+                        <h4 class="text-lg font-bold text-offwhite mb-3">Quantitative Savings</h4>
+                        <ul class="list-disc list-inside pl-4 text-sm font-semibold text-offwhite space-y-2">
+                            <li>Total Moves: <strong class="text-red-400">186 to 175 (-5.9%)</strong></li>
+                            <li>Rehandles: <strong class="text-red-400">34 to 23 (-32.4%)</strong></li>
                         </ul>
-                        <p class="text-sm font-bold text-navy pt-3 border-t border-navy mt-3">
-                            Immediate <strong class="text-navy">OPEX savings</strong> and <strong class="text-navy">Terminal CAPA increase</strong>.
+                        <p class="text-sm font-bold text-offwhite pt-3 border-t border-ice mt-3">
+                            Immediate <strong class="text-ice">OPEX savings</strong> and <strong class="text-ice">Terminal CAPA increase</strong>.
                         </p>
                     </div>
-                    <div class="bg-white p-6 rounded-lg border-4 border-navy border-l-8 border-l-navy">
-                        <h4 class="text-lg font-bold text-navy mb-3">Business Impact Projection</h4>
-                        <ul class="list-disc list-inside pl-4 text-sm text-navy space-y-2">
-                            <li>Annual Savings Potential: <strong class="text-navy">~55.1B KRW</strong></li>
-                            <li>CAPA Increase Potential: <strong class="text-navy">+9.3M TEU</strong></li>
-                            <li>Revenue Model: <strong class="text-navy">Rev-Share</strong> based on OPEX savings</li>
+                    <div class="bg-navy p-6 rounded-lg border-4 border-ice border-l-8 border-l-ice">
+                        <h4 class="text-lg font-bold text-offwhite mb-3">Business Impact Projection</h4>
+                        <ul class="list-disc list-inside pl-4 text-sm text-offwhite space-y-2">
+                            <li>Annual Savings Potential: <strong class="text-ice">~55.1B KRW</strong></li>
+                            <li>CAPA Increase Potential: <strong class="text-ice">+9.3M TEU</strong></li>
+                            <li>Revenue Model: <strong class="text-ice">Rev-Share</strong> based on OPEX savings</li>
                         </ul>
                     </div>
                 </div>
@@ -189,94 +237,106 @@
         </div>
     </section>
 
-    <!-- Block 3: AI Pipeline (NAVY) -->
-    <section id="progress" class="py-16 bg-navy">
-        <div class="max-w-6xl mx-auto px-4 text-offwhite">
-            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite"><a href="#progress" class="section-title-link">3. AI Pipeline & Future Vision</a></h2>
-            <p class="mt-4 text-xl text-offwhite">
+    <!-- Block 3: AI Pipeline (WHITE) -->
+    <section id="progress" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 text-navy">
+            <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy"><a href="#progress" class="section-title-link">3. AI Pipeline & Future Vision</a></h2>
+            <p class="mt-4 text-xl text-navy">
                 Building on T-CAG's success, MaeBara completes the ultimate vision spanning the entire logistics system.
             </p>
-            
+
             <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <!-- V1: T-CAG Platform -->
-                <div class="p-6 rounded-xl shadow-lg border-4 border-ice bg-navy">
-                    <span class="text-2xl font-bold text-offwhite mb-2 block">V1.0.0 (MVP)</span>
-                    <h3 class="text-xl font-extrabold text-ice mb-2">T-CAG Platform</h3>
-                    <p class="text-sm text-offwhite">
-                        Core <strong class="text-ice">Port Optimization (Rehandle Minimum)</strong> technology for OPEX reduction.
+                <div class="p-6 rounded-xl shadow-lg border-4 border-navy bg-white">
+                    <span class="text-2xl font-bold text-navy mb-2 block">V1.0.0 (MVP)</span>
+                    <h3 class="text-xl font-extrabold text-navy mb-2">T-CAG Platform</h3>
+                    <p class="text-sm text-navy">
+                        Core <strong class="text-navy">Port Optimization (Rehandle Minimum)</strong> technology for OPEX reduction.
                     </p>
                     <span class="inline-block mt-3 px-3 py-1 bg-green-500 text-white text-xs font-bold rounded-full">CURRENT</span>
                 </div>
                 <!-- V2: Logistics Optimization -->
-                <div class="p-6 rounded-xl shadow-lg border-4 border-ice bg-navy/50">
-                    <span class="text-2xl font-bold text-offwhite mb-2 block">V2.0.0</span>
-                    <h3 class="text-xl font-extrabold text-ice mb-2">Logistics Optimization</h3>
-                    <p class="text-sm text-offwhite">
-                        T-CAG data-driven <strong class="text-ice">SCM Efficiency</strong> and <strong class="text-ice">Global Demand Forecasting</strong>.
+                <div class="p-6 rounded-xl shadow-lg border-4 border-navy/40 bg-gray-50">
+                    <span class="text-2xl font-bold text-navy mb-2 block">V2.0.0</span>
+                    <h3 class="text-xl font-extrabold text-navy mb-2">Logistics Optimization</h3>
+                    <p class="text-sm text-navy">
+                        T-CAG data-driven <strong class="text-navy">SCM Efficiency</strong> and <strong class="text-navy">Global Demand Forecasting</strong>.
                     </p>
                 </div>
                 <!-- V3: Route Optimization -->
-                <div class="p-6 rounded-xl shadow-lg border-4 border-ice bg-navy/50">
-                    <span class="text-2xl font-bold text-offwhite mb-2 block">V3.0.0 (Ultimate)</span>
-                    <h3 class="text-xl font-extrabold text-ice mb-2">Route Optimization</h3>
-                    <p class="text-sm text-offwhite">
-                        DRL-based <strong class="text-ice">Arctic Route & Maritime Economic Routing</strong> system.
+                <div class="p-6 rounded-xl shadow-lg border-4 border-navy/40 bg-gray-50">
+                    <span class="text-2xl font-bold text-navy mb-2 block">V3.0.0 (Ultimate)</span>
+                    <h3 class="text-xl font-extrabold text-navy mb-2">Route Optimization</h3>
+                    <p class="text-sm text-navy">
+                        DRL-based <strong class="text-navy">Arctic Route & Maritime Economic Routing</strong> system.
                     </p>
                 </div>
             </div>
-                        
+
             <!-- DRL Technical Depth -->
-            <div class="mt-12 p-6 rounded-xl shadow-2xl border-4 border-ice bg-navy/50">
-                <h3 class="text-2xl font-bold text-offwhite mb-4 text-center">DRL Technical Depth (Extreme Environment Test)</h3>
+            <div class="mt-12 p-6 rounded-xl shadow-2xl border-4 border-navy bg-gray-50">
+                <h3 class="text-2xl font-bold text-navy mb-4 text-center">DRL Technical Depth (Extreme Environment Test)</h3>
                 <div class="flex justify-center items-center">
                     <div class="max-w-md">
-                        <img src="release_note/0.3.0/251114_a_star.png" alt="MaeBara V0.3.0 A* Route Optimization" class="w-full h-auto rounded-lg border-2 border-ice shadow-md">
-                        <p class="text-xs text-offwhite mt-3 text-center italic">
+                        <img src="release_note/0.3.0/251114_a_star.png" alt="MaeBara V0.3.0 A* Route Optimization" class="w-full h-auto rounded-lg border-2 border-navy shadow-md">
+                        <p class="text-xs text-navy mt-3 text-center italic">
                             DRL Agent training environment proven with 459.3 km route reduction in extreme Arctic conditions
                         </p>
                     </div>
                 </div>
-                <p class="text-base text-offwhite mt-6 text-center">
+                <p class="text-base text-navy mt-6 text-center">
                     MaeBara's DRL technology has already been validated in the most challenging environment (route optimization). This proven capability powers the T-CAG Platform's superior performance.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- Block 4: The Architect (WHITE) -->
-    <section id="architect" class="py-16 bg-white">
+    <!-- Block 4: The Architect (NAVY) -->
+    <section id="architect" class="py-16 bg-navy">
         <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy"><a href="#architect" class="section-title-link">4. Leadership</a></h2>
+            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite"><a href="#architect" class="section-title-link">4. Leadership</a></h2>
             <div class="mt-8 space-y-4">
                 <div class="flex flex-col md:flex-row items-center md:items-start gap-6 mb-6">
                     <div class="flex-shrink-0">
-                        <img src="sangdo_han_profile.jpg" alt="Sangdo Han" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-navy shadow-lg">
+                        <img src="images/sangdo_han_profile.jpg" alt="Sangdo Han" class="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-ice shadow-lg">
                     </div>
                     <div class="flex-1 text-center md:text-left">
-                        <p class="text-2xl font-bold text-navy">Sangdo Han</p>
-                        <p class="text-lg text-navy">CEO, MaeBara Corporation</p>
-                        <p class="text-sm text-navy mt-2">
-                            Homepage: <a href="https://sites.google.com/site/hansd410/" target="_blank" class="text-navy hover:text-navy/70 underline">https://sites.google.com/site/hansd410/</a>
-                        </p>
+                        <p class="text-2xl font-bold text-offwhite">Sangdo Han</p>
+                        <p class="text-lg text-ice">CEO, MaeBara Corporation</p>
+                        <div class="mt-3">
+                            <span class="inline-block bg-ice/20 border border-ice text-ice text-sm font-bold px-3 py-1 rounded-full">
+                                🏆 OpenAI GPT-5 Hackathon Global Winner
+                            </span>
+                        </div>
+                        <div class="flex flex-wrap gap-3 mt-4 justify-center md:justify-start">
+                            <a href="https://www.linkedin.com/in/sangdo-han-32085486/" target="_blank" class="inline-flex items-center gap-2 bg-ice/10 border border-ice text-offwhite hover:text-ice hover:bg-ice/20 text-sm px-3 py-1.5 rounded-lg transition-all">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                LinkedIn
+                            </a>
+                            <a href="https://sites.google.com/site/hansd410/" target="_blank" class="inline-flex items-center gap-2 bg-ice/10 border border-ice text-offwhite hover:text-ice hover:bg-ice/20 text-sm px-3 py-1.5 rounded-lg transition-all">
+                                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+                                Homepage
+                            </a>
+                        </div>
                     </div>
                 </div>
-                
+
                 <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-8">
-                    <div class="w-full md:w-1/2 bg-gray-50 p-4 rounded-lg border-4 border-navy">
-                        <h4 class="font-bold text-navy mt-2 border-l-4 border-navy pl-2">Core Competencies & Achievements</h4>
-                        <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm text-navy">
-                            <li><strong class="text-navy">OpenAI GPT-5 Hackathon Global Winner</strong> (Proven Top-tier AI Expertise)</li>
-                            <li>AI/ML <strong class="text-navy">Technical Consulting & Project Development</strong> (B2B projects in Architecture/Civil Structure Optimization)</li>
+                    <div class="w-full md:w-1/2 bg-navy/50 p-4 rounded-lg border-4 border-ice">
+                        <h4 class="font-bold text-ice mt-2 border-l-4 border-ice pl-2">Core Competencies & Achievements</h4>
+                        <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm text-offwhite">
+                            <li><strong class="text-ice">OpenAI GPT-5 Hackathon Global Winner</strong> (Proven Top-tier AI Expertise)</li>
+                            <li>AI/ML <strong class="text-offwhite">Technical Consulting & Project Development</strong> (B2B projects in Architecture/Civil Structure Optimization)</li>
                             <li>POSTECH Computer Science M.S. / Ph.D. Coursework (NLP, Reinforcement Learning)</li>
                             <li>Former Head of R&D at TmaxAI (Technical Leadership & Management)</li>
                         </ul>
                     </div>
-                    <div class="w-full md:w-1/2 bg-gray-50 p-4 rounded-lg border-4 border-navy">
-                        <h4 class="font-bold text-navy mt-2 border-l-4 border-navy pl-2">Strategic Plan</h4>
-                        <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm text-navy">
+                    <div class="w-full md:w-1/2 bg-navy/50 p-4 rounded-lg border-4 border-ice">
+                        <h4 class="font-bold text-ice mt-2 border-l-4 border-ice pl-2">Strategic Plan</h4>
+                        <ul class="list-disc list-inside space-y-1 pl-4 mt-2 text-sm text-offwhite">
                             <li>Exclusive acquisition of Busan Port T/O operational data for DRL model training</li>
-                            <li>Domestic terminal expansion: Deploy MaeBara AI across multiple Busan Port terminals with <strong class="text-navy">55.1B KRW annual savings</strong> and <strong class="text-navy">+9.3M TEU CAPA increase</strong> via Rev-Share model.</li>
-                            <li>Pre-emptive global <strong class="text-navy">'Policy Advantage'</strong> for projected 2030 Arctic route volume (150M tons) through integrated risk data and logistics optimization.</li>
+                            <li>Domestic terminal expansion: Deploy MaeBara AI across multiple Busan Port terminals with <strong class="text-ice">55.1B KRW annual savings</strong> and <strong class="text-ice">+9.3M TEU CAPA increase</strong> via Rev-Share model.</li>
+                            <li>Pre-emptive global <strong class="text-ice">'Policy Advantage'</strong> for projected 2030 Arctic route volume (150M tons) through integrated risk data and logistics optimization.</li>
                         </ul>
                     </div>
                 </div>
@@ -284,35 +344,35 @@
         </div>
     </section>
 
-    <!-- Block 5: White Paper (NAVY) -->
-    <section id="whitepaper" class="py-16 bg-navy">
-        <div class="max-w-4xl mx-auto px-4 text-offwhite">
-            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite"><a href="#whitepaper" class="section-title-link">5. Technical White Paper</a></h2>
-            <div class="mt-8 bg-navy/50 p-8 rounded-xl border-4 border-ice">
-                <h3 class="text-2xl font-bold text-ice mb-4">[MaeBara White Paper] Northern Sea Route Era: Charting a New Map for Korean Maritime Logistics</h3>
-                <p class="text-base text-offwhite leading-relaxed">
-                    MaeBara's vision for maritime logistics goes beyond simple efficiency improvement - it aims to set the standard for 'Intelligent Infrastructure'.
+    <!-- Block 5: White Paper (WHITE) -->
+    <section id="whitepaper" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-navy">
+            <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy"><a href="#whitepaper" class="section-title-link">5. Technical White Paper</a></h2>
+            <div class="mt-8 bg-gray-50 p-8 rounded-xl border-4 border-navy">
+                <h3 class="text-2xl font-bold text-navy mb-4">[MaeBara White Paper] Northern Sea Route Era: Charting a New Map for Korean Maritime Logistics</h3>
+                <p class="text-base text-navy leading-relaxed">
+                    MaeBara's vision for maritime logistics goes beyond simple efficiency improvement — it aims to set the standard for 'Intelligent Infrastructure'.
                 </p>
-                <p class="text-base text-offwhite leading-relaxed mt-4">
+                <p class="text-base text-navy leading-relaxed mt-4">
                     We release Technical White Paper v1.0.0, containing MaeBara's core technologies and empirical data to solve the ~500 billion KRW annual operational inefficiency at Busan Port and seize leadership in the upcoming Northern Sea Route era.
                 </p>
-                <div class="mt-6 bg-navy p-6 rounded-lg border-2 border-ice">
-                    <h4 class="text-lg font-bold text-ice mb-4">Key Highlights:</h4>
-                    <ul class="list-disc list-inside space-y-2 pl-4 text-offwhite">
-                        <li><strong class="text-ice">T-CAG TYO:</strong> Deep Reinforcement Learning (DRL) based port stacking optimization (32.4% rehandling reduction)</li>
-                        <li><strong class="text-ice">NSR-OptiNav:</strong> Northern Sea Route intelligent navigation (459.3km route reduction)</li>
-                        <li><strong class="text-ice">Global Vision:</strong> Realizing the 'Tesla Model' of maritime logistics connecting ports and seas</li>
+                <div class="mt-6 bg-white p-6 rounded-lg border-2 border-navy">
+                    <h4 class="text-lg font-bold text-navy mb-4">Key Highlights:</h4>
+                    <ul class="list-disc list-inside space-y-2 pl-4 text-navy">
+                        <li><strong class="text-navy">T-CAG TYO:</strong> Deep Reinforcement Learning (DRL) based port stacking optimization (32.4% rehandling reduction)</li>
+                        <li><strong class="text-navy">NSR-OptiNav:</strong> Northern Sea Route intelligent navigation (459.3km route reduction)</li>
+                        <li><strong class="text-navy">Global Vision:</strong> Realizing the 'Tesla Model' of maritime logistics connecting ports and seas</li>
                     </ul>
                 </div>
-                <p class="text-base text-offwhite leading-relaxed mt-6">
+                <p class="text-base text-navy leading-relaxed mt-6">
                     See how the overwhelming technical capability proven by OpenAI Hackathon victory solves real industry challenges.
                 </p>
                 <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="MaeBara_WhitePaper_KO_1_0_0.pdf" target="_blank" class="bg-ice text-navy font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-white shadow-lg text-center flex items-center justify-center gap-2">
+                    <a href="MaeBara_WhitePaper_KO_1_0_0.pdf" target="_blank" class="bg-navy text-white font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-navy/80 shadow-lg text-center flex items-center justify-center gap-2">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
                         <span>White Paper (KO)</span>
                     </a>
-                    <a href="MaeBara_WhitePaper_EN_1_0_0.pdf" target="_blank" class="bg-ice text-navy font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-white shadow-lg text-center flex items-center justify-center gap-2">
+                    <a href="MaeBara_WhitePaper_EN_1_0_0.pdf" target="_blank" class="bg-navy text-white font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-navy/80 shadow-lg text-center flex items-center justify-center gap-2">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20M12,19L8,15H10.5V12H13.5V15H16L12,19Z"/></svg>
                         <span>White Paper (EN)</span>
                     </a>
@@ -321,61 +381,61 @@
         </div>
     </section>
 
-    <!-- Block 6: Media (WHITE) -->
-    <section id="media" class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-4 text-navy">
-            <h2 class="text-3xl font-bold border-b-4 border-navy pb-2 text-navy"><a href="#media" class="section-title-link">6. Media Coverage</a></h2>
+    <!-- Block 6: Media (NAVY) -->
+    <section id="media" class="py-16 bg-navy">
+        <div class="max-w-4xl mx-auto px-4 text-offwhite">
+            <h2 class="text-3xl font-bold border-b-4 border-ice pb-2 text-offwhite"><a href="#media" class="section-title-link">6. Media Coverage</a></h2>
             <div class="mt-8 space-y-4">
-                <div class="bg-gray-50 p-6 rounded-lg border-4 border-navy hover:bg-gray-100 transition-colors">
+                <div class="bg-navy/50 p-6 rounded-lg border-4 border-ice hover:bg-navy/70 transition-colors">
                     <a href="https://www.ceoeconomy.com/news/articleView.html?idxno=14532" target="_blank" class="block">
-                        <h3 class="text-lg font-bold text-navy">[CEO Economic-Editorial] Vibe Coding Approaches Like the Black Ships: What's Your Strategy?</h3>
-                        <p class="text-sm text-navy mt-2">CEO Economic News | 2025.12.04</p>
+                        <h3 class="text-lg font-bold text-offwhite">[CEO Economic-Editorial] Vibe Coding Approaches Like the Black Ships: What's Your Strategy?</h3>
+                        <p class="text-sm text-ice mt-2">CEO Economic News | 2025.12.04</p>
                     </a>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-4 border-navy hover:bg-gray-100 transition-colors">
+                <div class="bg-navy/50 p-6 rounded-lg border-4 border-ice hover:bg-navy/70 transition-colors">
                     <a href="https://www.ceoeconomy.com/news/articleView.html?idxno=14531" target="_blank" class="block">
-                        <h3 class="text-lg font-bold text-navy">[Promising Startup] OpenAI Hackathon Global Winner, CEO Sangdo Han, Launches AI Arctic Route Company</h3>
-                        <p class="text-sm text-navy mt-2">CEO Economic News | 2025.12.03</p>
+                        <h3 class="text-lg font-bold text-offwhite">[Promising Startup] OpenAI Hackathon Global Winner, CEO Sangdo Han, Launches AI Arctic Route Company</h3>
+                        <p class="text-sm text-ice mt-2">CEO Economic News | 2025.12.03</p>
                     </a>
                 </div>
-                <div class="bg-gray-50 p-6 rounded-lg border-4 border-navy hover:bg-gray-100 transition-colors">
+                <div class="bg-navy/50 p-6 rounded-lg border-4 border-ice hover:bg-navy/70 transition-colors">
                     <a href="https://contents.premium.naver.com/ceoedu/ceocare/contents/251119075414242jt" target="_blank" class="block">
-                        <h3 class="text-lg font-bold text-navy">[CEO Business School] First Professor Announcement (OpenAI GPT-5 Hackathon 'Global Winner', Prof. Sangdo Han Joins)</h3>
-                        <p class="text-sm text-navy mt-2">Naver Premium Content | 2025.11.19</p>
+                        <h3 class="text-lg font-bold text-offwhite">[CEO Business School] First Professor Announcement (OpenAI GPT-5 Hackathon 'Global Winner', Prof. Sangdo Han Joins)</h3>
+                        <p class="text-sm text-ice mt-2">Naver Premium Content | 2025.11.19</p>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Block 7: Call to Action & Contact (NAVY) -->
-    <section id="partnering" class="py-16 bg-navy">
-        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-ice p-10 rounded-xl bg-navy/50">
-            <h2 class="text-3xl font-bold text-ice">Busan: The Global AI Port Standard!</h2>
-            <p class="mt-4 text-xl font-semibold text-offwhite">
+    <!-- Block 7: Call to Action & Contact (WHITE) -->
+    <section id="partnering" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center border-4 border-navy p-10 rounded-xl bg-gray-50">
+            <h2 class="text-3xl font-bold text-navy">Busan: The Global AI Port Standard!</h2>
+            <p class="mt-4 text-xl font-semibold text-navy">
                 Transform your terminal operations with MaeBara's T-CAG technology.
             </p>
-            
+
             <div class="mt-8 space-y-4 md:space-y-0 md:space-x-8 flex flex-col md:flex-row justify-center items-center">
-                <a href="mailto:info@maebara.org" class="bg-ice text-navy font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-white shadow-lg text-lg">
+                <a href="mailto:info@maebara.org" class="bg-navy text-white font-bold py-4 px-8 rounded-lg transition duration-300 hover:bg-navy/80 shadow-lg text-lg">
                     Meeting & Partnership Inquiry
                 </a>
             </div>
-            
-            <div class="mt-6 pt-6 border-t border-ice/30">
-                <p class="text-base text-offwhite">
-                    Email: <a href="mailto:info@maebara.org" class="text-ice hover:text-white underline">info@maebara.org</a>
+
+            <div class="mt-6 pt-6 border-t border-navy/30">
+                <p class="text-base text-navy">
+                    Email: <a href="mailto:info@maebara.org" class="text-navy hover:text-navy/70 underline">info@maebara.org</a>
                 </p>
             </div>
-            
+
             <!-- QR Code Section -->
-            <div class="mt-12 pt-8 border-t border-ice/30">
+            <div class="mt-12 pt-8 border-t border-navy/30">
                 <div class="flex flex-col items-center">
-                    <h3 class="text-xl font-bold text-ice mb-4">Quick Mobile Access</h3>
-                    <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-ice">
-                        <img src="mae-bara-qr.png" alt="MaeBara Homepage QR Code" class="w-48 h-48 md:w-56 md:h-56">
+                    <h3 class="text-xl font-bold text-navy mb-4">Quick Mobile Access</h3>
+                    <div class="bg-white p-6 rounded-xl shadow-xl border-2 border-navy">
+                        <img src="images/mae-bara-qr.png" alt="MaeBara Homepage QR Code" class="w-48 h-48 md:w-56 md:h-56">
                     </div>
-                    <p class="text-sm text-offwhite mt-4 italic">Scan QR code to access MaeBara homepage</p>
+                    <p class="text-sm text-navy mt-4 italic">Scan QR code to access MaeBara homepage</p>
                 </div>
             </div>
         </div>
@@ -410,6 +470,31 @@
         <p class="mt-1">GitHub: <a href="https://github.com/hansd410" class="text-ice hover:text-white underline">https://github.com/hansd410</a></p>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[200] bg-black hidden items-center justify-center" onclick="closeLightbox()">
+        <button onclick="closeLightbox()" class="absolute top-4 right-5 text-white text-4xl font-bold leading-none hover:text-gray-400 transition-colors z-10">&times;</button>
+        <img id="lightbox-img" src="" alt="" class="max-w-full max-h-full object-contain p-4" onclick="event.stopPropagation()">
+    </div>
+
+    <script>
+        function openLightbox(src, alt) {
+            const lb = document.getElementById('lightbox');
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-img').alt = alt;
+            lb.classList.remove('hidden');
+            lb.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            const lb = document.getElementById('lightbox');
+            lb.classList.add('hidden');
+            lb.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+    </script>
+
 </body>
 </html>
-
