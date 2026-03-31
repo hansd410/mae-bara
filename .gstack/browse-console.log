@@ -1,0 +1,5 @@
+[2026-03-31T05:24:13.944Z] [error] Failed to load resource: the server responded with a status of 404 (File not found)
+[2026-03-31T05:24:14.990Z] [warning] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation
+[2026-03-31T05:24:15.002Z] [warning] Unrecognized feature: 'web-share'.
+[2026-03-31T05:25:15.163Z] [warning] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation
+[2026-03-31T05:25:15.165Z] [warning] Unrecognized feature: 'web-share'.
