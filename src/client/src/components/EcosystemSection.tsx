@@ -100,7 +100,7 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
                   </span>
                   <span className="text-navy-500 dark:text-navy-300 text-xs">{tier.copy}</span>
                   {isRecommended && (
-                    <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[9px] font-bold tracking-wider uppercase shrink-0">
+                    <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-bold tracking-wider uppercase shrink-0">
                       {i.bestValue}
                     </span>
                   )}
@@ -295,7 +295,7 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
                 <span className="text-gold-700 dark:text-gold-400 text-xs font-bold">{idx + 1}</span>
               </div>
               <div>
-                <p className="text-navy-400 text-[10px] font-semibold tracking-wider uppercase">{step.brand}</p>
+                <p className="text-navy-400 text-xs font-semibold tracking-wider uppercase">{step.brand}</p>
                 <p className="text-navy-700 dark:text-navy-200 text-sm">{step.label}</p>
               </div>
             </div>

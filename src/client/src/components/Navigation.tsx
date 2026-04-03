@@ -94,7 +94,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
         <div className="flex lg:hidden items-center gap-2">
           <a
             href={i.langSwitchHref}
-            className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-[10px] font-bold tracking-wider transition-colors ${
+            className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
               isOnDarkBg
                 ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
                 : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"

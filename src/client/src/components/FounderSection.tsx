@@ -231,12 +231,25 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
             {/* Left: Profile Info */}
             <div className="w-full md:w-1/3 min-w-0">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 dark:from-gold-500/15 dark:to-gold-500/5 border border-gold-300 dark:border-gold-500/25 flex items-center justify-center shadow-lg shadow-gold-500/10">
-                  <span className="text-gold-800 dark:text-gold-400 font-serif font-black text-2xl">H</span>
+                <div className="w-16 h-16 rounded-2xl overflow-hidden border border-gold-300 dark:border-gold-500/25 shadow-lg shadow-gold-500/10 shrink-0">
+                  <img
+                    src="/images/sangdo_han_profile.jpg"
+                    alt="Han Sangdo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-navy-900 dark:text-white font-bold text-xl font-serif">{i.name}</h3>
                   <p className="text-gold-700 dark:text-gold-400 text-sm font-semibold">{i.role}</p>
+                  <a
+                    href="https://sites.google.com/site/hansd410/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-xs mt-1 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    {lang === "zh" ? "个人主页" : lang === "en" ? "Profile Page" : "프로필 페이지"}
+                  </a>
                 </div>
               </div>
 
@@ -261,7 +274,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
 
               {/* Research Focus */}
               <div className="mt-6 p-3 sm:p-4 rounded-xl bg-navy-50 dark:bg-navy-800/40 border border-navy-200/60 dark:border-navy-700/30 overflow-hidden">
-                <p className="text-navy-400 dark:text-navy-500 text-[10px] font-semibold tracking-[0.2em] uppercase mb-2">{i.researchTitle}</p>
+                <p className="text-navy-400 dark:text-navy-500 text-xs font-semibold tracking-[0.2em] uppercase mb-2">{i.researchTitle}</p>
                 <p className="text-navy-700 dark:text-navy-200 text-xs leading-relaxed break-words">
                   AI-Driven Optimization & Large-Scale System Design — Reinforcement Learning, Multi-Modal Data Fusion, Complex Decision Systems
                 </p>
@@ -281,14 +294,14 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                     className="text-center p-3 sm:p-4 rounded-xl bg-navy-50/80 dark:bg-navy-800/30 border border-navy-200/40 dark:border-navy-700/20 overflow-hidden"
                   >
                     <AnimatedNumber target={parseInt(s.num)} suffix="+" />
-                    <p className="text-navy-500 dark:text-navy-400 text-[10px] sm:text-xs mt-1 sm:mt-2 font-medium leading-tight">{s.label}</p>
+                    <p className="text-navy-500 dark:text-navy-400 text-xs mt-1 sm:mt-2 font-medium leading-tight">{s.label}</p>
                   </motion.div>
                 ))}
               </div>
 
               {/* Media Highlights */}
               <div>
-                <p className="text-navy-400 dark:text-navy-500 text-[10px] font-semibold tracking-[0.2em] uppercase mb-4">
+                <p className="text-navy-400 dark:text-navy-500 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
                   {i.mediaTitle}
                 </p>
                 <div className="space-y-3">
