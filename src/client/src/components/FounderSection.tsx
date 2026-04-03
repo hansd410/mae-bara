@@ -150,19 +150,28 @@ const mediaHighlights = [
   {
     title: "박사 자퇴 후 오픈AI 해커톤 우승…\"둥지 떠나서야 비로소 비행 배웠다\"",
     titleEn: "After leaving PhD, won OpenAI Hackathon — \"Only after leaving the nest did I learn to fly\"",
+    titleZh: "博士退学后赢得OpenAI黑客马拉松——\"离巢之后，才真正学会飞翔\"",
     source: "한국경제",
+    sourceEn: "Hankyung",
+    sourceZh: "韩国经济",
     url: "https://www.hankyung.com/article/2025092176781",
   },
   {
     title: "GPT-5 해커톤 대회서 전 세계 93팀 제치고 1등 '韓 스타트업'",
     titleEn: "Korean startup beats 93 teams worldwide for 1st place at GPT-5 Hackathon",
+    titleZh: "韩国初创企业在GPT-5黑客马拉松中击败全球93支队伍夺冠",
     source: "매일경제",
+    sourceEn: "Maeil Business",
+    sourceZh: "每日经济",
     url: "https://www.mk.co.kr/news/business/11393991",
   },
   {
     title: "800여명 경쟁자 제치고 '오픈AI 대회' 1위 우뚝",
     titleEn: "Beats 800+ competitors to claim 1st place at OpenAI competition",
+    titleZh: "击败800余名竞争者，荣获OpenAI大赛第一名",
     source: "헬로디디",
+    sourceEn: "HelloDD",
+    sourceZh: "科技日报",
     url: "https://www.hellodd.com/news/articleView.html?idxno=108914",
   },
 ];
@@ -172,9 +181,13 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
   const diffs = differentiators[lang];
   const quote = lang === "en"
     ? { text: "Technology isn't about proving — it's about showing results.\nMaeBara proves your AX with numbers.", author: "— Sangdo Han, CEO & Founder" }
+    : lang === "zh"
+    ? { text: "技术不是用来证明的，而是用结果来展示的。\nMaeBara用数字证明您的AX价值。", author: "— 韩相度，CEO & Founder" }
     : { text: "기술은 증명하는 것이 아니라 결과로 보여주는 것입니다.\n매바라는 귀사의 AX를 숫자로 증명합니다.", author: "— 한상도, CEO & Founder" };
   const subtitle = lang === "en"
     ? "Led directly by CEO Sangdo Han. The only AX partner combining world-class technology, real-world experience, and deep research capabilities."
+    : lang === "zh"
+    ? "由CEO韩相度亲自带领的团队。将世界顶级技术实力、实战经验与研究能力融为一体的唯一AX合作伙伴。"
     : "CEO 한상도가 직접 이끄는 팀. 세계 최고 수준의 기술력과 실전 경험, 그리고 연구 역량이 하나로 결합된 유일한 AX 파트너입니다.";
 
   return (
@@ -238,7 +251,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
                   <BookOpen className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
-                  <span className="break-words">CEO Business School {lang === "en" ? "Professor" : "교수"}</span>
+                  <span className="break-words">CEO Business School {lang === "en" ? "Professor" : lang === "zh" ? "教授" : "교수"}</span>
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
                   <Briefcase className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
@@ -294,9 +307,9 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                       <FileText className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <p className="text-navy-700 dark:text-navy-200 text-xs sm:text-sm font-medium truncate group-hover:text-gold-700 dark:group-hover:text-gold-400 transition-colors">
-                          {lang === "en" ? m.titleEn : m.title}
+                          {lang === "zh" ? m.titleZh : lang === "en" ? m.titleEn : m.title}
                         </p>
-                        <p className="text-navy-400 dark:text-navy-500 text-xs">{m.source}</p>
+                        <p className="text-navy-400 dark:text-navy-500 text-xs">{lang === "zh" ? m.sourceZh : lang === "en" ? m.sourceEn : m.source}</p>
                       </div>
                       <ExternalLink className="w-3.5 h-3.5 text-navy-300 dark:text-navy-600 group-hover:text-gold-500 transition-colors shrink-0" />
                     </motion.a>
