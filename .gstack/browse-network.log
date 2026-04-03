@@ -55,3 +55,7 @@
 [2026-03-31T05:26:15.450Z] POST https://www.youtube.com/youtubei/v1/log_event?alt=json → 200 (229ms, 28B)
 [2026-03-31T05:27:15.966Z] GET https://googleads.g.doubleclick.net/pagead/id → pending (?ms, ?B)
 [2026-03-31T05:27:16.138Z] GET https://googleads.g.doubleclick.net/pagead/id?slf_rd=1 → 200 (109ms, 100B)
+[2026-03-31T05:36:20.520Z] HEAD https://www.youtube.com/generate_204 → pending (?ms, ?B)
+[2026-03-31T05:36:30.124Z] HEAD https://www.youtube.com/generate_204 → 204 (237ms, ?B)
+[2026-03-31T05:52:55.251Z] HEAD https://www.youtube.com/generate_204 → pending (?ms, ?B)
+[2026-03-31T05:53:52.976Z] HEAD https://www.youtube.com/generate_204 → pending (?ms, ?B)
