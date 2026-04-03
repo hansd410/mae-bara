@@ -231,12 +231,25 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
             {/* Left: Profile Info */}
             <div className="w-full md:w-1/3 min-w-0">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 dark:from-gold-500/15 dark:to-gold-500/5 border border-gold-300 dark:border-gold-500/25 flex items-center justify-center shadow-lg shadow-gold-500/10">
-                  <span className="text-gold-800 dark:text-gold-400 font-serif font-black text-2xl">H</span>
+                <div className="w-16 h-16 rounded-2xl overflow-hidden border border-gold-300 dark:border-gold-500/25 shadow-lg shadow-gold-500/10 shrink-0">
+                  <img
+                    src="/images/sangdo_han_profile.jpg"
+                    alt="Han Sangdo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-navy-900 dark:text-white font-bold text-xl font-serif">{i.name}</h3>
                   <p className="text-gold-700 dark:text-gold-400 text-sm font-semibold">{i.role}</p>
+                  <a
+                    href="https://sites.google.com/site/hansd410/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-xs mt-1 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    {lang === "zh" ? "个人主页" : lang === "en" ? "Profile Page" : "프로필 페이지"}
+                  </a>
                 </div>
               </div>
 

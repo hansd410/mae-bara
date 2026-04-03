@@ -60,17 +60,22 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
           ))}
 
           {/* Language switch */}
-          <a
-            href={i.langSwitchHref}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
-              isOnDarkBg
-                ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
-                : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
-            }`}
-          >
-            <Globe className="w-3.5 h-3.5" />
-            {i.langSwitch}
-          </a>
+          <div className="flex items-center gap-1">
+            <Globe className={`w-3.5 h-3.5 ${isOnDarkBg ? "text-gold-400" : "text-navy-400 dark:text-navy-400"}`} />
+            {i.langOptions.map((opt) => (
+              <a
+                key={opt.href}
+                href={opt.href}
+                className={`px-2 py-1 rounded text-xs font-bold tracking-wider transition-colors ${
+                  isOnDarkBg
+                    ? "text-gold-400 hover:bg-navy-800/50"
+                    : "text-navy-500 dark:text-navy-300 hover:text-gold-700 dark:hover:text-gold-400"
+                }`}
+              >
+                {opt.label}
+              </a>
+            ))}
+          </div>
 
           {/* Dark mode toggle */}
           <button
@@ -92,17 +97,21 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
 
         {/* Mobile: lang + theme toggle + menu button */}
         <div className="flex lg:hidden items-center gap-2">
-          <a
-            href={i.langSwitchHref}
-            className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-[10px] font-bold tracking-wider transition-colors ${
-              isOnDarkBg
-                ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
-                : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
-            }`}
-          >
-            <Globe className="w-3 h-3" />
-            {i.langSwitch}
-          </a>
+          <div className={`flex items-center gap-0.5 px-2 py-1 rounded-lg border text-[10px] font-bold tracking-wider ${
+            isOnDarkBg
+              ? "border-navy-600 text-gold-400"
+              : "border-navy-200 dark:border-navy-700 text-navy-500 dark:text-navy-300"
+          }`}>
+            <Globe className="w-3 h-3 mr-0.5" />
+            {i.langOptions.map((opt, idx) => (
+              <span key={opt.href} className="flex items-center">
+                {idx > 0 && <span className="mx-0.5 opacity-40">|</span>}
+                <a href={opt.href} className="hover:text-gold-600 dark:hover:text-gold-400 transition-colors">
+                  {opt.label}
+                </a>
+              </span>
+            ))}
+          </div>
           <button
             onClick={toggleTheme}
             className={`p-2 rounded-lg border transition-colors ${
