@@ -9,7 +9,9 @@ import { t, type Lang } from "@/lib/i18n";
 export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).contact;
 
-  const descText = lang === "en"
+  const descText = lang === "zh"
+    ? <>您的数据可能正在错失收益机会。MaeBara的OpenAI黑客马拉松全球冠军专家将免费进行审查(Audit)。<br />我们在15天内用数字证明ROI。</>
+    : lang === "en"
     ? <>Your data could be generating revenue. Our OpenAI Hackathon global-winning experts will perform a free audit.<br />We prove ROI in numbers within 15 days.</>
     : <>귀사의 데이터가 수익이 될 수 있는지, OpenAI 해커톤 글로벌 우승 전문가가 무료로 감사(Audit)를 수행합니다.<br />15일 이내에 ROI를 숫자로 증명합니다.</>;
 
