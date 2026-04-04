@@ -20,6 +20,8 @@ const nav = {
     ],
     langSwitch: "EN",
     langSwitchHref: "/en",
+    langSwitch2: "CN",
+    langSwitchHref2: "/zh",
   },
   en: {
     links: [
@@ -34,6 +36,8 @@ const nav = {
     ],
     langSwitch: "KR",
     langSwitchHref: "/",
+    langSwitch2: "CN",
+    langSwitchHref2: "/zh",
   },
   zh: {
     links: [
@@ -48,6 +52,8 @@ const nav = {
     ],
     langSwitch: "KR",
     langSwitchHref: "/",
+    langSwitch2: "EN",
+    langSwitchHref2: "/en",
   },
 };
 

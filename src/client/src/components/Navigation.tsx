@@ -71,6 +71,19 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             <Globe className="w-3.5 h-3.5" />
             {i.langSwitch}
           </a>
+          {i.langSwitch2 && i.langSwitchHref2 && (
+            <a
+              href={i.langSwitchHref2}
+              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
+                isOnDarkBg
+                  ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
+                  : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
+              }`}
+            >
+              <Globe className="w-3.5 h-3.5" />
+              {i.langSwitch2}
+            </a>
+          )}
 
           {/* Dark mode toggle */}
           <button
@@ -103,6 +116,19 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             <Globe className="w-3 h-3" />
             {i.langSwitch}
           </a>
+          {i.langSwitch2 && i.langSwitchHref2 && (
+            <a
+              href={i.langSwitchHref2}
+              className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
+                isOnDarkBg
+                  ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
+                  : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
+              }`}
+            >
+              <Globe className="w-3 h-3" />
+              {i.langSwitch2}
+            </a>
+          )}
           <button
             onClick={toggleTheme}
             className={`p-2 rounded-lg border transition-colors ${
