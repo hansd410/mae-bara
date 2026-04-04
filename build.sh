@@ -8,6 +8,18 @@ SRC_DIR="$REPO_ROOT/src"
 DIST_DIR="$SRC_DIR/dist/public"
 ASSETS_DIR="$REPO_ROOT/assets"
 
+# macOS / Linux sed 호환 함수
+replace_in_file() {
+  local file="$1"
+  local old="$2"
+  local new="$3"
+  if [[ "$OSTYPE" == "darwin"* ]]; then
+    sed -i '' "s|$old|$new|g" "$file"
+  else
+    sed -i "s|$old|$new|g" "$file"
+  fi
+}
+
 echo "▶ 빌드 시작..."
 cd "$SRC_DIR"
 npm run build
@@ -29,8 +41,8 @@ echo "▶ HTML 파일 업데이트..."
 for html in "$REPO_ROOT/index.html" "$REPO_ROOT/en/index.html" "$REPO_ROOT/zh/index.html"; do
   OLD_JS=$(grep -o 'assets/index-[^"]*\.js' "$html" | head -1 | xargs basename 2>/dev/null || echo "")
   OLD_CSS=$(grep -o 'assets/index-[^"]*\.css' "$html" | head -1 | xargs basename 2>/dev/null || echo "")
-  [ -n "$OLD_JS" ] && sed -i "s|$OLD_JS|$NEW_JS|g" "$html"
-  [ -n "$OLD_CSS" ] && sed -i "s|$OLD_CSS|$NEW_CSS|g" "$html"
+  [ -n "$OLD_JS" ] && replace_in_file "$html" "$OLD_JS" "$NEW_JS"
+  [ -n "$OLD_CSS" ] && replace_in_file "$html" "$OLD_CSS" "$NEW_CSS"
   echo "   업데이트: $(basename $(dirname $html))/$(basename $html)"
 done
 
