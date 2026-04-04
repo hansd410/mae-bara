@@ -164,7 +164,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                     <div className={`px-3 py-1.5 rounded-lg text-xs font-bold ${gradeVisuals[idx].badgeColor} ${gradeVisuals[idx].textColor}`}>
                       {g.rank}{i.gradeUnit}
                     </div>
-                    <span className="text-navy-400 dark:text-navy-500 text-[10px] font-medium">{g.code}</span>
+                    <span className="text-navy-400 dark:text-navy-500 text-xs font-medium">{g.code}</span>
                   </div>
                 ))}
               </div>
@@ -311,7 +311,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                         <div className={`w-full h-3 rounded-full transition-all duration-500 ${
                           g.rank === grade.rank ? gradeVisuals[idx].badgeColor + " shadow-md" : "bg-navy-200 dark:bg-navy-700"
                         }`} />
-                        <span className={`text-[10px] font-bold ${
+                        <span className={`text-xs font-bold ${
                           g.rank === grade.rank ? "text-navy-800 dark:text-white" : "text-navy-300 dark:text-navy-600"
                         }`}>{g.code}</span>
                       </div>
@@ -373,7 +373,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                           <item.icon className="w-4 h-4 text-gold-700 dark:text-gold-400" />
                         </div>
                         <div>
-                          <span className="text-navy-400 text-[10px] font-semibold tracking-wider uppercase">{item.label}</span>
+                          <span className="text-navy-400 text-xs font-semibold tracking-wider uppercase">{item.label}</span>
                           <p className="text-navy-600 dark:text-navy-300 text-sm leading-relaxed">{item.desc}</p>
                         </div>
                         <CheckCircle2 className="w-4 h-4 text-gold-600 dark:text-gold-500/60 shrink-0 mt-1" />
