@@ -37,7 +37,7 @@ export default function CertificationSection({ lang = "ko" as Lang }: { lang?: L
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -61,7 +61,7 @@ export default function CertificationSection({ lang = "ko" as Lang }: { lang?: L
           <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-gold-100 to-gold-200 dark:from-gold-500/15 dark:to-gold-500/5 border border-gold-300 dark:border-gold-500/25 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
             <ShieldCheck className="w-10 h-10 text-gold-700 dark:text-gold-400" />
           </div>
-          <p className="text-navy-600 dark:text-navy-300 text-center max-w-lg leading-relaxed text-sm">
+          <p className="text-navy-600 dark:text-navy-300 text-center max-w-lg leading-relaxed text-base">
             {auditText}
           </p>
         </motion.div>
@@ -79,19 +79,19 @@ export default function CertificationSection({ lang = "ko" as Lang }: { lang?: L
                 transition={{ duration: 0.6, delay: idx * 0.15 }}
                 className="glass-card rounded-2xl p-8 text-center group"
               >
-                <div className="text-gold-500/50 text-xs font-bold tracking-[0.3em] mb-4 uppercase">
+                <div className="text-gold-500/50 text-base font-bold tracking-[0.3em] mb-4 uppercase">
                   {cert.level}
                 </div>
                 <div className="w-16 h-16 mx-auto rounded-2xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center mb-6 group-hover:bg-gold-200 dark:group-hover:bg-gold-500/20 transition-colors">
                   <Icon className="w-8 h-8 text-gold-700 dark:text-gold-400" />
                 </div>
                 <h3 className="text-navy-900 dark:text-white font-bold text-xl mb-2 font-serif">{cert.name}</h3>
-                <p className="text-navy-500 dark:text-navy-300 text-sm leading-relaxed mb-6">{cert.desc}</p>
+                <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed mb-6">{cert.desc}</p>
                 <div className="text-left space-y-2">
                   {cert.criteria.map((c, j) => (
                     <div key={j} className="flex items-start gap-2">
                       <BadgeCheck className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
-                      <span className="text-navy-600 dark:text-navy-300 text-xs leading-relaxed">{c}</span>
+                      <span className="text-navy-600 dark:text-navy-300 text-base leading-relaxed">{c}</span>
                     </div>
                   ))}
                 </div>
@@ -110,12 +110,12 @@ export default function CertificationSection({ lang = "ko" as Lang }: { lang?: L
         >
           <a
             href="#assessment"
-            className="group inline-flex items-center gap-2 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg text-sm tracking-wide"
+            className="group inline-flex items-center gap-2 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg text-base tracking-wide"
           >
             <span>{i.ctaBtn}</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </a>
-          <p className="text-navy-400 text-xs mt-4">{ctaNote}</p>
+          <p className="text-navy-400 text-base mt-4">{ctaNote}</p>
         </motion.div>
       </div>
 

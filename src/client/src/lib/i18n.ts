@@ -10,10 +10,10 @@ const nav = {
   ko: {
     links: [
       { href: "#about", label: "ABOUT" },
+      { href: "#product", label: "PRODUCT" },
       { href: "#founder", label: "WHY US" },
       { href: "#promise", label: "PROMISE" },
       { href: "#ecosystem", label: "ECOSYSTEM" },
-      { href: "#product", label: "PRODUCT" },
       { href: "#certification", label: "인증" },
       { href: "#assessment", label: "AX 진단" },
       { href: "#contact", label: "CONTACT" },
@@ -26,10 +26,10 @@ const nav = {
   en: {
     links: [
       { href: "#about", label: "ABOUT" },
+      { href: "#product", label: "PRODUCT" },
       { href: "#founder", label: "WHY US" },
       { href: "#promise", label: "PROMISE" },
       { href: "#ecosystem", label: "ECOSYSTEM" },
-      { href: "#product", label: "PRODUCT" },
       { href: "#certification", label: "CERTIFICATION" },
       { href: "#assessment", label: "AX ASSESSMENT" },
       { href: "#contact", label: "CONTACT" },
@@ -42,10 +42,10 @@ const nav = {
   zh: {
     links: [
       { href: "#about", label: "关于我们" },
+      { href: "#product", label: "产品" },
       { href: "#founder", label: "为何选择" },
       { href: "#promise", label: "我们的承诺" },
       { href: "#ecosystem", label: "生态系统" },
-      { href: "#product", label: "产品" },
       { href: "#certification", label: "认证" },
       { href: "#assessment", label: "AX诊断" },
       { href: "#contact", label: "联系我们" },
@@ -636,6 +636,7 @@ const product = {
     headline: "제품",
     headlineAccent: "라인업",
     sub: "OpenAI 글로벌 우승 아키텍처 기반의 엔터프라이즈 AI 제품군",
+    viewBtn: "자세히 보기",
     consultBtn: "제품 문의",
     consultSubject: "[제품 문의]",
     consultBody: "관심 제품: ",
@@ -648,6 +649,7 @@ const product = {
     headline: "Product",
     headlineAccent: "Lineup",
     sub: "Enterprise AI products built on the OpenAI Global Hackathon-winning architecture",
+    viewBtn: "Learn More",
     consultBtn: "Product Inquiry",
     consultSubject: "[Product Inquiry]",
     consultBody: "Product of Interest: ",
@@ -660,6 +662,7 @@ const product = {
     headline: "产品",
     headlineAccent: "阵列",
     sub: "基于OpenAI全球冠军架构打造的企业级AI产品群",
+    viewBtn: "了解详情",
     consultBtn: "产品和谈",
     consultSubject: "[产品和谈]",
     consultBody: "感兴趣的产品：",

@@ -20,10 +20,10 @@ export default function HomeEn() {
       <Navigation lang="en" />
       <HeroSection lang="en" />
       <AboutSection lang="en" />
+      <ProductSection lang="en" />
       <FounderSection lang="en" />
       <PromiseSection lang="en" />
       <EcosystemSection lang="en" />
-      <ProductSection lang="en" />
       <CertificationSection lang="en" />
       <AssessmentSection lang="en" />
       <ContactSection lang="en" />

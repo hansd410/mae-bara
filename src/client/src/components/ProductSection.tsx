@@ -12,10 +12,21 @@ import {
   Bot,
   ShoppingBag,
   Anchor,
-  Mail,
   ArrowRight,
 } from "lucide-react";
 import { t, type Lang } from "@/lib/i18n";
+
+/* ── Product → Labs/One page URL mapping ── */
+const PRODUCT_HREFS: Record<string, { ko: string; en: string }> = {
+  "True Draft":   { ko: "/labs/trueDraft/truedraft.html",    en: "/labs/trueDraft/truedraft_en.html" },
+  "True Predict": { ko: "/labs/truePredict/truePredict.html", en: "/labs/truePredict/truePredict_en.html" },
+  "True Persona": { ko: "/labs/truePersona/truePersona.html", en: "/labs/truePersona/truePersona_en.html" },
+  "True Guard":   { ko: "/labs/trueGuard/trueGuard.html",    en: "/labs/trueGuard/trueGuard_en.html" },
+  "True Forge":   { ko: "/labs/trueForge/trueForge.html",    en: "/labs/trueForge/trueForge_en.html" },
+  "True Agent":   { ko: "/labs/trueAgent/trueAgent.html",    en: "/labs/trueAgent/trueAgent_en.html" },
+  "Pure LLM":     { ko: "/labs/pureLLM/purellm.html",        en: "/labs/pureLLM/purellm_en.html" },
+  "MaeBara One":  { ko: "/one/one_index.html",               en: "/one/one_index_en.html" },
+};
 
 /* ── Product data (bilingual) ── */
 const products = {
@@ -51,19 +62,10 @@ const products = {
   ],
 };
 
-/* ── Consult mailto helper ── */
-function openConsultMail(lang: Lang, product: string) {
-  const i = t(lang).product;
-  const subject = encodeURIComponent(`${i.consultSubject} ${product}`);
-  const body = encodeURIComponent(
-    i.consultGreeting + i.consultBody + product + "\n" + i.consultRequest + i.consultFooter
-  );
-  window.open(`mailto:info@maebara.org?subject=${subject}&body=${body}`, "_self");
-}
-
 export default function ProductSection({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).product;
   const items = products[lang];
+  const hrefLang = lang === "zh" ? "en" : lang;
 
   return (
     <section id="product" className="relative py-24 md:py-32 overflow-hidden">
@@ -78,7 +80,7 @@ export default function ProductSection({ lang = "ko" as Lang }: { lang?: Lang })
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -118,17 +120,18 @@ export default function ProductSection({ lang = "ko" as Lang }: { lang?: Lang })
               </div>
 
               <h3 className="text-navy-900 dark:text-white font-bold text-lg mb-1 leading-tight">{product.name}</h3>
-              <p className="text-gold-600 dark:text-gold-400 text-xs font-medium mb-3">{product.subtitle}</p>
-              <p className="text-navy-500 dark:text-navy-400 text-sm leading-relaxed mb-5 flex-1">{product.desc}</p>
+              <p className="text-gold-600 dark:text-gold-400 text-base font-medium mb-3">{product.subtitle}</p>
+              <p className="text-navy-500 dark:text-navy-400 text-base leading-relaxed mb-5 flex-1">{product.desc}</p>
 
-              <button
-                onClick={() => openConsultMail(lang, product.name)}
-                className="flex items-center gap-1.5 text-gold-700 dark:text-gold-400 text-sm font-semibold hover:text-gold-800 dark:hover:text-gold-300 transition-colors mt-auto"
+              <a
+                href={PRODUCT_HREFS[product.name]?.[hrefLang] ?? "#"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-gold-700 dark:text-gold-400 text-base font-semibold hover:text-gold-800 dark:hover:text-gold-300 transition-colors mt-auto"
               >
-                <Mail className="w-4 h-4" />
-                {i.consultBtn}
+                {i.viewBtn}
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>

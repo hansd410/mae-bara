@@ -20,10 +20,10 @@ export default function HomeZh() {
       <Navigation lang="zh" />
       <HeroSection lang="zh" />
       <AboutSection lang="zh" />
+      <ProductSection lang="zh" />
       <FounderSection lang="zh" />
       <PromiseSection lang="zh" />
       <EcosystemSection lang="zh" />
-      <ProductSection lang="zh" />
       <CertificationSection lang="zh" />
       <AssessmentSection lang="zh" />
       <ContactSection lang="zh" />

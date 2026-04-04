@@ -79,7 +79,7 @@ export default function SolutionsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             Solutions
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-white">
@@ -115,7 +115,7 @@ export default function SolutionsSection() {
                   )}
                 </div>
               </div>
-              <p className="text-navy-300 text-sm leading-relaxed">{sol.desc}</p>
+              <p className="text-navy-300 text-base leading-relaxed">{sol.desc}</p>
             </motion.div>
           ))}
         </div>

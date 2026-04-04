@@ -69,7 +69,7 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
 
   return (
     <div>
-      <h4 className="text-navy-400 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+      <h4 className="text-navy-400 text-base font-semibold tracking-[0.2em] uppercase mb-4">
         {i.tierServiceTitle}
       </h4>
 
@@ -94,11 +94,11 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
                 className="w-full flex items-center justify-between p-4 bg-navy-50 dark:bg-navy-800/30 hover:bg-navy-100 dark:hover:bg-navy-800/50 transition-colors"
               >
                 <div className="flex items-center gap-3 flex-wrap">
-                  <span className={`px-2.5 py-1 rounded-lg text-xs font-bold ${vc.color} ${vc.textColor} flex items-center gap-1.5 shrink-0`}>
+                  <span className={`px-2.5 py-1 rounded-lg text-base font-bold ${vc.color} ${vc.textColor} flex items-center gap-1.5 shrink-0`}>
                     <TierIcon tierKey={tier.key} />
                     {tier.label}
                   </span>
-                  <span className="text-navy-500 dark:text-navy-300 text-xs">{tier.copy}</span>
+                  <span className="text-navy-500 dark:text-navy-300 text-base">{tier.copy}</span>
                   {isRecommended && (
                     <span className="px-2 py-0.5 rounded-full bg-amber-100 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-bold tracking-wider uppercase shrink-0">
                       {i.bestValue}
@@ -122,12 +122,12 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
                     className="overflow-hidden"
                   >
                     <div className="p-4 bg-white dark:bg-navy-900/20">
-                      <p className="text-navy-600 dark:text-navy-300 text-sm leading-relaxed mb-4">
+                      <p className="text-navy-600 dark:text-navy-300 text-base leading-relaxed mb-4">
                         {service[field]}
                       </p>
                       <button
                         onClick={() => openConsultMail(lang, brandName, `${tier.label}`, service[field])}
-                        className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gold-100 dark:bg-gold-500/10 text-gold-700 dark:text-gold-400 text-xs font-semibold hover:bg-gold-200 dark:hover:bg-gold-500/20 transition-colors border border-gold-200 dark:border-gold-500/20"
+                        className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gold-100 dark:bg-gold-500/10 text-gold-700 dark:text-gold-400 text-base font-semibold hover:bg-gold-200 dark:hover:bg-gold-500/20 transition-colors border border-gold-200 dark:border-gold-500/20"
                       >
                         <Mail className="w-3.5 h-3.5" />
                         {i.consultBtn}
@@ -148,15 +148,15 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
             <Gift className="w-5 h-5 text-gold-700 dark:text-gold-400" />
           </div>
           <div>
-            <h5 className="text-navy-900 dark:text-white font-bold text-sm mb-1">{i.bundleTitle}</h5>
-            <p className="text-navy-500 dark:text-navy-300 text-xs leading-relaxed mb-3">
+            <h5 className="text-navy-900 dark:text-white font-bold text-base mb-1">{i.bundleTitle}</h5>
+            <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed mb-3">
               {i.bundleDesc1}{" "}
               <span className="text-gold-700 dark:text-gold-400 font-bold">{i.bundleDiscount}</span>
               {i.bundleDesc2}
             </p>
             <button
               onClick={() => openConsultMail(lang, i.consultMailCategory, i.consultMailItem)}
-              className="flex items-center gap-1.5 text-gold-700 dark:text-gold-400 text-xs font-semibold hover:text-gold-800 dark:hover:text-gold-300 transition-colors"
+              className="flex items-center gap-1.5 text-gold-700 dark:text-gold-400 text-base font-semibold hover:text-gold-800 dark:hover:text-gold-300 transition-colors"
             >
               <Mail className="w-3.5 h-3.5" />
               {i.bundleBtn}
@@ -188,7 +188,7 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -209,7 +209,7 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
                 </span>
               );
             })}
-            <span className="text-navy-400 dark:text-navy-500 text-xs flex items-center ml-1">
+            <span className="text-navy-400 dark:text-navy-500 text-base flex items-center ml-1">
               {i.tierNote}
             </span>
           </div>
@@ -223,7 +223,7 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
               <button
                 key={b.id}
                 onClick={() => setActive(idx)}
-                className={`flex items-center gap-2 px-5 py-3 rounded-xl text-sm font-semibold transition-all duration-300 border ${
+                className={`flex items-center gap-2 px-5 py-3 rounded-xl text-base font-semibold transition-all duration-300 border ${
                   active === idx
                     ? "bg-gold-100 dark:bg-gold-500/15 border-gold-400 dark:border-gold-500/50 text-gold-800 dark:text-gold-400 shadow-lg shadow-gold-500/10"
                     : "bg-white dark:bg-navy-800/40 border-navy-200 dark:border-navy-700/40 text-navy-500 dark:text-navy-300 hover:border-navy-300 dark:hover:border-navy-600/60 hover:text-navy-700 dark:hover:text-navy-100"
@@ -255,20 +255,20 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
                   </div>
                   <div>
                     <h3 className="text-navy-900 dark:text-white font-bold text-xl">{brand.name}</h3>
-                    <p className="text-gold-700 dark:text-gold-400 text-sm font-medium">{brand.tagline}</p>
+                    <p className="text-gold-700 dark:text-gold-400 text-base font-medium">{brand.tagline}</p>
                   </div>
                 </div>
 
-                <p className="text-navy-600 dark:text-navy-200 leading-relaxed mb-6 text-sm">{brand.narrative}</p>
+                <p className="text-navy-600 dark:text-navy-200 leading-relaxed mb-6 text-base">{brand.narrative}</p>
 
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-2">
-                    <span className="text-gold-700 dark:text-gold-500 text-xs font-bold mt-0.5 shrink-0">TARGET</span>
-                    <span className="text-navy-500 dark:text-navy-300 text-sm">{brand.target}</span>
+                    <span className="text-gold-700 dark:text-gold-500 text-base font-bold mt-0.5 shrink-0">TARGET</span>
+                    <span className="text-navy-500 dark:text-navy-300 text-base">{brand.target}</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-gold-700 dark:text-gold-500 text-xs font-bold mt-0.5 shrink-0">VALUE</span>
-                    <span className="text-navy-500 dark:text-navy-300 text-sm">{brand.value}</span>
+                    <span className="text-gold-700 dark:text-gold-500 text-base font-bold mt-0.5 shrink-0">VALUE</span>
+                    <span className="text-navy-500 dark:text-navy-300 text-base">{brand.value}</span>
                   </div>
                 </div>
               </div>
@@ -292,11 +292,11 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
           {i.flowSteps.map((step, idx) => (
             <div key={idx} className="flex items-center gap-3 p-4 rounded-xl bg-navy-50 dark:bg-navy-800/20 border border-navy-200 dark:border-navy-700/20">
               <div className="w-8 h-8 rounded-full bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center shrink-0">
-                <span className="text-gold-700 dark:text-gold-400 text-xs font-bold">{idx + 1}</span>
+                <span className="text-gold-700 dark:text-gold-400 text-base font-bold">{idx + 1}</span>
               </div>
               <div>
-                <p className="text-navy-400 text-xs font-semibold tracking-wider uppercase">{step.brand}</p>
-                <p className="text-navy-700 dark:text-navy-200 text-sm">{step.label}</p>
+                <p className="text-navy-400 text-base font-semibold tracking-wider uppercase">{step.brand}</p>
+                <p className="text-navy-700 dark:text-navy-200 text-base">{step.label}</p>
               </div>
             </div>
           ))}

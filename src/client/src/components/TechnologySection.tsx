@@ -58,7 +58,7 @@ export default function TechnologySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-400 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-400 text-base font-semibold tracking-[0.25em] uppercase">
             Technology — The Arctic Proof
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-white">
@@ -86,7 +86,7 @@ export default function TechnologySection() {
               <span className="text-gold-400 text-3xl md:text-4xl font-extrabold font-serif">
                 {statsInView ? stat.display : "—"}
               </span>
-              <div className="text-navy-300 text-xs mt-2 tracking-wide">{stat.label}</div>
+              <div className="text-navy-300 text-base mt-2 tracking-wide">{stat.label}</div>
             </motion.div>
           ))}
         </div>
@@ -106,8 +106,8 @@ export default function TechnologySection() {
                 <tech.icon className="w-8 h-8 text-gold-400" />
               </div>
               <h3 className="text-white font-bold text-xl mb-2">{tech.title}</h3>
-              <p className="text-gold-400 text-sm font-semibold mb-4">{tech.subtitle}</p>
-              <p className="text-navy-200 text-sm leading-relaxed">{tech.desc}</p>
+              <p className="text-gold-400 text-base font-semibold mb-4">{tech.subtitle}</p>
+              <p className="text-navy-200 text-base leading-relaxed">{tech.desc}</p>
             </motion.div>
           ))}
         </div>

@@ -4,7 +4,7 @@
 import { t, type Lang } from "@/lib/i18n";
 
 const LOGO_LIGHT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663325138416/6uQycx7vmjvWLhEUm478jc/logo_maebara_eng_transparent_517481aa.png";
-const LOGO_DARK = "https://d2xsxph8kpxj0f.cloudfront.net/310519663325138416/6uQycx7vmjvWLhEUm478jc/logo_maebara_eng_white_bb531472.png";
+const LOGO_DARK = "/logo_dark_gold.png";
 
 export default function Footer({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).footer;
@@ -18,8 +18,8 @@ export default function Footer({ lang = "ko" as Lang }: { lang?: Lang }) {
             <img src={LOGO_DARK} alt="MaeBara" className="h-7 hidden dark:block" />
           </div>
           <div className="text-center md:text-right">
-            <p className="text-navy-400 dark:text-navy-500 text-xs">{i.copyright}</p>
-            <p className="text-navy-300 dark:text-navy-600 text-xs mt-1">{i.tagline}</p>
+            <p className="text-navy-400 dark:text-navy-500 text-base">{i.copyright}</p>
+            <p className="text-navy-300 dark:text-navy-600 text-base mt-1">{i.tagline}</p>
           </div>
         </div>
       </div>

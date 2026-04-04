@@ -54,7 +54,7 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-600/20 dark:border-gold-500/25 bg-gold-500/[0.08] dark:bg-gold-500/[0.06] mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse" />
-            <span className="text-gold-700 dark:text-gold-400 text-xs font-semibold tracking-[0.2em] uppercase">
+            <span className="text-gold-700 dark:text-gold-400 text-base font-semibold tracking-[0.2em] uppercase">
               {i.badge}
             </span>
           </motion.div>
@@ -98,14 +98,14 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
           >
             <a
               href="#assessment"
-              className="group inline-flex items-center gap-2 bg-gold-600 hover:bg-gold-700 dark:bg-gold-500 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-gold-600/20 dark:shadow-gold-500/20 hover:shadow-gold-600/40 dark:hover:shadow-gold-500/40 text-sm tracking-wide"
+              className="group inline-flex items-center gap-2 bg-gold-600 hover:bg-gold-700 dark:bg-gold-500 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-gold-600/20 dark:shadow-gold-500/20 hover:shadow-gold-600/40 dark:hover:shadow-gold-500/40 text-base tracking-wide"
             >
               <span>{i.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#about"
-              className="inline-flex items-center gap-2 border border-navy-300 dark:border-navy-400/40 hover:border-gold-600/50 dark:hover:border-gold-500/50 text-navy-700 dark:text-navy-100 font-medium py-4 px-8 rounded-lg transition-all duration-300 text-sm tracking-wide hover:bg-navy-100/50 dark:hover:bg-navy-800/30"
+              className="inline-flex items-center gap-2 border border-navy-300 dark:border-navy-400/40 hover:border-gold-600/50 dark:hover:border-gold-500/50 text-navy-700 dark:text-navy-100 font-medium py-4 px-8 rounded-lg transition-all duration-300 text-base tracking-wide hover:bg-navy-100/50 dark:hover:bg-navy-800/30"
             >
               {i.ctaSecondary}
             </a>

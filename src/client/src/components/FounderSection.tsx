@@ -205,7 +205,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -240,12 +240,12 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                 </div>
                 <div>
                   <h3 className="text-navy-900 dark:text-white font-bold text-xl font-serif">{i.name}</h3>
-                  <p className="text-gold-700 dark:text-gold-400 text-sm font-semibold">{i.role}</p>
+                  <p className="text-gold-700 dark:text-gold-400 text-base font-semibold">{i.role}</p>
                   <a
                     href="https://sites.google.com/site/hansd410/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-xs mt-1 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
+                    className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-base mt-1 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
                   >
                     <ExternalLink className="w-3 h-3" />
                     {lang === "zh" ? "个人主页" : lang === "en" ? "Profile Page" : "프로필 페이지"}
@@ -253,7 +253,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                 </div>
               </div>
 
-              <div className="space-y-3 text-sm">
+              <div className="space-y-3 text-base">
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
                   <GraduationCap className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
                   <span className="break-words">POSTECH PhD ABD (NLP & Optimization)</span>
@@ -274,8 +274,8 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
 
               {/* Research Focus */}
               <div className="mt-6 p-3 sm:p-4 rounded-xl bg-navy-50 dark:bg-navy-800/40 border border-navy-200/60 dark:border-navy-700/30 overflow-hidden">
-                <p className="text-navy-400 dark:text-navy-500 text-xs font-semibold tracking-[0.2em] uppercase mb-2">{i.researchTitle}</p>
-                <p className="text-navy-700 dark:text-navy-200 text-xs leading-relaxed break-words">
+                <p className="text-navy-400 dark:text-navy-500 text-base font-semibold tracking-[0.2em] uppercase mb-2">{i.researchTitle}</p>
+                <p className="text-navy-700 dark:text-navy-200 text-base leading-relaxed break-words">
                   AI-Driven Optimization & Large-Scale System Design — Reinforcement Learning, Multi-Modal Data Fusion, Complex Decision Systems
                 </p>
               </div>
@@ -294,14 +294,14 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                     className="text-center p-3 sm:p-4 rounded-xl bg-navy-50/80 dark:bg-navy-800/30 border border-navy-200/40 dark:border-navy-700/20 overflow-hidden"
                   >
                     <AnimatedNumber target={parseInt(s.num)} suffix="+" />
-                    <p className="text-navy-500 dark:text-navy-400 text-xs mt-1 sm:mt-2 font-medium leading-tight">{s.label}</p>
+                    <p className="text-navy-500 dark:text-navy-400 text-base mt-1 sm:mt-2 font-medium leading-tight">{s.label}</p>
                   </motion.div>
                 ))}
               </div>
 
               {/* Media Highlights */}
               <div>
-                <p className="text-navy-400 dark:text-navy-500 text-xs font-semibold tracking-[0.2em] uppercase mb-4">
+                <p className="text-navy-400 dark:text-navy-500 text-base font-semibold tracking-[0.2em] uppercase mb-4">
                   {i.mediaTitle}
                 </p>
                 <div className="space-y-3">
@@ -319,10 +319,10 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                     >
                       <FileText className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <p className="text-navy-700 dark:text-navy-200 text-xs sm:text-sm font-medium truncate group-hover:text-gold-700 dark:group-hover:text-gold-400 transition-colors">
+                        <p className="text-navy-700 dark:text-navy-200 text-base sm:text-base font-medium truncate group-hover:text-gold-700 dark:group-hover:text-gold-400 transition-colors">
                           {lang === "zh" ? m.titleZh : lang === "en" ? m.titleEn : m.title}
                         </p>
-                        <p className="text-navy-400 dark:text-navy-500 text-xs">{lang === "zh" ? m.sourceZh : lang === "en" ? m.sourceEn : m.source}</p>
+                        <p className="text-navy-400 dark:text-navy-500 text-base">{lang === "zh" ? m.sourceZh : lang === "en" ? m.sourceEn : m.source}</p>
                       </div>
                       <ExternalLink className="w-3.5 h-3.5 text-navy-300 dark:text-navy-600 group-hover:text-gold-500 transition-colors shrink-0" />
                     </motion.a>
@@ -357,7 +357,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
               <h3 className="text-navy-900 dark:text-white font-bold text-base mb-3 font-serif leading-snug">
                 {d.title}
               </h3>
-              <p className="text-navy-500 dark:text-navy-300 text-sm leading-relaxed">
+              <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed">
                 {d.desc}
               </p>
             </motion.div>
@@ -375,7 +375,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
           <blockquote className="font-serif text-lg md:text-xl text-navy-600 dark:text-navy-300 italic leading-relaxed max-w-3xl mx-auto whitespace-pre-line">
             "{quote.text}"
           </blockquote>
-          <p className="text-navy-400 dark:text-navy-500 text-sm mt-4 font-medium">
+          <p className="text-navy-400 dark:text-navy-500 text-base mt-4 font-medium">
             {quote.author}
           </p>
         </motion.div>

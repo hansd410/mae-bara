@@ -1,30 +1,55 @@
 /*
- * Navigation — Light default + Dark toggle + Language switch
- * PNG 로고 (투명 배경 + 다크모드용 흰색), 다크모드 토글, 한/영 전환
+ * Navigation — Light default + Dark toggle + Language dropdown
+ * PNG 로고 (투명 배경 + 다크모드용 골드), 다크모드 토글, 언어 드롭다운
  */
-import { useState, useEffect } from "react";
-import { Menu, X, Moon, Sun, Globe } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, Moon, Sun, Globe, ChevronDown } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { t, type Lang } from "@/lib/i18n";
 
 const LOGO_LIGHT = "https://d2xsxph8kpxj0f.cloudfront.net/310519663325138416/6uQycx7vmjvWLhEUm478jc/logo_maebara_eng_transparent_517481aa.png";
-const LOGO_DARK = "https://d2xsxph8kpxj0f.cloudfront.net/310519663325138416/6uQycx7vmjvWLhEUm478jc/logo_maebara_eng_white_bb531472.png";
+const LOGO_DARK = "/logo_dark_gold.png";
+
+const LANG_OPTIONS: { label: string; href: string; lang: Lang }[] = [
+  { label: "KR", href: "/", lang: "ko" },
+  { label: "EN", href: "/en", lang: "en" },
+  { label: "CN", href: "/zh", lang: "zh" },
+];
 
 export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).nav;
   const [isOpen, setIsOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { theme, toggleTheme } = useTheme();
+  const langRef = useRef<HTMLDivElement>(null);
+  const mobileLangRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      const target = e.target as Node;
+      const outsideDesktop = langRef.current && !langRef.current.contains(target);
+      const outsideMobile = mobileLangRef.current && !mobileLangRef.current.contains(target);
+      if (outsideDesktop && outsideMobile) setLangOpen(false);
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const isOnDarkBg = theme === "dark";
+  const currentLang = LANG_OPTIONS.find((o) => o.lang === lang)!;
+
+  const langBtnClass = `flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
+    isOnDarkBg
+      ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
+      : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
+  }`;
 
   return (
     <nav
@@ -59,31 +84,42 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             </a>
           ))}
 
-          {/* Language switch */}
-          <a
-            href={i.langSwitchHref}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
-              isOnDarkBg
-                ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
-                : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
-            }`}
-          >
-            <Globe className="w-3.5 h-3.5" />
-            {i.langSwitch}
-          </a>
-          {i.langSwitch2 && i.langSwitchHref2 && (
-            <a
-              href={i.langSwitchHref2}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
-                isOnDarkBg
-                  ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
-                  : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
-              }`}
+          {/* Language dropdown */}
+          <div ref={langRef} className="relative">
+            <button
+              onClick={() => setLangOpen((v) => !v)}
+              className={langBtnClass}
+              aria-label="Select language"
             >
               <Globe className="w-3.5 h-3.5" />
-              {i.langSwitch2}
-            </a>
-          )}
+              {currentLang.label}
+              <ChevronDown className={`w-3 h-3 transition-transform ${langOpen ? "rotate-180" : ""}`} />
+            </button>
+            {langOpen && (
+              <div className={`absolute right-0 mt-1.5 w-20 rounded-lg border shadow-lg overflow-hidden ${
+                isOnDarkBg
+                  ? "bg-navy-900 border-navy-600"
+                  : "bg-white dark:bg-navy-900 border-navy-200 dark:border-navy-700"
+              }`}>
+                {LANG_OPTIONS.map((opt) => (
+                  <a
+                    key={opt.lang}
+                    href={opt.href}
+                    onClick={() => setLangOpen(false)}
+                    className={`block px-4 py-2 text-xs font-bold tracking-wider transition-colors ${
+                      opt.lang === lang
+                        ? "text-gold-500 bg-gold-50 dark:bg-gold-900/20"
+                        : isOnDarkBg
+                        ? "text-navy-200 hover:bg-navy-800 hover:text-gold-400"
+                        : "text-navy-500 dark:text-navy-300 hover:bg-navy-50 dark:hover:bg-navy-800 hover:text-gold-700 dark:hover:text-gold-400"
+                    }`}
+                  >
+                    {opt.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
 
           {/* Dark mode toggle */}
           <button
@@ -103,32 +139,47 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
           </button>
         </div>
 
-        {/* Mobile: lang + theme toggle + menu button */}
+        {/* Mobile: lang dropdown + theme toggle + menu button */}
         <div className="flex lg:hidden items-center gap-2">
-          <a
-            href={i.langSwitchHref}
-            className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
-              isOnDarkBg
-                ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
-                : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
-            }`}
-          >
-            <Globe className="w-3 h-3" />
-            {i.langSwitch}
-          </a>
-          {i.langSwitch2 && i.langSwitchHref2 && (
-            <a
-              href={i.langSwitchHref2}
+          <div ref={mobileLangRef} className="relative">
+            <button
+              onClick={() => setLangOpen((v) => !v)}
               className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
                 isOnDarkBg
                   ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
                   : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
               }`}
+              aria-label="Select language"
             >
               <Globe className="w-3 h-3" />
-              {i.langSwitch2}
-            </a>
-          )}
+              {currentLang.label}
+              <ChevronDown className={`w-3 h-3 transition-transform ${langOpen ? "rotate-180" : ""}`} />
+            </button>
+            {langOpen && (
+              <div className={`absolute right-0 mt-1.5 w-20 rounded-lg border shadow-lg overflow-hidden z-50 ${
+                isOnDarkBg
+                  ? "bg-navy-900 border-navy-600"
+                  : "bg-white dark:bg-navy-900 border-navy-200 dark:border-navy-700"
+              }`}>
+                {LANG_OPTIONS.map((opt) => (
+                  <a
+                    key={opt.lang}
+                    href={opt.href}
+                    onClick={() => setLangOpen(false)}
+                    className={`block px-4 py-2 text-xs font-bold tracking-wider transition-colors ${
+                      opt.lang === lang
+                        ? "text-gold-500 bg-gold-50 dark:bg-gold-900/20"
+                        : isOnDarkBg
+                        ? "text-navy-200 hover:bg-navy-800 hover:text-gold-400"
+                        : "text-navy-500 dark:text-navy-300 hover:bg-navy-50 dark:hover:bg-navy-800 hover:text-gold-700 dark:hover:text-gold-400"
+                    }`}
+                  >
+                    {opt.label}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
           <button
             onClick={toggleTheme}
             className={`p-2 rounded-lg border transition-colors ${

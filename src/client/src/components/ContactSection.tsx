@@ -28,7 +28,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -44,7 +44,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
           <div className="mt-10">
             <a
               href="mailto:info@maebara.org"
-              className="group inline-flex items-center gap-3 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-lg text-sm tracking-wide"
+              className="group inline-flex items-center gap-3 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-lg text-base tracking-wide"
             >
               <Mail className="w-5 h-5" />
               <span>{i.ctaBtn}</span>
@@ -52,7 +52,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
           </div>
 
           <div className="mt-8 pt-8 border-t border-navy-200 dark:border-navy-700/50 space-y-2">
-            <p className="text-navy-400 text-sm">
+            <p className="text-navy-400 text-base">
               {i.contactLabel}:{" "}
               <a
                 href="mailto:info@maebara.org"

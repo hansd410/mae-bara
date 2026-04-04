@@ -30,7 +30,7 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-xs font-semibold tracking-[0.25em] uppercase">
+          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -66,8 +66,8 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-navy-900 dark:text-white font-bold text-sm mb-1">{i.concept1Title} ({i.concept1Sub})</h4>
-                  <p className="text-navy-500 dark:text-navy-300 text-sm leading-relaxed">
+                  <h4 className="text-navy-900 dark:text-white font-bold text-base mb-1">{i.concept1Title} ({i.concept1Sub})</h4>
+                  <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed">
                     {i.concept1Desc}
                   </p>
                 </div>
@@ -79,8 +79,8 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
                   </svg>
                 </div>
                 <div>
-                  <h4 className="text-navy-900 dark:text-white font-bold text-sm mb-1">{i.concept2Title} ({i.concept2Sub})</h4>
-                  <p className="text-navy-500 dark:text-navy-300 text-sm leading-relaxed">
+                  <h4 className="text-navy-900 dark:text-white font-bold text-base mb-1">{i.concept2Title} ({i.concept2Sub})</h4>
+                  <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed">
                     {i.concept2Desc}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-navy-400 dark:text-navy-400 text-xs font-semibold tracking-[0.2em] uppercase mb-6">
+              <h3 className="text-navy-400 dark:text-navy-400 text-base font-semibold tracking-[0.2em] uppercase mb-6">
                 Why MaeBara
               </h3>
             </motion.div>
@@ -114,7 +114,7 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
                 >
                   <div className="flex items-start gap-5">
                     <div className="flex flex-col items-center gap-2 shrink-0">
-                      <span className="text-gold-500/60 text-xs font-bold tracking-wider">{s.num}</span>
+                      <span className="text-gold-500/60 text-base font-bold tracking-wider">{s.num}</span>
                       <div className="w-12 h-12 rounded-xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center group-hover:bg-gold-200 dark:group-hover:bg-gold-500/20 transition-colors">
                         <Icon className="w-6 h-6 text-gold-700 dark:text-gold-400" />
                       </div>
@@ -126,7 +126,7 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
                           {s.highlight}
                         </span>
                       </div>
-                      <p className="text-navy-500 dark:text-navy-300 text-sm leading-relaxed">{s.desc}</p>
+                      <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed">{s.desc}</p>
                     </div>
                   </div>
                 </motion.div>

@@ -1,7 +1,7 @@
 /*
  * MaeBara AX Standard — Home Page
  * Design: Sovereign Command (Light default + Dark toggle)
- * Section Order: Hero → About → Founder → Promise → Ecosystem → Product → Certification → Assessment → Contact
+ * Section Order: Hero → About → Product → Founder → Promise → Ecosystem → Certification → Assessment → Contact
  */
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
@@ -21,10 +21,10 @@ export default function Home() {
       <Navigation lang="ko" />
       <HeroSection lang="ko" />
       <AboutSection lang="ko" />
+      <ProductSection lang="ko" />
       <FounderSection lang="ko" />
       <PromiseSection lang="ko" />
       <EcosystemSection lang="ko" />
-      <ProductSection lang="ko" />
       <CertificationSection lang="ko" />
       <AssessmentSection lang="ko" />
       <ContactSection lang="ko" />
