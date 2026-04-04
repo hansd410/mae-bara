@@ -9,14 +9,14 @@ export type Lang = "ko" | "en" | "zh";
 const nav = {
   ko: {
     links: [
-      { href: "#about", label: "ABOUT" },
-      { href: "#product", label: "PRODUCT" },
-      { href: "#founder", label: "WHY US" },
-      { href: "#promise", label: "PROMISE" },
-      { href: "#ecosystem", label: "ECOSYSTEM" },
+      { href: "#about", label: "소개" },
+      { href: "#product", label: "제품" },
+      { href: "#founder", label: "왜 매바라인가" },
+      { href: "#promise", label: "약속" },
+      { href: "#ecosystem", label: "생태계" },
       { href: "#certification", label: "인증" },
       { href: "#assessment", label: "AX 진단" },
-      { href: "#contact", label: "CONTACT" },
+      { href: "#contact", label: "문의" },
     ],
     langSwitch: "EN",
     langSwitchHref: "/en",
