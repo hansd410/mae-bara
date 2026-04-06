@@ -77,7 +77,7 @@ const differentiators = {
       icon: Rocket,
       title: "빠른 반영과 높은 만족도",
       highlight: "1주 ~ 1달",
-      desc: "15일 만에 MVP 구현, 1주~1달 내 실질적 결과 전달. 고객 피드백을 즉시 반영하는 민첩한 실행력으로, 대기업급 품질을 스타트업 속도로 납품합니다.",
+      desc: "고객 피드백을 즉시 반영하는 민첩한 실행력으로, 대기업급 품질을 스타트업 속도로 납품합니다.",
     },
   ],
   en: [
@@ -109,7 +109,7 @@ const differentiators = {
       icon: Rocket,
       title: "Fast Delivery & High Satisfaction",
       highlight: "1 Week – 1 Month",
-      desc: "MVP in 15 days, tangible results in 1 week to 1 month. Agile execution that instantly reflects client feedback — enterprise quality at startup speed.",
+      desc: "Agile execution that instantly reflects client feedback — enterprise quality at startup speed.",
     },
   ],
   zh: [
@@ -141,7 +141,7 @@ const differentiators = {
       icon: Rocket,
       title: "快速交付与高满意度",
       highlight: "1周 ~ 1个月",
-      desc: "15天内实现MVP，1周至1个月内交付实质性成果。即时反映客户反馈的敏捷执行力，以初创企业的速度交付大企业级品质。",
+      desc: "即时反映客户反馈的敏捷执行力，以初创企业的速度交付大企业级品质。",
     },
   ],
 };
