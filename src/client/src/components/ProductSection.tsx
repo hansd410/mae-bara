@@ -20,8 +20,8 @@ import { t, type Lang } from "@/lib/i18n";
 
 /* ── Product → Labs/One page URL mapping ── */
 const PRODUCT_HREFS: Record<string, { ko: string; en: string }> = {
-  "Storyroll":    { ko: "https://autotubeai-hxyetbz3.manus.space/", en: "https://autotubeai-hxyetbz3.manus.space/" },
-  "ManySeller":   { ko: "https://prodpagegen-pxwjrc53.manus.space/", en: "https://prodpagegen-pxwjrc53.manus.space/" },
+  "Storyroll":    { ko: "https://storyroll.cloud", en: "https://storyroll.cloud" },
+  "ManySeller":   { ko: "https://manyseller.shop", en: "https://manyseller.shop" },
   "True Draft":   { ko: "https://truedraft.shop",    en: "https://truedraft.shop" },
   "True Predict": { ko: "/labs/truePredict/truePredict.html", en: "/labs/truePredict/truePredict_en.html" },
   "True Persona": { ko: "/labs/truePersona/truePersona.html", en: "/labs/truePersona/truePersona_en.html" },
