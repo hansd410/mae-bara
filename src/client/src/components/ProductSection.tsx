@@ -21,7 +21,7 @@ import { t, type Lang } from "@/lib/i18n";
 /* ── Product → Labs/One page URL mapping ── */
 const PRODUCT_HREFS: Record<string, { ko: string; en: string }> = {
   "Storyroll":    { ko: "https://autotubeai-hxyetbz3.manus.space/", en: "https://autotubeai-hxyetbz3.manus.space/" },
-  "Selldi":       { ko: "https://prodpagegen-pxwjrc53.manus.space/", en: "https://prodpagegen-pxwjrc53.manus.space/" },
+  "ManySeller":   { ko: "https://prodpagegen-pxwjrc53.manus.space/", en: "https://prodpagegen-pxwjrc53.manus.space/" },
   "True Draft":   { ko: "https://truedraft.shop",    en: "https://truedraft.shop" },
   "True Predict": { ko: "/labs/truePredict/truePredict.html", en: "/labs/truePredict/truePredict_en.html" },
   "True Persona": { ko: "/labs/truePersona/truePersona.html", en: "/labs/truePersona/truePersona_en.html" },
@@ -36,7 +36,7 @@ const PRODUCT_HREFS: Record<string, { ko: string; en: string }> = {
 const products = {
   ko: [
     { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "텍스트를 입력하면 AI가 영상을 만듭니다. 5단계 자동 파이프라인으로 영상 클립·나레이션·더빙까지 원클릭 완성.", category: "영상 생성", tag: "New" },
-    { icon: Store, name: "Selldi", subtitle: "AI Product Page Builder", desc: "상품명 하나로 팔리는 상세페이지를 30초 만에 완성. AI 카피라이팅·디자인·상품 이미지까지 자동 생성.", category: "이커머스", tag: "New" },
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "상품명 하나로 팔리는 상세페이지를 30초 만에 완성. AI 카피라이팅·디자인·상품 이미지까지 자동 생성.", category: "이커머스", tag: "New" },
     { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "Vision AI 기반 문서 검증 시스템. 표, 도면, 수치 데이터의 완벽한 정합성 분석으로 모든 산업의 규격 문서를 자동 감사합니다.", category: "문서 자동화" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "글로벌 트렌드와 공급망 변수를 결합한 AI 예측 솔루션. 제조, 유통, 금융 분야의 수요 예측과 리스크 관리를 지원합니다.", category: "예측 분석" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "고객 행동과 취향을 실시간 분석하는 초개인화 마케팅 엔진. 이커머스, 미디어, 교육, 금융 분야에서 전환율을 극대화합니다.", category: "마케팅" },
@@ -48,7 +48,7 @@ const products = {
   ],
   en: [
     { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "Type text, and AI creates your video. A 5-step pipeline auto-generates clips, narration, and dubbing in one click.", category: "Video Creation", tag: "New" },
-    { icon: Store, name: "Selldi", subtitle: "AI Product Page Builder", desc: "Build a high-converting product detail page in 30 seconds. AI auto-generates copywriting, design, and product images.", category: "E-commerce", tag: "New" },
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "Build a high-converting product detail page in 30 seconds. AI auto-generates copywriting, design, and product images.", category: "E-commerce", tag: "New" },
     { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "A Vision AI-powered document verification system. Automatically audits regulatory documents across all industries with perfect consistency analysis of tables, drawings, and numerical data.", category: "Document Automation" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "An AI forecasting solution combining global trends with supply chain variables. Supports demand forecasting and risk management in manufacturing, distribution, and finance.", category: "Predictive Analytics" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "A hyper-personalization marketing engine that analyzes customer behavior and preferences in real-time. Maximizes conversion rates in e-commerce, media, education, and finance.", category: "Marketing" },
@@ -60,7 +60,7 @@ const products = {
   ],
   zh: [
     { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "输入文字，AI自动生成视频。五步流水线一键完成视频片段、旁白与配音。", category: "视频生成", tag: "New" },
-    { icon: Store, name: "Selldi", subtitle: "AI Product Page Builder", desc: "只需输入商品名称，30秒完成高转化率商品详情页。AI自动生成文案、设计与商品图片。", category: "电商", tag: "New" },
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "只需输入商品名称，30秒完成高转化率商品详情页。AI自动生成文案、设计与商品图片。", category: "电商", tag: "New" },
     { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "基于Vision AI的文件验证系统。通过对表格、图纸、数值数据的完美一致性分析，自动审计各行业的规格文件。", category: "文件自动化" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "结合全球趋势与供应链变量的AI预测解决方案。支持制造、分销、金融领域的需求预测和风险管理。", category: "预测分析" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "实时分析客户行为和偏好的超个性化营销引擎。在电商、媒体、教育、金融领域最大化转化率。", category: "营销" },
