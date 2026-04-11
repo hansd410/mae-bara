@@ -68,14 +68,26 @@ const products = {
     { icon: Clapperboard, name: "True Forge", subtitle: "AI Content Generation Pipeline", desc: "自动生成游戏资产、3D模型、多语言剧本的AI流水线。将制作成本降至1/10，同时最大化质量。", category: "内容生成" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "超越报告、执行实务的AI自主业务代理。直接与企业系统通信，自动化人类工作的80%。", category: "业务自动化" },
     { icon: ShoppingBag, name: "Pure LLM", subtitle: "The Purest AI for Shopify", desc: "将GPT、Claude等最新LLM直接集成到Shopify店铺的纯粹AI集成解决方案。无需代码即可添加强大智能。", category: "电商", tag: "App" },
-    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "港口智能操作系统。通过处方型AI（Prescriptive AI）提供超越分析、确定利益的Decision-as-a-Service。", category: "物流·港口", tag: "Enterprise" },
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "港口智能操作系统。通过处方型·AI（Prescriptive AI）提供超越分析、确定利益的Decision-as-a-Service。", category: "物流·港口", tag: "Enterprise" },
+  ],
+  jp: [
+    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "テキストを入力するだけでAIが動画を作成。5ステップ自動パイプラインで動画クリップ・ナレーション・吹替えまでワンクリック完成。", category: "動画生成", tag: "New" },
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "商品名ひとつで売れる商品詳細ページを、30秒で完成。AIコピーライティング・デザイン・商品画像まで自動生成。", category: "イーコマース", tag: "New" },
+    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "Vision AIベースの文書検証システム。表・図面・数値データの完全整合性分析で、あらゆる産業の規格文書を自動監査します。", category: "文書自動化" },
+    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "グローバルトレンドとサプライチェーン変数を組み合わせたAI予測ソリューション。製造・流通・金融分野の需要予測とリスク管理を支援。", category: "予測分析" },
+    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "顧客の行動と喗帽をリアルタイム分析する超個性化マーケティングエンジン。イーコマース・メディア・教育・金融分野でコンバージョン率を最大化。", category: "マーケティング" },
+    { icon: Shield, name: "True Guard", subtitle: "AI Digital Safety & Security", desc: "隙間詐欺・スミッシング・ディープフェイク詐欺をリアルタイムで検知するAIセキュリティソリューション。銀行・通信・政府・企業向けデジタル安全網。", category: "セキュリティ" },
+    { icon: Clapperboard, name: "True Forge", subtitle: "AI Content Generation Pipeline", desc: "ゲームアセット・3Dモデル・多言語シナリオを自動生成するAIパイプライン。制作コストを1/10に削減し、品質を最大化。", category: "コンテンツ生成" },
+    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "報告を超えて実務を遅行するAI自律業務エージェント。企業システムと直接通信し、人間業務の80%を自動化。", category: "業務自動化" },
+    { icon: ShoppingBag, name: "Pure LLM", subtitle: "The Purest AI for Shopify", desc: "ShopifyストアにGPT、Claudeなど最新LLMを直接連携する純粋AI統合ソリューション。コード不要で強力な知性を追加。", category: "コマース", tag: "App" },
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "港湾インテリジェントOS。処方型 AI（Prescriptive AI）により分析を超えて利益を確定するDecision-as-a-Serviceを提供。", category: "物流・港湾", tag: "Enterprise" },
   ],
 };
 
 export default function ProductSection({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).product;
   const items = products[lang];
-  const hrefLang = lang === "zh" ? "en" : lang;
+  const hrefLang = lang === "zh" || lang === "jp" ? "en" : lang;
 
   return (
     <section id="product" className="relative py-24 md:py-32 overflow-hidden">

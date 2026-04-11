@@ -144,6 +144,38 @@ const differentiators = {
       desc: "即时反映客户反馈的敏捷执行力，以初创企业的速度交付大企业级品质。",
     },
   ],
+  jp: [
+    {
+      icon: Trophy,
+      title: "世界最高水準の最新技術習熟度",
+      highlight: "Global 1st",
+      desc: "OpenAI GPT-5ハッカソンで世界93チームを抑えグローバル1位を達成。3D空間マルチモーダルLLMグローバルリーダーボード1位。最新AI技術を最速で実践適用する能力。",
+    },
+    {
+      icon: Briefcase,
+      title: "AI実務経験",
+      highlight: "多数受賞",
+      desc: "Naver、TmaxAI、VRcrew、Waddleなど国内主要AI企業でResearch DirectorおよびML Engineerとして実務経験。KMETA AIチャットボット最優秀賞、Google Kaggle優秀成果など、実務で検証された実力。",
+    },
+    {
+      icon: GraduationCap,
+      title: "AI研究経験",
+      highlight: "論文20+ / 特許26+",
+      desc: "POSTECH博士課程（NLP & Optimization）。SIGDIAL、NAACL、ASRUなど国際学会論文20本以上。海外3件を含む特許26件以上。国家R&Dプロジェクト13件以上参加。",
+    },
+    {
+      icon: Lightbulb,
+      title: "要件の的確な把握と高い企画力",
+      highlight: "精密設計",
+      desc: "顧客が言葉にしていないことまで読み取ります。技術的可能性とビジネスインパクトを同時に考慮する企画力で、単なる開発ではなく戦略的AX設計を提供します。",
+    },
+    {
+      icon: Rocket,
+      title: "迅速な反映と高い満足度",
+      highlight: "1週間〜1ヶ月",
+      desc: "顧客フィードバックを即座に反映するアジャイルな実行力で、大企業レベルの品質をスタートアップのスピードで納品します。",
+    },
+  ],
 };
 
 const mediaHighlights = [
@@ -151,27 +183,33 @@ const mediaHighlights = [
     title: "박사 자퇴 후 오픈AI 해커톤 우승…\"둥지 떠나서야 비로소 비행 배웠다\"",
     titleEn: "After leaving PhD, won OpenAI Hackathon — \"Only after leaving the nest did I learn to fly\"",
     titleZh: "博士退学后赢得OpenAI黑客马拉松——\"离巢之后，才真正学会飞翔\"",
+    titleJp: "博士耀学後OpenAIハッカソン優勝…「巣立ちて初めて飛べることを学んだ」",
     source: "한국경제",
     sourceEn: "Hankyung",
     sourceZh: "韩国经济",
+    sourceJp: "韓国経済",
     url: "https://www.hankyung.com/article/2025092176781",
   },
   {
     title: "GPT-5 해커톤 대회서 전 세계 93팀 제치고 1등 '韓 스타트업'",
     titleEn: "Korean startup beats 93 teams worldwide for 1st place at GPT-5 Hackathon",
     titleZh: "韩国初创企业在GPT-5黑客马拉松中击败全球93支队伍夺冠",
+    titleJp: "GPT-5ハッカソンで世界93チームを抑えで1位の「韓国スタートアップ」",
     source: "매일경제",
     sourceEn: "Maeil Business",
     sourceZh: "每日经济",
+    sourceJp: "毎日経済",
     url: "https://www.mk.co.kr/news/business/11393991",
   },
   {
     title: "800여명 경쟁자 제치고 '오픈AI 대회' 1위 우뚝",
     titleEn: "Beats 800+ competitors to claim 1st place at OpenAI competition",
-    titleZh: "击败800余名竞争者，荣获OpenAI大赛第一名",
+    titleZh: "击赕80余名竞争者，荣获OpenAI大赛第一名",
+    titleJp: "800名以上の競争相手を抑えて「OpenAI大会」で全体　第1位",
     source: "헬로디디",
     sourceEn: "HelloDD",
     sourceZh: "科技日报",
+    sourceJp: "HelloDD",
     url: "https://www.hellodd.com/news/articleView.html?idxno=108914",
   },
 ];
@@ -183,11 +221,15 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
     ? { text: "Technology isn't about proving — it's about showing results.\nHandaro AI proves your AX with numbers.", author: "— Sangdo Han, CEO & Founder" }
     : lang === "zh"
     ? { text: "技术不是用来证明的，而是用结果来展示的。\nHandaro AI用数字证明您的AX价值。", author: "— 韩相度，CEO & Founder" }
+    : lang === "jp"
+    ? { text: "技術は証明するものではなく、結果で示すものです。\nHandaro AIは貴社のAXを数字で証明します。", author: "— ハン・サンド，CEO & Founder" }
     : { text: "기술은 증명하는 것이 아니라 결과로 보여주는 것입니다.\n한다로AI는 귀사의 AX를 숫자로 증명합니다.", author: "— 한상도, CEO & Founder" };
   const subtitle = lang === "en"
     ? "Led directly by CEO Sangdo Han. The only AX partner combining world-class technology, real-world experience, and deep research capabilities."
     : lang === "zh"
     ? "由CEO韩相度亲自带领的团队。将世界顶级技术实力、实战经验与研究能力融为一体的唯一AX合作伙伴。"
+    : lang === "jp"
+    ? "CEO ハン・サンドが直接率いるチーム。世界最高水準の技術力・実務経験・研究能力を兼ね備えた唯一のAXパートナーです。"
     : "CEO 한상도가 직접 이끄는 팀. 세계 최고 수준의 기술력과 실전 경험, 그리고 연구 역량이 하나로 결합된 유일한 AX 파트너입니다.";
 
   return (
@@ -320,9 +362,9 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                       <FileText className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0" />
                       <div className="flex-1 min-w-0">
                         <p className="text-navy-700 dark:text-navy-200 text-base sm:text-base font-medium truncate group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
-                          {lang === "zh" ? m.titleZh : lang === "en" ? m.titleEn : m.title}
+                          {lang === "zh" ? m.titleZh : lang === "en" ? m.titleEn : lang === "jp" ? m.titleJp : m.title}
                         </p>
-                        <p className="text-navy-400 dark:text-navy-500 text-base">{lang === "zh" ? m.sourceZh : lang === "en" ? m.sourceEn : m.source}</p>
+                        <p className="text-navy-400 dark:text-navy-500 text-base">{lang === "zh" ? m.sourceZh : lang === "en" ? m.sourceEn : lang === "jp" ? m.sourceJp : m.source}</p>
                       </div>
                       <ExternalLink className="w-3.5 h-3.5 text-navy-300 dark:text-navy-600 group-hover:text-blue-500 transition-colors shrink-0" />
                     </motion.a>
