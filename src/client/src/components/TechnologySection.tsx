@@ -1,6 +1,6 @@
 /*
  * Technology Section (Arctic Proof) — Light default + Dark mode
- * Handalo AI One의 기술 증명 — 북극항로
+ * Handaro AI One의 기술 증명 — 북극항로
  */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";

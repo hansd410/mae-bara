@@ -97,7 +97,7 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
               transition={{ duration: 0.5 }}
             >
               <h3 className="text-navy-400 dark:text-navy-400 text-base font-semibold tracking-[0.2em] uppercase mb-6">
-                Why Handalo AI
+                Why Handaro AI
               </h3>
             </motion.div>
 

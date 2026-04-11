@@ -1,5 +1,5 @@
 /*
- * Handalo AI AX Standard — English Home Page (/en)
+ * Handaro AI AX Standard — English Home Page (/en)
  * Same section order as Korean, with lang="en" prop passed to all components
  */
 import Navigation from "@/components/Navigation";

@@ -28,6 +28,7 @@ echo "▶ 기존 assets 정리..."
 rm -f "$ASSETS_DIR"/index-*.js "$ASSETS_DIR"/index-*.css
 
 echo "▶ 새 빌드 파일 복사..."
+cp "$DIST_DIR"/*.svg "$REPO_ROOT"/ 2>/dev/null || true
 cp "$DIST_DIR"/assets/index-*.js "$ASSETS_DIR"/
 cp "$DIST_DIR"/assets/index-*.css "$ASSETS_DIR"/
 

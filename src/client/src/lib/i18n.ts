@@ -82,7 +82,7 @@ const hero = {
     sub1: "Beyond analytics — we deliver",
     subBold1: "confirmed profit",
     sub1end: " through Prescriptive AI.",
-    sub2: "Handalo AI builds an Instructional OS that",
+    sub2: "Handaro AI builds an Instructional OS that",
     sub3: "deploys",
     subBold2: "AI that commands your operations",
     sub3end: " directly on the ground.",
@@ -97,7 +97,7 @@ const hero = {
     sub1: "超越分析——通过处方型AI",
     subBold1: "确保利润",
     sub1end: "。",
-    sub2: "Handalo AI构建指令型操作系统(Instructional OS)，",
+    sub2: "Handaro AI构建指令型操作系统(Instructional OS)，",
     sub3: "在您的业务现场",
     subBold2: "直接发出AI指令",
     sub3end: "。",
@@ -109,7 +109,7 @@ const hero = {
 /* ── About ── */
 const about = {
   ko: {
-    eyebrow: "About Handalo AI",
+    eyebrow: "About Handaro AI",
     headline: "AI를 넘어,",
     headlineAccent: "산업의 주권",
     headlineEnd: "을 설계합니다",
@@ -143,11 +143,11 @@ const about = {
     ],
   },
   en: {
-    eyebrow: "About Handalo AI",
+    eyebrow: "About Handaro AI",
     headline: "Beyond AI,",
     headlineAccent: "Industrial Sovereignty",
     headlineEnd: " by Design",
-    p1: "Handalo AI fundamentally redesigns enterprise decision-making through Prescriptive AI. Rather than simple data analysis, we build an Instructional OS where AI directly issues optimal commands to the field.",
+    p1: "Handaro AI fundamentally redesigns enterprise decision-making through Prescriptive AI. Rather than simple data analysis, we build an Instructional OS where AI directly issues optimal commands to the field.",
     p2: "Backed by our 1st place finish at the OpenAI Global Hackathon, we help enterprises reclaim industrial sovereignty through AI — not become dependent on it.",
     concept1Title: "Prescriptive AI",
     concept1Sub: "Prescriptive AI",
@@ -177,11 +177,11 @@ const about = {
     ],
   },
   zh: {
-    eyebrow: "About Handalo AI",
+    eyebrow: "About Handaro AI",
     headline: "超越 AI，",
     headlineAccent: "设计产业主权",
     headlineEnd: "。",
-    p1: "Handalo AI通过处方型AI(Prescriptive AI)从根本上重新设计企业决策架构。我们构建的不是简单的数据分析，而是让AI直接向现场发出最优指令的智能执行指挥体系(Instructional OS)。",
+    p1: "Handaro AI通过处方型AI(Prescriptive AI)从根本上重新设计企业决策架构。我们构建的不是简单的数据分析，而是让AI直接向现场发出最优指令的智能执行指挥体系(Instructional OS)。",
     p2: "凭借 OpenAI 全球黑客马拉松冠军的技术实力，我们帮助企业不依赖AI，而是通过AI重新掌握产业主权。",
     concept1Title: "处方型AI",
     concept1Sub: "Prescriptive AI",
@@ -242,7 +242,7 @@ const founder = {
   en: {
     eyebrow: "Why Us",
     headline: "Why",
-    headlineAccent: "Handalo AI",
+    headlineAccent: "Handaro AI",
     headlineEnd: "?",
     subtitle: "AX strategy designed directly by the OpenAI Global Hackathon 1st place winner",
     name: "Sangdo Han",
@@ -267,7 +267,7 @@ const founder = {
   zh: {
     eyebrow: "Why Us",
     headline: "为何选择",
-    headlineAccent: "Handalo AI",
+    headlineAccent: "Handaro AI",
     headlineEnd: "？",
     subtitle: "OpenAI全球黑客马拉松冠军亲自设计的AX战略",
     name: "韩相度",
@@ -319,7 +319,7 @@ const promise = {
   en: {
     eyebrow: "Our Promise",
     headline: "Three Promises",
-    headlineAccent: "from Handalo AI",
+    headlineAccent: "from Handaro AI",
     sub: "We prove with results, not words",
     items: [
       {
@@ -335,13 +335,13 @@ const promise = {
       {
         num: "03",
         title: "ROI Guarantee",
-        desc: "No results means no value. Handalo AI proves its trust through tangible outcomes.",
+        desc: "No results means no value. Handaro AI proves its trust through tangible outcomes.",
       },
     ],
   },
   zh: {
     eyebrow: "Our Promise",
-    headline: "Handalo AI的",
+    headline: "Handaro AI的",
     headlineAccent: "三项承诺",
     sub: "我们用结果证明，而非语言",
     items: [
@@ -358,7 +358,7 @@ const promise = {
       {
         num: "03",
         title: "ROI Guarantee",
-        desc: "没有成果，就没有价值。Handalo AI用切实的结果来证明信任。",
+        desc: "没有成果，就没有价值。Handaro AI用切实的结果来证明信任。",
       },
     ],
   },
@@ -391,7 +391,7 @@ const ecosystem = {
     brands: [
       {
         id: "ax",
-        name: "Handalo AI AX",
+        name: "Handaro AI AX",
         tagline: "전략 자문 및 공정 재설계",
         target: "CXO(CEO, CTO, CIO), 전략기획실",
         value: "Diagnosis over Service — 서비스보다 진단이 우선한다",
@@ -399,7 +399,7 @@ const ecosystem = {
       },
       {
         id: "solutions",
-        name: "Handalo AI Solutions",
+        name: "Handaro AI Solutions",
         tagline: "기업용 맞춤 AI 서비스",
         target: "현업 부서(영업, 마케팅, 인사 등), 중견기업",
         value: "ROI Driven — 확실한 수익률 기반의 도구",
@@ -407,7 +407,7 @@ const ecosystem = {
       },
       {
         id: "academy",
-        name: "Handalo AI Academy",
+        name: "Handaro AI Academy",
         tagline: "AI 교육 및 인재 육성",
         target: "기업 임원진, 인사팀(HRD), AI 핵심 실무 인력",
         value: "Human-AI Collaboration — 지능을 다루는 인재의 변화",
@@ -441,9 +441,9 @@ const ecosystem = {
       },
     ],
     flowSteps: [
-      { label: "AX로 길을 찾고", brand: "Handalo AI AX" },
-      { label: "Solutions로 도구를 갖추며", brand: "Handalo AI Solutions" },
-      { label: "Academy로 사람을 키웁니다", brand: "Handalo AI Academy" },
+      { label: "AX로 길을 찾고", brand: "Handaro AI AX" },
+      { label: "Solutions로 도구를 갖추며", brand: "Handaro AI Solutions" },
+      { label: "Academy로 사람을 키웁니다", brand: "Handaro AI Academy" },
     ],
     consultMail: {
       greeting: "안녕하세요, 한다로AI 팀.\n\n",
@@ -457,7 +457,7 @@ const ecosystem = {
     eyebrow: "Ecosystem",
     headline: "Integrated AX",
     headlineAccent: "Ecosystem",
-    sub: "Handalo AI's complete AX ecosystem: Strategy → Solutions → Education",
+    sub: "Handaro AI's complete AX ecosystem: Strategy → Solutions → Education",
     tierNote: "— Unified tier system across all services",
     tierServiceTitle: "Services by Tier",
     bestValue: "Best Value",
@@ -478,7 +478,7 @@ const ecosystem = {
     brands: [
       {
         id: "ax",
-        name: "Handalo AI AX",
+        name: "Handaro AI AX",
         tagline: "Strategic Advisory & Process Redesign",
         target: "CXO (CEO, CTO, CIO), Strategy Division",
         value: "Diagnosis over Service — Diagnosis always comes first",
@@ -486,7 +486,7 @@ const ecosystem = {
       },
       {
         id: "solutions",
-        name: "Handalo AI Solutions",
+        name: "Handaro AI Solutions",
         tagline: "Custom Enterprise AI Services",
         target: "Business Units (Sales, Marketing, HR, etc.), Mid-size Enterprises",
         value: "ROI Driven — Tools built on proven returns",
@@ -494,7 +494,7 @@ const ecosystem = {
       },
       {
         id: "academy",
-        name: "Handalo AI Academy",
+        name: "Handaro AI Academy",
         tagline: "AI Education & Talent Development",
         target: "Executives, HR (HRD), Core AI Practitioners",
         value: "Human-AI Collaboration — Transforming talent to wield intelligence",
@@ -528,12 +528,12 @@ const ecosystem = {
       },
     ],
     flowSteps: [
-      { label: "Find the path with AX", brand: "Handalo AI AX" },
-      { label: "Equip with Solutions", brand: "Handalo AI Solutions" },
-      { label: "Grow talent with Academy", brand: "Handalo AI Academy" },
+      { label: "Find the path with AX", brand: "Handaro AI AX" },
+      { label: "Equip with Solutions", brand: "Handaro AI Solutions" },
+      { label: "Grow talent with Academy", brand: "Handaro AI Academy" },
     ],
     consultMail: {
-      greeting: "Hello, Handalo AI Team.\n\n",
+      greeting: "Hello, Handaro AI Team.\n\n",
       interest: "Service of Interest: ",
       detail: "Details: ",
       request: "\nWe would like to request a consultation.\n\n",
@@ -544,7 +544,7 @@ const ecosystem = {
     eyebrow: "Ecosystem",
     headline: "整合AX",
     headlineAccent: "生态系统",
-    sub: "Handalo AI完整的AX生态系统：战略 → 解决方案 → 教育",
+    sub: "Handaro AI完整的AX生态系统：战略 → 解决方案 → 教育",
     tierNote: "——所有服务统一等级体系",
     tierServiceTitle: "按等级划分的服务",
     bestValue: "Best Value",
@@ -565,7 +565,7 @@ const ecosystem = {
     brands: [
       {
         id: "ax",
-        name: "Handalo AI AX",
+        name: "Handaro AI AX",
         tagline: "战略和谘及流程再设计",
         target: "CXO（CEO, CTO, CIO），战略规划部",
         value: "Diagnosis over Service — 诊断始终优先",
@@ -573,7 +573,7 @@ const ecosystem = {
       },
       {
         id: "solutions",
-        name: "Handalo AI Solutions",
+        name: "Handaro AI Solutions",
         tagline: "企业定制AI服务",
         target: "业务部门（销售、营销、人事等），中型企业",
         value: "ROI Driven — 基于确切回报率的工具",
@@ -581,7 +581,7 @@ const ecosystem = {
       },
       {
         id: "academy",
-        name: "Handalo AI Academy",
+        name: "Handaro AI Academy",
         tagline: "AI教育及人才培养",
         target: "企业高管、人事部(HRD)、AI核心实务人员",
         value: "Human-AI Collaboration — 培养掌握智能的人才",
@@ -615,12 +615,12 @@ const ecosystem = {
       },
     ],
     flowSteps: [
-      { label: "用AX找到方向", brand: "Handalo AI AX" },
-      { label: "用Solutions备备工具", brand: "Handalo AI Solutions" },
-      { label: "用Academy培养人才", brand: "Handalo AI Academy" },
+      { label: "用AX找到方向", brand: "Handaro AI AX" },
+      { label: "用Solutions备备工具", brand: "Handaro AI Solutions" },
+      { label: "用Academy培养人才", brand: "Handaro AI Academy" },
     ],
     consultMail: {
-      greeting: "您好，Handalo AI团队。\n\n",
+      greeting: "您好，Handaro AI团队。\n\n",
       interest: "感兴趣的服务：",
       detail: "详细信息：",
       request: "\n我们希望申请和谈。\n\n",
@@ -653,7 +653,7 @@ const product = {
     consultBtn: "Product Inquiry",
     consultSubject: "[Product Inquiry]",
     consultBody: "Product of Interest: ",
-    consultGreeting: "Hello, Handalo AI Team.\n\n",
+    consultGreeting: "Hello, Handaro AI Team.\n\n",
     consultRequest: "\nWe would like to inquire about this product.\n\n",
     consultFooter: "---\nCompany: \nContact Person: \nPhone/Email: \n",
   },
@@ -666,7 +666,7 @@ const product = {
     consultBtn: "产品和谈",
     consultSubject: "[产品和谈]",
     consultBody: "感兴趣的产品：",
-    consultGreeting: "您好，Handalo AI团队。\n\n",
+    consultGreeting: "您好，Handaro AI团队。\n\n",
     consultRequest: "\n我们希望就该产品申请和谈。\n\n",
     consultFooter: "---\n公司名称： \n联系人： \n联系方式： \n",
   },
@@ -708,9 +708,9 @@ const certification = {
     eyebrow: "Certification",
     headline: "AI-Native",
     headlineAccent: "Certification Program",
-    intro: "Handalo AI objectively evaluates your enterprise's AI transformation level and grants certifications aligned with global standards.",
+    intro: "Handaro AI objectively evaluates your enterprise's AI transformation level and grants certifications aligned with global standards.",
     auditTitle: "Certification Audit Process",
-    auditDesc: "Handalo AI's certification is not a simple checklist. We comprehensively audit actual AI utilization outcomes, data governance, and organizational capabilities to determine your true AI-Native level.",
+    auditDesc: "Handaro AI's certification is not a simple checklist. We comprehensively audit actual AI utilization outcomes, data governance, and organizational capabilities to determine your true AI-Native level.",
     ctaBtn: "Check Your AX Level",
     ctaNote: "Take the free self-assessment to check your current level",
     levels: [
@@ -738,9 +738,9 @@ const certification = {
     eyebrow: "Certification",
     headline: "AI-Native",
     headlineAccent: "认证项目",
-    intro: "Handalo AI客观评估企业AI转型水平，并授予符合全球标准的认证。",
+    intro: "Handaro AI客观评估企业AI转型水平，并授予符合全球标准的认证。",
     auditTitle: "认证审查流程",
-    auditDesc: "Handalo AI的认证不是简单的清单检查。我们综合审查实际AI利用成果、数据治理和组织能力，判定企业的真实AI-Native水平。",
+    auditDesc: "Handaro AI的认证不是简单的清单检查。我们综合审查实际AI利用成果、数据治理和组织能力，判定企业的真实AI-Native水平。",
     ctaBtn: "确认企业AX等级",
     ctaNote: "通过免费自我评估确认当前水平",
     levels: [
@@ -1016,7 +1016,7 @@ const assessment = {
     grades: [
       {
         rank: 1, code: "Pioneer", subtitle: "AI-Native Level",
-        desc: "You're already near AI-Native level. Partner with Handalo AI to redefine industry standards and accelerate global expansion.",
+        desc: "You're already near AI-Native level. Partner with Handaro AI to redefine industry standards and accelerate global expansion.",
         bundleCopy: "For those who want to dominate their industry",
         ax: "Global-standard enterprise AI architecture design + Group/subsidiary integrated master plan + AI investment portfolio optimization",
         solutions: "Enterprise-wide intelligent operations engine — connecting all department data in real-time with AI autonomously making optimal decisions",
@@ -1049,7 +1049,7 @@ const assessment = {
     ],
     bundleMailSubject: "[AX Bundle Consultation Request]",
     bundleMailBody: {
-      greeting: "Hello, Handalo AI Team.\n\n",
+      greeting: "Hello, Handaro AI Team.\n\n",
       result: "AX Maturity Assessment Result: ",
       score: "Total Score: ",
       unknown: "'Not sure' responses: ",
@@ -1060,7 +1060,7 @@ const assessment = {
     },
     detailMailSubject: "[Detailed Quote Request]",
     detailMailBody: {
-      greeting: "Hello, Handalo AI Team.\n\n",
+      greeting: "Hello, Handaro AI Team.\n\n",
       result: "AX Maturity Assessment Result: ",
       score: "Total Score: ",
       unknown: "'Not sure' responses: ",
@@ -1167,7 +1167,7 @@ const assessment = {
     grades: [
       {
         rank: 1, code: "Pioneer", subtitle: "AI-Native水平",
-        desc: "您已接近AI-Native水平。与Handalo AI合作，重新定义行业标准，加速全球扩展。",
+        desc: "您已接近AI-Native水平。与Handaro AI合作，重新定义行业标准，加速全球扩展。",
         bundleCopy: "希望成为行业压倒性第一",
         ax: "全球标准全企业AI架构设计 + 集团/子公司整合主计划 + AI投资组合优化",
         solutions: "全企业整合智能运营引擎——实时连接所有部门数据，AI自主做出最优决策",
@@ -1200,7 +1200,7 @@ const assessment = {
     ],
     bundleMailSubject: "[AX捆绑和谈申请]",
     bundleMailBody: {
-      greeting: "您好，Handalo AI团队。\n\n",
+      greeting: "您好，Handaro AI团队。\n\n",
       result: "AX成熟度评估结果：",
       score: "总分：",
       unknown: "'不确定'回答：",
@@ -1211,7 +1211,7 @@ const assessment = {
     },
     detailMailSubject: "[详细报价申请]",
     detailMailBody: {
-      greeting: "您好，Handalo AI团队。\n\n",
+      greeting: "您好，Handaro AI团队。\n\n",
       result: "AX成熟度评估结果：",
       score: "总分：",
       unknown: "'不确定'回答：",
@@ -1237,7 +1237,7 @@ const contact = {
     eyebrow: "Contact",
     headline: "Start Your",
     headlineAccent: "AX Transformation Now",
-    desc: "We start with a free AX diagnostic. Handalo AI proves its trust through tangible outcomes.",
+    desc: "We start with a free AX diagnostic. Handaro AI proves its trust through tangible outcomes.",
     ctaBtn: "Request AX Diagnostic",
     contactLabel: "Contact",
   },
@@ -1245,7 +1245,7 @@ const contact = {
     eyebrow: "Contact",
     headline: "开始您的",
     headlineAccent: "AX转型之旅",
-    desc: "从免费AX评估开始。Handalo AI用切实的结果来证明信任。",
+    desc: "从免费AX评估开始。Handaro AI用切实的结果来证明信任。",
     ctaBtn: "申请AX评估",
     contactLabel: "联系我们",
   },
@@ -1255,15 +1255,15 @@ const contact = {
 const footer = {
   ko: {
     tagline: "산업의 의사결정 주권을 바꾸는 AX Standard",
-    copyright: `© ${new Date().getFullYear()} Handalo AI. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Handaro AI. All rights reserved.`,
   },
   en: {
     tagline: "The AX Standard Redefining Industrial Decision Sovereignty",
-    copyright: `© ${new Date().getFullYear()} Handalo AI. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Handaro AI. All rights reserved.`,
   },
   zh: {
     tagline: "重新定义产业决策主权的AX Standard",
-    copyright: `© ${new Date().getFullYear()} Handalo AI. All rights reserved.`,
+    copyright: `© ${new Date().getFullYear()} Handaro AI. All rights reserved.`,
   },
 };
 

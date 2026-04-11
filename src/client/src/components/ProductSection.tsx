@@ -29,7 +29,7 @@ const PRODUCT_HREFS: Record<string, { ko: string; en: string }> = {
   "True Forge":   { ko: "/labs/trueForge/trueForge.html",    en: "/labs/trueForge/trueForge_en.html" },
   "True Agent":   { ko: "/labs/trueAgent/trueAgent.html",    en: "/labs/trueAgent/trueAgent_en.html" },
   "Pure LLM":     { ko: "/labs/pureLLM/purellm.html",        en: "/labs/pureLLM/purellm_en.html" },
-  "Handalo AI One":  { ko: "/one/one_index.html",               en: "/one/one_index_en.html" },
+  "Handaro AI One":  { ko: "/one/one_index.html",               en: "/one/one_index_en.html" },
 };
 
 /* ── Product data (bilingual) ── */
@@ -44,7 +44,7 @@ const products = {
     { icon: Clapperboard, name: "True Forge", subtitle: "AI Content Generation Pipeline", desc: "게임 에셋, 3D 모델, 다국어 시나리오를 자동 생성하는 AI 파이프라인. 제작 단가를 1/10로 낮추고 퀄리티는 극대화합니다.", category: "콘텐츠 생성" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "보고를 넘어 실무를 수행하는 AI 자율 업무 에이전트. 기업 시스템과 직접 통신하여 인간 업무의 80%를 자동화합니다.", category: "업무 자동화" },
     { icon: ShoppingBag, name: "Pure LLM", subtitle: "The Purest AI for Shopify", desc: "쇼피파이 스토어에 GPT, Claude 등 최신 LLM을 직접 연동하는 순수한 AI 통합 솔루션. 코드 없이 강력한 지능을 추가하세요.", category: "커머스", tag: "App" },
-    { icon: Anchor, name: "Handalo AI One", subtitle: "Port Sync Orchestrator", desc: "항만 지능 운영체제. 처방형 AI(Prescriptive AI)를 통해 분석을 넘어 이익을 확정하는 Decision-as-a-Service를 제공합니다.", category: "물류·항만", tag: "Enterprise" },
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "항만 지능 운영체제. 처방형 AI(Prescriptive AI)를 통해 분석을 넘어 이익을 확정하는 Decision-as-a-Service를 제공합니다.", category: "물류·항만", tag: "Enterprise" },
   ],
   en: [
     { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "Type text, and AI creates your video. A 5-step pipeline auto-generates clips, narration, and dubbing in one click.", category: "Video Creation", tag: "New" },
@@ -56,7 +56,7 @@ const products = {
     { icon: Clapperboard, name: "True Forge", subtitle: "AI Content Generation Pipeline", desc: "An AI pipeline that auto-generates game assets, 3D models, and multilingual scenarios. Cuts production costs to 1/10 while maximizing quality.", category: "Content Creation" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "An AI autonomous task agent that goes beyond reporting to execute real work. Communicates directly with enterprise systems to automate 80% of human tasks.", category: "Task Automation" },
     { icon: ShoppingBag, name: "Pure LLM", subtitle: "The Purest AI for Shopify", desc: "A pure AI integration solution that connects the latest LLMs like GPT and Claude directly to your Shopify store. Add powerful intelligence without code.", category: "Commerce", tag: "App" },
-    { icon: Anchor, name: "Handalo AI One", subtitle: "Port Sync Orchestrator", desc: "A port intelligence operating system. Delivers Decision-as-a-Service through Prescriptive AI that goes beyond analysis to lock in profits.", category: "Logistics & Port", tag: "Enterprise" },
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "A port intelligence operating system. Delivers Decision-as-a-Service through Prescriptive AI that goes beyond analysis to lock in profits.", category: "Logistics & Port", tag: "Enterprise" },
   ],
   zh: [
     { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "输入文字，AI自动生成视频。五步流水线一键完成视频片段、旁白与配音。", category: "视频生成", tag: "New" },
@@ -68,7 +68,7 @@ const products = {
     { icon: Clapperboard, name: "True Forge", subtitle: "AI Content Generation Pipeline", desc: "自动生成游戏资产、3D模型、多语言剧本的AI流水线。将制作成本降至1/10，同时最大化质量。", category: "内容生成" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "超越报告、执行实务的AI自主业务代理。直接与企业系统通信，自动化人类工作的80%。", category: "业务自动化" },
     { icon: ShoppingBag, name: "Pure LLM", subtitle: "The Purest AI for Shopify", desc: "将GPT、Claude等最新LLM直接集成到Shopify店铺的纯粹AI集成解决方案。无需代码即可添加强大智能。", category: "电商", tag: "App" },
-    { icon: Anchor, name: "Handalo AI One", subtitle: "Port Sync Orchestrator", desc: "港口智能操作系统。通过处方型AI（Prescriptive AI）提供超越分析、确定利益的Decision-as-a-Service。", category: "物流·港口", tag: "Enterprise" },
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "港口智能操作系统。通过处方型AI（Prescriptive AI）提供超越分析、确定利益的Decision-as-a-Service。", category: "物流·港口", tag: "Enterprise" },
   ],
 };
 

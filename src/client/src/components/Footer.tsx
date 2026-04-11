@@ -3,8 +3,8 @@
  */
 import { t, type Lang } from "@/lib/i18n";
 
-const LOGO_LIGHT = "/handalo_logo_light.svg";
-const LOGO_DARK = "/handalo_logo_dark.svg";
+const LOGO_LIGHT = "/handaro_logo_light.svg";
+const LOGO_DARK = "/handaro_logo_dark.svg";
 
 export default function Footer({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).footer;
@@ -14,8 +14,8 @@ export default function Footer({ lang = "ko" as Lang }: { lang?: Lang }) {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <img src={LOGO_LIGHT} alt="Handalo AI" className="h-7 dark:hidden" />
-            <img src={LOGO_DARK} alt="Handalo AI" className="h-7 hidden dark:block" />
+            <img src={LOGO_LIGHT} alt="Handaro AI" className="h-7 dark:hidden" />
+            <img src={LOGO_DARK} alt="Handaro AI" className="h-7 hidden dark:block" />
           </div>
           <div className="text-center md:text-right">
             <p className="text-navy-400 dark:text-navy-500 text-base">{i.copyright}</p>

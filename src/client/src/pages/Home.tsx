@@ -1,5 +1,5 @@
 /*
- * Handalo AI AX Standard — Home Page
+ * Handaro AI AX Standard — Home Page
  * Design: Sovereign Command (Light default + Dark toggle)
  * Section Order: Hero → NameOrigin → About → Product → Founder → Promise → Ecosystem → Certification → Assessment → Contact
  */

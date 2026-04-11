@@ -7,8 +7,8 @@ import { Menu, X, Moon, Sun, Globe, ChevronDown } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { t, type Lang } from "@/lib/i18n";
 
-const LOGO_LIGHT = "/handalo_logo_light.svg";
-const LOGO_DARK = "/handalo_logo_dark.svg";
+const LOGO_LIGHT = "/handaro_logo_light.svg";
+const LOGO_DARK = "/handaro_logo_dark.svg";
 
 const LANG_OPTIONS: { label: string; href: string; lang: Lang }[] = [
   { label: "KR", href: "/", lang: "ko" },
@@ -63,7 +63,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
         <a href={lang === "en" ? "/en#home" : lang === "zh" ? "/zh#home" : "#home"} className="flex items-center gap-3">
           <img
             src={isOnDarkBg ? LOGO_DARK : LOGO_LIGHT}
-            alt="Handalo AI"
+            alt="Handaro AI"
             className="h-9"
           />
         </a>
