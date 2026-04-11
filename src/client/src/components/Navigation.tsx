@@ -60,22 +60,22 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 sm:py-4 flex items-center justify-between">
         <a href={lang === "en" ? "/en#home" : lang === "zh" ? "/zh#home" : lang === "jp" ? "/jp#home" : "#home"} className="flex items-center gap-3">
           <img
             src={isOnDarkBg ? LOGO_DARK : LOGO_LIGHT}
             alt="Handaro AI"
-            className="h-9"
+            className="h-auto w-[88px] sm:w-[110px] lg:w-[150px] xl:w-[180px]"
           />
         </a>
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-6">
           {i.links.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className={`nav-link-anim text-sm font-medium transition-colors tracking-[0.12em] ${
+              className={`nav-link-anim text-xs xl:text-sm font-medium transition-colors tracking-wide xl:tracking-[0.12em] ${
                 isOnDarkBg
                   ? "text-navy-100 hover:text-blue-400"
                   : "text-navy-600 dark:text-navy-200 hover:text-blue-700 dark:hover:text-blue-400"
@@ -141,7 +141,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
         </div>
 
         {/* Mobile: lang dropdown + theme toggle + menu button */}
-        <div className="flex lg:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-1.5">
           <div ref={mobileLangRef} className="relative">
             <button
               onClick={() => setLangOpen((v) => !v)}
