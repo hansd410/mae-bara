@@ -75,7 +75,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             <a
               key={link.href}
               href={link.href}
-              className={`nav-link-anim text-xs xl:text-sm font-medium transition-colors tracking-wide xl:tracking-[0.12em] ${
+              className={`nav-link-anim text-xs xl:text-sm font-medium transition-colors whitespace-nowrap leading-none ${
                 isOnDarkBg
                   ? "text-navy-100 hover:text-blue-400"
                   : "text-navy-600 dark:text-navy-200 hover:text-blue-700 dark:hover:text-blue-400"
