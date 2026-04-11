@@ -1,10 +1,11 @@
 /*
- * MaeBara AX Standard — Home Page
+ * Handalo AI AX Standard — Home Page
  * Design: Sovereign Command (Light default + Dark toggle)
- * Section Order: Hero → About → Product → Founder → Promise → Ecosystem → Certification → Assessment → Contact
+ * Section Order: Hero → NameOrigin → About → Product → Founder → Promise → Ecosystem → Certification → Assessment → Contact
  */
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import NameOriginSection from "@/components/NameOriginSection";
 import AboutSection from "@/components/AboutSection";
 import FounderSection from "@/components/FounderSection";
 import PromiseSection from "@/components/PromiseSection";
@@ -20,6 +21,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground font-sans antialiased overflow-x-hidden">
       <Navigation lang="ko" />
       <HeroSection lang="ko" />
+      <NameOriginSection lang="ko" />
       <AboutSection lang="ko" />
       <ProductSection lang="ko" />
       <FounderSection lang="ko" />

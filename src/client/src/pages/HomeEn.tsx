@@ -1,9 +1,10 @@
 /*
- * MaeBara AX Standard — English Home Page (/en)
+ * Handalo AI AX Standard — English Home Page (/en)
  * Same section order as Korean, with lang="en" prop passed to all components
  */
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
+import NameOriginSection from "@/components/NameOriginSection";
 import AboutSection from "@/components/AboutSection";
 import FounderSection from "@/components/FounderSection";
 import PromiseSection from "@/components/PromiseSection";
@@ -19,6 +20,7 @@ export default function HomeEn() {
     <div className="min-h-screen bg-background text-foreground font-sans antialiased overflow-x-hidden">
       <Navigation lang="en" />
       <HeroSection lang="en" />
+      <NameOriginSection lang="en" />
       <AboutSection lang="en" />
       <ProductSection lang="en" />
       <FounderSection lang="en" />

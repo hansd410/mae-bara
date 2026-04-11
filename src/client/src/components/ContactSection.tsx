@@ -10,10 +10,10 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
   const i = t(lang).contact;
 
   const descText = lang === "zh"
-    ? <>您的数据可能正在错失收益机会。MaeBara的OpenAI黑客马拉松全球冠军专家将免费进行审查(Audit)。<br />MaeBara用切实的结果来证明信任。</>
+    ? <>您的数据可能正在错失收益机会。Handalo AI的OpenAI黑客马拉松全球冠军专家将免费进行审查(Audit)。<br />Handalo AI用切实的结果来证明信任。</>
     : lang === "en"
-    ? <>Your data could be generating revenue. Our OpenAI Hackathon global-winning experts will perform a free audit.<br />MaeBara proves its trust through tangible outcomes.</>
-    : <>귀사의 데이터가 수익이 될 수 있는지, OpenAI 해커톤 글로벌 우승 전문가가 무료로 감사(Audit)를 수행합니다.<br />매바라는 실질적인 결과로 신뢰를 증명합니다.</>;
+    ? <>Your data could be generating revenue. Our OpenAI Hackathon global-winning experts will perform a free audit.<br />Handalo AI proves its trust through tangible outcomes.</>
+    : <>귀사의 데이터가 수익이 될 수 있는지, OpenAI 해커톤 글로벌 우승 전문가가 무료로 감사(Audit)를 수행합니다.<br />한다로AI는 실질적인 결과로 신뢰를 증명합니다.</>;
 
   return (
     <section id="contact" className="relative py-24 md:py-32 overflow-hidden">
@@ -43,7 +43,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
 
           <div className="mt-10">
             <a
-              href="mailto:info@maebara.org"
+              href="mailto:info@handalo.org"
               className="group inline-flex items-center gap-3 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-lg text-base tracking-wide"
             >
               <Mail className="w-5 h-5" />
@@ -55,10 +55,10 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
             <p className="text-navy-400 text-base">
               {i.contactLabel}:{" "}
               <a
-                href="mailto:info@maebara.org"
+                href="mailto:info@handalo.org"
                 className="text-gold-700 dark:text-gold-400 hover:text-gold-800 dark:hover:text-gold-300 transition-colors"
               >
-                info@maebara.org
+                info@handalo.org
               </a>
             </p>
           </div>

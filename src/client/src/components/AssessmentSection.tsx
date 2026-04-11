@@ -93,7 +93,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
       `  - AX: ${grade.ax}\n  - Solutions: ${grade.solutions}\n  - Academy: ${grade.academy}\n\n` +
       mb.discount + mb.footer
     );
-    window.open(`mailto:info@maebara.org?subject=${subject}&body=${body}`, "_self");
+    window.open(`mailto:info@handalo.org?subject=${subject}&body=${body}`, "_self");
   };
 
   const handleDetailInquiry = () => {
@@ -105,7 +105,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
       md.unknown + `${unknownCount}${md.unknownUnit}\n\n` +
       md.request + md.areas + md.footer
     );
-    window.open(`mailto:info@maebara.org?subject=${subject}&body=${body}`, "_self");
+    window.open(`mailto:info@handalo.org?subject=${subject}&body=${body}`, "_self");
   };
 
   const BundleIcon = vis.tierIcon;

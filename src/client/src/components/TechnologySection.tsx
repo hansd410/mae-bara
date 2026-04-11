@@ -1,6 +1,6 @@
 /*
  * Technology Section (Arctic Proof) — Light default + Dark mode
- * MaeBara One의 기술 증명 — 북극항로
+ * Handalo AI One의 기술 증명 — 북극항로
  */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -68,7 +68,7 @@ export default function TechnologySection() {
           <div className="gold-line max-w-24 mx-auto mt-6" />
           <p className="text-navy-200 mt-6 max-w-2xl mx-auto leading-relaxed">
             변수가 가장 많고 물리적으로 가장 가혹한 북극항로의 물류 최적화를 해결한 기술력 —
-            이것이 매바라가 모든 산업의 AX를 자신 있게 수행할 수 있는 이유입니다.
+            이것이 한다로AI가 모든 산업의 AX를 자신 있게 수행할 수 있는 이유입니다.
           </p>
         </motion.div>
 

@@ -50,7 +50,7 @@ function openConsultMail(lang: Lang, category: string, item: string, detail?: st
     (detail ? i.detail + detail + "\n" : "") +
     i.request + i.footer
   );
-  window.open(`mailto:info@maebara.org?subject=${subject}&body=${body}`, "_self");
+  window.open(`mailto:info@handalo.org?subject=${subject}&body=${body}`, "_self");
 }
 
 /* ── Service field key by brand type ── */

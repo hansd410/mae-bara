@@ -12,10 +12,10 @@ export default function CertificationSection({ lang = "ko" as Lang }: { lang?: L
   const i = t(lang).certification;
 
   const auditText = lang === "zh"
-    ? "MaeBara的OpenAI黑客马拉松全球冠军专家亲自到访贵公司，对数据基础设施、AI利用度和组织能力进行综合审查(Audit)，并颁发相应等级认证书。"
+    ? "Handalo AI的OpenAI黑客马拉松全球冠军专家亲自到访贵公司，对数据基础设施、AI利用度和组织能力进行综合审查(Audit)，并颁发相应等级认证书。"
     : lang === "en"
-    ? "MaeBara's OpenAI Hackathon global-winning experts visit your company to comprehensively audit data infrastructure, AI utilization, and organizational capabilities, then issue tier-specific certifications."
-    : "매바라의 OpenAI 해커톤 글로벌 우승 전문가가 직접 귀사를 방문하여 데이터 인프라, AI 활용도, 조직 역량을 종합 감사(Audit)한 뒤, 등급별 인증서를 발급합니다.";
+    ? "Handalo AI's OpenAI Hackathon global-winning experts visit your company to comprehensively audit data infrastructure, AI utilization, and organizational capabilities, then issue tier-specific certifications."
+    : "한다로AI의 OpenAI 해커톤 글로벌 우승 전문가가 직접 귀사를 방문하여 데이터 인프라, AI 활용도, 조직 역량을 종합 감사(Audit)한 뒤, 등급별 인증서를 발급합니다.";
 
   const ctaNote = lang === "zh"
     ? "请先完成AX成熟度评估，之后将引导您进入认证流程。"

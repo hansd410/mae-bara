@@ -180,10 +180,10 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
   const i = t(lang).founder;
   const diffs = differentiators[lang];
   const quote = lang === "en"
-    ? { text: "Technology isn't about proving — it's about showing results.\nMaeBara proves your AX with numbers.", author: "— Sangdo Han, CEO & Founder" }
+    ? { text: "Technology isn't about proving — it's about showing results.\nHandalo AI proves your AX with numbers.", author: "— Sangdo Han, CEO & Founder" }
     : lang === "zh"
-    ? { text: "技术不是用来证明的，而是用结果来展示的。\nMaeBara用数字证明您的AX价值。", author: "— 韩相度，CEO & Founder" }
-    : { text: "기술은 증명하는 것이 아니라 결과로 보여주는 것입니다.\n매바라는 귀사의 AX를 숫자로 증명합니다.", author: "— 한상도, CEO & Founder" };
+    ? { text: "技术不是用来证明的，而是用结果来展示的。\nHandalo AI用数字证明您的AX价值。", author: "— 韩相度，CEO & Founder" }
+    : { text: "기술은 증명하는 것이 아니라 결과로 보여주는 것입니다.\n한다로AI는 귀사의 AX를 숫자로 증명합니다.", author: "— 한상도, CEO & Founder" };
   const subtitle = lang === "en"
     ? "Led directly by CEO Sangdo Han. The only AX partner combining world-class technology, real-world experience, and deep research capabilities."
     : lang === "zh"
