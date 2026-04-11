@@ -44,7 +44,7 @@ function TierIcon({ tierKey }: { tierKey: string }) {
 /* ── Consult mailto helper ── */
 function openConsultMail(lang: Lang, category: string, item: string, detail?: string) {
   const i = t(lang).ecosystem.consultMail;
-  const subject = encodeURIComponent(`[${lang === "zh" ? "咨询申请" : lang === "en" ? "Consultation Request" : "상담 요청"}] ${category} — ${item}`);
+  const subject = encodeURIComponent(`[${lang === "zh" ? "咋询申请" : lang === "en" ? "Consultation Request" : lang === "jp" ? "相談リクエスト" : "상담 요청"}] ${category} — ${item}`);
   const body = encodeURIComponent(
     i.greeting + i.interest + `${category} — ${item}\n` +
     (detail ? i.detail + detail + "\n" : "") +

@@ -290,7 +290,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                     className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-base mt-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     <ExternalLink className="w-3 h-3" />
-                    {lang === "zh" ? "个人主页" : lang === "en" ? "Profile Page" : "프로필 페이지"}
+                    {lang === "zh" ? "个人主页" : lang === "en" ? "Profile Page" : lang === "jp" ? "プロフィールページ" : "프로필 페이지"}
                   </a>
                 </div>
               </div>
@@ -306,7 +306,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
                   <BookOpen className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0 mt-0.5" />
-                  <span className="break-words">CEO Business School {lang === "en" ? "Professor" : lang === "zh" ? "教授" : "교수"}</span>
+                  <span className="break-words">CEO Business School {lang === "en" ? "Professor" : lang === "zh" ? "教授" : lang === "jp" ? "教授" : "교수"}</span>
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
                   <Briefcase className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0 mt-0.5" />

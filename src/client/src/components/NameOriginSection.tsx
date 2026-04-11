@@ -85,6 +85,32 @@ const content = {
     ],
     tagline: "以海量数据(瀚)与多元技术(多)，指引通向未来的道路(路)。",
   },
+  jp: {
+    eyebrow: "名前の由来",
+    headline: "なぜ『ハンダロ』なのか",
+    subtitle: "三つの漢字が込めた、一つの約束。",
+    chars: [
+      {
+        hanja: "瀚",
+        korean: "ハン",
+        meaning: "広大・雄大",
+        desc: "膨大なデータ",
+      },
+      {
+        hanja: "多",
+        korean: "ダ",
+        meaning: "多様・豊富",
+        desc: "多彩な技術",
+      },
+      {
+        hanja: "路",
+        korean: "ロ",
+        meaning: "道・方向",
+        desc: "未来への道",
+      },
+    ],
+    tagline: "膨大なデータ(瀚)と多彩な技術(多)で、未来への道(路)を切り拓く。",
+  },
 };
 
 const cardColors = [

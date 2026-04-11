@@ -13,6 +13,8 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
     ? <>您的数据可能正在错失收益机会。Handaro AI的OpenAI黑客马拉松全球冠军专家将免费进行审查(Audit)。<br />Handaro AI用切实的结果来证明信任。</>
     : lang === "en"
     ? <>Your data could be generating revenue. Our OpenAI Hackathon global-winning experts will perform a free audit.<br />Handaro AI proves its trust through tangible outcomes.</>
+    : lang === "jp"
+    ? <>貴社のデータが収益になり得るか、OpenAIハッカソングローバル優勝専門家が無料で監査（Audit）を実施します。<br />Handaro AIは実質的な結果で信頼を証明します。</>
     : <>귀사의 데이터가 수익이 될 수 있는지, OpenAI 해커톤 글로벌 우승 전문가가 무료로 감사(Audit)를 수행합니다.<br />한다로AI는 실질적인 결과로 신뢰를 증명합니다.</>;
 
   return (
