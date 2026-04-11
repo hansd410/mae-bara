@@ -3,8 +3,8 @@
  */
 import { t, type Lang } from "@/lib/i18n";
 
-const LOGO_LIGHT = "/handalo_logo.svg";
-const LOGO_DARK = "/handalo_logo.svg";
+const LOGO_LIGHT = "/handalo_logo_light.svg";
+const LOGO_DARK = "/handalo_logo_dark.svg";
 
 export default function Footer({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).footer;

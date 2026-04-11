@@ -7,8 +7,8 @@ import { Menu, X, Moon, Sun, Globe, ChevronDown } from "lucide-react";
 import { useTheme } from "@/contexts/ThemeContext";
 import { t, type Lang } from "@/lib/i18n";
 
-const LOGO_LIGHT = "/handalo_logo.svg";
-const LOGO_DARK = "/handalo_logo.svg";
+const LOGO_LIGHT = "/handalo_logo_light.svg";
+const LOGO_DARK = "/handalo_logo_dark.svg";
 
 const LANG_OPTIONS: { label: string; href: string; lang: Lang }[] = [
   { label: "KR", href: "/", lang: "ko" },
