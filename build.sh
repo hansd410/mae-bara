@@ -39,7 +39,7 @@ echo "   JS:  $NEW_JS"
 echo "   CSS: $NEW_CSS"
 
 echo "▶ HTML 파일 업데이트..."
-for html in "$REPO_ROOT/index.html" "$REPO_ROOT/en/index.html" "$REPO_ROOT/zh/index.html"; do
+for html in "$REPO_ROOT/index.html" "$REPO_ROOT/en/index.html" "$REPO_ROOT/zh/index.html" "$REPO_ROOT/jp/index.html"; do
   OLD_JS=$(grep -o 'assets/index-[^"]*\.js' "$html" | head -1 | xargs basename 2>/dev/null || echo "")
   OLD_CSS=$(grep -o 'assets/index-[^"]*\.css' "$html" | head -1 | xargs basename 2>/dev/null || echo "")
   [ -n "$OLD_JS" ] && replace_in_file "$html" "$OLD_JS" "$NEW_JS"

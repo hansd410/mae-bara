@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import HomeEn from "./pages/HomeEn";
 import HomeZh from "./pages/HomeZh";
+import HomeJp from "./pages/HomeJp";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/en"} component={HomeEn} />
       <Route path={"/zh"} component={HomeZh} />
+      <Route path={"/jp"} component={HomeJp} />
       <Route path={"/404"} component={NotFound} />
       <Route component={NotFound} />
     </Switch>

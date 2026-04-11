@@ -14,6 +14,7 @@ const LANG_OPTIONS: { label: string; href: string; lang: Lang }[] = [
   { label: "KR", href: "/", lang: "ko" },
   { label: "EN", href: "/en", lang: "en" },
   { label: "CN", href: "/zh", lang: "zh" },
+  { label: "JP", href: "/jp", lang: "jp" },
 ];
 
 export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
@@ -60,7 +61,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href={lang === "en" ? "/en#home" : lang === "zh" ? "/zh#home" : "#home"} className="flex items-center gap-3">
+        <a href={lang === "en" ? "/en#home" : lang === "zh" ? "/zh#home" : lang === "jp" ? "/jp#home" : "#home"} className="flex items-center gap-3">
           <img
             src={isOnDarkBg ? LOGO_DARK : LOGO_LIGHT}
             alt="Handaro AI"
