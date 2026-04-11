@@ -26,7 +26,7 @@ const tierColors: Record<string, { color: string; textColor: string }> = {
   basic: { color: "bg-navy-500", textColor: "text-white" },
   standard: { color: "bg-amber-500", textColor: "text-white" },
   advanced: { color: "bg-emerald-600", textColor: "text-white" },
-  premium: { color: "bg-gold-600", textColor: "text-white" },
+  premium: { color: "bg-blue-600", textColor: "text-white" },
 };
 
 const brandIcons = [Compass, Wrench, GraduationCap];
@@ -127,7 +127,7 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
                       </p>
                       <button
                         onClick={() => openConsultMail(lang, brandName, `${tier.label}`, service[field])}
-                        className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-gold-100 dark:bg-gold-500/10 text-gold-700 dark:text-gold-400 text-base font-semibold hover:bg-gold-200 dark:hover:bg-gold-500/20 transition-colors border border-gold-200 dark:border-gold-500/20"
+                        className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-blue-50 dark:bg-blue-500/10 text-blue-700 dark:text-blue-400 text-base font-semibold hover:bg-blue-100 dark:hover:bg-blue-500/20 transition-colors border border-blue-100 dark:border-blue-500/20"
                       >
                         <Mail className="w-3.5 h-3.5" />
                         {i.consultBtn}
@@ -142,21 +142,21 @@ function TierDetail({ brandType, brandName, lang }: { brandType: string; brandNa
       </div>
 
       {/* Bundle Discount Banner */}
-      <div className="rounded-xl border-2 border-dashed border-gold-300 dark:border-gold-500/30 bg-gold-50/50 dark:bg-gold-500/5 p-5">
+      <div className="rounded-xl border-2 border-dashed border-blue-200 dark:border-blue-500/30 bg-blue-50/50 dark:bg-blue-500/5 p-5">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center shrink-0">
-            <Gift className="w-5 h-5 text-gold-700 dark:text-gold-400" />
+          <div className="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center shrink-0">
+            <Gift className="w-5 h-5 text-blue-700 dark:text-blue-400" />
           </div>
           <div>
             <h5 className="text-navy-900 dark:text-white font-bold text-base mb-1">{i.bundleTitle}</h5>
             <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed mb-3">
               {i.bundleDesc1}{" "}
-              <span className="text-gold-700 dark:text-gold-400 font-bold">{i.bundleDiscount}</span>
+              <span className="text-blue-700 dark:text-blue-400 font-bold">{i.bundleDiscount}</span>
               {i.bundleDesc2}
             </p>
             <button
               onClick={() => openConsultMail(lang, i.consultMailCategory, i.consultMailItem)}
-              className="flex items-center gap-1.5 text-gold-700 dark:text-gold-400 text-base font-semibold hover:text-gold-800 dark:hover:text-gold-300 transition-colors"
+              className="flex items-center gap-1.5 text-blue-700 dark:text-blue-400 text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
             >
               <Mail className="w-3.5 h-3.5" />
               {i.bundleBtn}
@@ -188,12 +188,12 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-700 dark:text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
             {i.headline}{" "}
-            <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>
+            <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
           <p className="text-navy-500 dark:text-navy-300 mt-6 max-w-2xl mx-auto leading-relaxed">{i.sub}</p>
@@ -225,7 +225,7 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
                 onClick={() => setActive(idx)}
                 className={`flex items-center gap-2 px-5 py-3 rounded-xl text-base font-semibold transition-all duration-300 border ${
                   active === idx
-                    ? "bg-gold-100 dark:bg-gold-500/15 border-gold-400 dark:border-gold-500/50 text-gold-800 dark:text-gold-400 shadow-lg shadow-gold-500/10"
+                    ? "bg-blue-50 dark:bg-blue-500/15 border-blue-400 dark:border-blue-500/50 text-blue-800 dark:text-blue-400 shadow-lg shadow-blue-500/10"
                     : "bg-white dark:bg-navy-800/40 border-navy-200 dark:border-navy-700/40 text-navy-500 dark:text-navy-300 hover:border-navy-300 dark:hover:border-navy-600/60 hover:text-navy-700 dark:hover:text-navy-100"
                 }`}
               >
@@ -250,12 +250,12 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
               {/* Left: Brand Info */}
               <div className="lg:col-span-2">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center">
-                    <BrandIcon className="w-6 h-6 text-gold-700 dark:text-gold-400" />
+                  <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center">
+                    <BrandIcon className="w-6 h-6 text-blue-700 dark:text-blue-400" />
                   </div>
                   <div>
                     <h3 className="text-navy-900 dark:text-white font-bold text-xl">{brand.name}</h3>
-                    <p className="text-gold-700 dark:text-gold-400 text-base font-medium">{brand.tagline}</p>
+                    <p className="text-blue-700 dark:text-blue-400 text-base font-medium">{brand.tagline}</p>
                   </div>
                 </div>
 
@@ -263,11 +263,11 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
 
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-2">
-                    <span className="text-gold-700 dark:text-gold-500 text-base font-bold mt-0.5 shrink-0">TARGET</span>
+                    <span className="text-blue-700 dark:text-blue-500 text-base font-bold mt-0.5 shrink-0">TARGET</span>
                     <span className="text-navy-500 dark:text-navy-300 text-base">{brand.target}</span>
                   </div>
                   <div className="flex items-start gap-2">
-                    <span className="text-gold-700 dark:text-gold-500 text-base font-bold mt-0.5 shrink-0">VALUE</span>
+                    <span className="text-blue-700 dark:text-blue-500 text-base font-bold mt-0.5 shrink-0">VALUE</span>
                     <span className="text-navy-500 dark:text-navy-300 text-base">{brand.value}</span>
                   </div>
                 </div>
@@ -291,8 +291,8 @@ export default function EcosystemSection({ lang = "ko" as Lang }: { lang?: Lang 
         >
           {i.flowSteps.map((step, idx) => (
             <div key={idx} className="flex items-center gap-3 p-4 rounded-xl bg-navy-50 dark:bg-navy-800/20 border border-navy-200 dark:border-navy-700/20">
-              <div className="w-8 h-8 rounded-full bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center shrink-0">
-                <span className="text-gold-700 dark:text-gold-400 text-base font-bold">{idx + 1}</span>
+              <div className="w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center shrink-0">
+                <span className="text-blue-700 dark:text-blue-400 text-base font-bold">{idx + 1}</span>
               </div>
               <div>
                 <p className="text-navy-400 text-base font-semibold tracking-wider uppercase">{step.brand}</p>

@@ -16,8 +16,8 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
     >
       {/* Light mode: abstract geometric pattern background */}
       <div className="absolute inset-0 dark:hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-white via-navy-50 to-gold-50" />
-        <div className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-gold-200/30 to-gold-100/10 blur-[80px]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-white via-navy-50 to-blue-50" />
+        <div className="absolute top-20 right-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-br from-blue-200/30 to-blue-50/10 blur-[80px]" />
         <div className="absolute bottom-20 left-[5%] w-[400px] h-[400px] rounded-full bg-gradient-to-tr from-navy-200/20 to-navy-100/10 blur-[60px]" />
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -26,14 +26,14 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
             backgroundSize: "60px 60px",
           }}
         />
-        <div className="absolute top-0 right-0 w-[1px] h-[60vh] bg-gradient-to-b from-transparent via-gold-400/20 to-transparent rotate-[25deg] translate-x-[-200px]" />
-        <div className="absolute bottom-0 left-[30%] w-[1px] h-[40vh] bg-gradient-to-t from-transparent via-gold-400/15 to-transparent rotate-[-15deg]" />
+        <div className="absolute top-0 right-0 w-[1px] h-[60vh] bg-gradient-to-b from-transparent via-blue-400/20 to-transparent rotate-[25deg] translate-x-[-200px]" />
+        <div className="absolute bottom-0 left-[30%] w-[1px] h-[40vh] bg-gradient-to-t from-transparent via-blue-400/15 to-transparent rotate-[-15deg]" />
       </div>
 
       {/* Dark mode: deep navy with subtle glow */}
       <div className="absolute inset-0 hidden dark:block">
         <div className="absolute inset-0 bg-gradient-to-br from-navy-950 via-navy-900 to-navy-950" />
-        <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-gold-500/[0.04] rounded-full blur-[120px]" />
+        <div className="absolute top-1/4 right-1/4 w-[600px] h-[600px] bg-blue-500/[0.04] rounded-full blur-[120px]" />
         <div className="absolute bottom-1/3 left-1/3 w-[400px] h-[400px] bg-navy-600/10 rounded-full blur-[100px]" />
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -51,10 +51,10 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold-600/20 dark:border-gold-500/25 bg-gold-500/[0.08] dark:bg-gold-500/[0.06] mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-600/20 dark:border-blue-500/25 bg-blue-500/[0.08] dark:bg-blue-500/[0.06] mb-8"
           >
-            <span className="w-2 h-2 rounded-full bg-gold-500 animate-pulse" />
-            <span className="text-gold-700 dark:text-gold-400 text-base font-semibold tracking-[0.2em] uppercase">
+            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+            <span className="text-blue-700 dark:text-blue-400 text-base font-semibold tracking-[0.2em] uppercase">
               {i.badge}
             </span>
           </motion.div>
@@ -68,7 +68,7 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
           >
             {i.headline1}
             <br />
-            {i.headline2} <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>
+            {i.headline2} <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
           </motion.h1>
 
           {/* Sub-headline */}
@@ -98,14 +98,14 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
           >
             <a
               href="#assessment"
-              className="group inline-flex items-center gap-2 bg-gold-600 hover:bg-gold-700 dark:bg-gold-500 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-gold-600/20 dark:shadow-gold-500/20 hover:shadow-gold-600/40 dark:hover:shadow-gold-500/40 text-base tracking-wide"
+              className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-blue-600/20 dark:shadow-blue-500/20 hover:shadow-blue-600/40 dark:hover:shadow-blue-500/40 text-base tracking-wide"
             >
               <span>{i.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#about"
-              className="inline-flex items-center gap-2 border border-navy-300 dark:border-navy-400/40 hover:border-gold-600/50 dark:hover:border-gold-500/50 text-navy-700 dark:text-navy-100 font-medium py-4 px-8 rounded-lg transition-all duration-300 text-base tracking-wide hover:bg-navy-100/50 dark:hover:bg-navy-800/30"
+              className="inline-flex items-center gap-2 border border-navy-300 dark:border-navy-400/40 hover:border-blue-600/50 dark:hover:border-blue-500/50 text-navy-700 dark:text-navy-100 font-medium py-4 px-8 rounded-lg transition-all duration-300 text-base tracking-wide hover:bg-navy-100/50 dark:hover:bg-navy-800/30"
             >
               {i.ctaSecondary}
             </a>

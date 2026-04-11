@@ -27,7 +27,7 @@ import { t, type Lang } from "@/lib/i18n";
 
 /* ── Grade visual config ── */
 const gradeVisuals = [
-  { badgeColor: "bg-gold-600 dark:bg-gold-500", textColor: "text-white dark:text-navy-950", tierColor: "bg-gold-600", tierIcon: Crown },
+  { badgeColor: "bg-blue-600 dark:bg-blue-500", textColor: "text-white dark:text-navy-950", tierColor: "bg-blue-600", tierIcon: Crown },
   { badgeColor: "bg-emerald-600 dark:bg-emerald-500", textColor: "text-white", tierColor: "bg-emerald-600", tierIcon: Sparkles },
   { badgeColor: "bg-amber-500 dark:bg-amber-500", textColor: "text-white dark:text-navy-950", tierColor: "bg-amber-500", tierIcon: Zap },
   { badgeColor: "bg-navy-500 dark:bg-navy-400", textColor: "text-white dark:text-navy-950", tierColor: "bg-navy-500", tierIcon: Layers },
@@ -124,12 +124,12 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
           transition={{ duration: 0.6 }}
           className="text-center mb-12"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-700 dark:text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
             {i.headline}{" "}
-            <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>{" "}
+            <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>{" "}
             {i.headlineEnd}
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
@@ -148,8 +148,8 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
               exit={{ opacity: 0, y: -20 }}
               className="glass-card rounded-2xl p-8 md:p-12 text-center max-w-3xl mx-auto"
             >
-              <div className="w-20 h-20 mx-auto rounded-2xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center mb-6">
-                <ClipboardCheck className="w-10 h-10 text-gold-700 dark:text-gold-400" />
+              <div className="w-20 h-20 mx-auto rounded-2xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center mb-6">
+                <ClipboardCheck className="w-10 h-10 text-blue-700 dark:text-blue-400" />
               </div>
               <h3 className="text-navy-900 dark:text-white font-bold text-2xl mb-3 font-serif">
                 {i.startTitle}
@@ -176,7 +176,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
               </p>
               <button
                 onClick={() => setStarted(true)}
-                className="inline-flex items-center gap-2 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-3.5 px-8 rounded-lg transition-all duration-300 shadow-lg text-base"
+                className="inline-flex items-center gap-2 bg-navy-800 dark:bg-blue-500 hover:bg-navy-900 dark:hover:bg-blue-600 text-white dark:text-navy-950 font-bold py-3.5 px-8 rounded-lg transition-all duration-300 shadow-lg text-base"
               >
                 {i.startBtn}
                 <ArrowRight className="w-4 h-4" />
@@ -205,7 +205,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
 
               <div className="w-full h-1 bg-navy-200 dark:bg-navy-800 rounded-full mb-8 overflow-hidden">
                 <motion.div
-                  className="h-full bg-gold-600 dark:bg-gold-500 rounded-full"
+                  className="h-full bg-blue-600 dark:bg-blue-500 rounded-full"
                   initial={{ width: 0 }}
                   animate={{ width: `${progress}%` }}
                   transition={{ duration: 0.4 }}
@@ -228,7 +228,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                         isSelected
                           ? isUnknown
                             ? "bg-navy-100 dark:bg-navy-700/40 border-navy-300 dark:border-navy-500/50 text-navy-700 dark:text-navy-200"
-                            : "bg-gold-50 dark:bg-gold-500/15 border-gold-400 dark:border-gold-500/50 text-navy-900 dark:text-white"
+                            : "bg-blue-50 dark:bg-blue-500/15 border-blue-400 dark:border-blue-500/50 text-navy-900 dark:text-white"
                           : isUnknown
                             ? "bg-navy-50/50 dark:bg-navy-800/20 border-navy-200 dark:border-navy-700/20 text-navy-400 hover:border-navy-300 dark:hover:border-navy-600/50"
                             : "bg-white dark:bg-navy-800/30 border-navy-200 dark:border-navy-700/30 text-navy-600 dark:text-navy-200 hover:border-navy-300 dark:hover:border-navy-600/50 hover:bg-navy-50 dark:hover:bg-navy-800/50"
@@ -237,7 +237,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                       <div
                         className={`w-5 h-5 rounded-full border-2 flex items-center justify-center shrink-0 mt-0.5 transition-colors ${
                           isSelected
-                            ? isUnknown ? "border-navy-400 dark:border-navy-500 bg-navy-400 dark:bg-navy-500" : "border-gold-500 bg-gold-500"
+                            ? isUnknown ? "border-navy-400 dark:border-navy-500 bg-navy-400 dark:bg-navy-500" : "border-blue-500 bg-blue-500"
                             : "border-navy-300 dark:border-navy-600"
                         }`}
                       >
@@ -264,7 +264,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                 <button
                   onClick={handleNext}
                   disabled={answers[current] === undefined}
-                  className="flex items-center gap-2 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 disabled:opacity-30 disabled:cursor-not-allowed text-white dark:text-navy-950 font-bold py-2.5 px-6 rounded-lg transition-all text-base"
+                  className="flex items-center gap-2 bg-navy-800 dark:bg-blue-500 hover:bg-navy-900 dark:hover:bg-blue-600 disabled:opacity-30 disabled:cursor-not-allowed text-white dark:text-navy-950 font-bold py-2.5 px-6 rounded-lg transition-all text-base"
                 >
                   {current === questions.length - 1 ? i.resultBtn : i.nextBtn}
                   <ArrowRight className="w-4 h-4" />
@@ -353,7 +353,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                         <h4 className="text-navy-900 dark:text-white font-bold text-lg">
                           {tierLabel} {i.bundleLabel}
                         </h4>
-                        <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-gold-100 dark:bg-gold-500/15 text-gold-700 dark:text-gold-400 text-[10px] font-bold">
+                        <span className="flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400 text-[10px] font-bold">
                           <Gift className="w-3 h-3" />
                           {i.bundleDiscount}
                         </span>
@@ -369,21 +369,21 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                       { icon: GraduationCap, label: "Academy", desc: grade.academy },
                     ].map((item) => (
                       <div key={item.label} className="flex items-start gap-3 p-3 rounded-xl bg-navy-50 dark:bg-navy-800/20 border border-navy-100 dark:border-navy-700/20">
-                        <div className="w-8 h-8 rounded-lg bg-gold-100 dark:bg-gold-500/10 flex items-center justify-center shrink-0 mt-0.5">
-                          <item.icon className="w-4 h-4 text-gold-700 dark:text-gold-400" />
+                        <div className="w-8 h-8 rounded-lg bg-blue-50 dark:bg-blue-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                          <item.icon className="w-4 h-4 text-blue-700 dark:text-blue-400" />
                         </div>
                         <div>
                           <span className="text-navy-400 text-base font-semibold tracking-wider uppercase">{item.label}</span>
                           <p className="text-navy-600 dark:text-navy-300 text-base leading-relaxed">{item.desc}</p>
                         </div>
-                        <CheckCircle2 className="w-4 h-4 text-gold-600 dark:text-gold-500/60 shrink-0 mt-1" />
+                        <CheckCircle2 className="w-4 h-4 text-blue-600 dark:text-blue-500/60 shrink-0 mt-1" />
                       </div>
                     ))}
                   </div>
 
                   <button
                     onClick={handleBundleConsult}
-                    className="w-full flex items-center justify-center gap-2 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-3 px-6 rounded-lg transition-all text-base shadow-md"
+                    className="w-full flex items-center justify-center gap-2 bg-navy-800 dark:bg-blue-500 hover:bg-navy-900 dark:hover:bg-blue-600 text-white dark:text-navy-950 font-bold py-3 px-6 rounded-lg transition-all text-base shadow-md"
                   >
                     <Mail className="w-4 h-4" />
                     {i.bundleConsultBtn}
@@ -401,7 +401,7 @@ export default function AssessmentSection({ lang = "ko" as Lang }: { lang?: Lang
                 <p className="text-navy-400 dark:text-navy-500 text-base mb-3">{i.detailNote}</p>
                 <button
                   onClick={handleDetailInquiry}
-                  className="inline-flex items-center gap-2 border-2 border-navy-300 dark:border-navy-600 hover:border-gold-500 dark:hover:border-gold-500 text-navy-700 dark:text-navy-200 hover:text-gold-700 dark:hover:text-gold-400 font-bold py-3 px-8 rounded-lg transition-all text-base"
+                  className="inline-flex items-center gap-2 border-2 border-navy-300 dark:border-navy-600 hover:border-blue-500 dark:hover:border-blue-500 text-navy-700 dark:text-navy-200 hover:text-blue-700 dark:hover:text-blue-400 font-bold py-3 px-8 rounded-lg transition-all text-base"
                 >
                   <FileText className="w-4 h-4" />
                   {i.detailBtn}

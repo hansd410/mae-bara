@@ -79,11 +79,11 @@ export default function SolutionsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             Solutions
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-white">
-            처방형 AI <span className="text-gold-400">솔루션</span>
+            처방형 AI <span className="text-blue-400">솔루션</span>
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
           <p className="text-navy-300 mt-6 max-w-xl mx-auto leading-relaxed">
@@ -103,13 +103,13 @@ export default function SolutionsSection() {
               className="glass-card rounded-2xl p-6 group"
             >
               <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center group-hover:bg-gold-500/20 transition-colors shrink-0">
-                  <sol.icon className="w-5 h-5 text-gold-400" />
+                <div className="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center group-hover:bg-blue-500/20 transition-colors shrink-0">
+                  <sol.icon className="w-5 h-5 text-blue-400" />
                 </div>
                 <div className="flex items-center gap-2">
                   <h3 className="text-white font-bold text-base leading-tight">{sol.title}</h3>
                   {sol.tag && (
-                    <span className="px-2 py-0.5 bg-gold-500/15 text-gold-400 text-[10px] font-semibold rounded-full border border-gold-500/20 shrink-0">
+                    <span className="px-2 py-0.5 bg-blue-500/15 text-blue-400 text-[10px] font-semibold rounded-full border border-blue-500/20 shrink-0">
                       {sol.tag}
                     </span>
                   )}

@@ -18,7 +18,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
   return (
     <section id="contact" className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-navy-50 via-white to-navy-50 dark:from-navy-950 dark:via-navy-800/30 dark:to-navy-950" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gold-500/[0.04] rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-500/[0.04] rounded-full blur-[120px]" />
 
       <div className="relative z-10 max-w-3xl mx-auto px-6">
         <motion.div
@@ -28,13 +28,13 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-700 dark:text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
             {i.headline}
             <br />
-            <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>
+            <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
           <p className="text-navy-500 dark:text-navy-300 mt-6 max-w-xl mx-auto leading-relaxed">
@@ -44,7 +44,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
           <div className="mt-10">
             <a
               href="mailto:info@handaro.ai"
-              className="group inline-flex items-center gap-3 bg-navy-800 dark:bg-gold-500 hover:bg-navy-900 dark:hover:bg-gold-600 text-white dark:text-navy-950 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-lg text-base tracking-wide"
+              className="group inline-flex items-center gap-3 bg-navy-800 dark:bg-blue-500 hover:bg-navy-900 dark:hover:bg-blue-600 text-white dark:text-navy-950 font-bold py-4 px-10 rounded-lg transition-all duration-300 shadow-lg text-base tracking-wide"
             >
               <Mail className="w-5 h-5" />
               <span>{i.ctaBtn}</span>
@@ -56,7 +56,7 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
               {i.contactLabel}:{" "}
               <a
                 href="mailto:info@handaro.ai"
-                className="text-gold-700 dark:text-gold-400 hover:text-gold-800 dark:hover:text-gold-300 transition-colors"
+                className="text-blue-700 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors"
               >
                 info@handaro.ai
               </a>

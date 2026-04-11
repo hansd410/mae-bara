@@ -26,12 +26,12 @@ export default function PromiseSection({ lang = "ko" as Lang }: { lang?: Lang })
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-700 dark:text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
             {i.headline}{" "}
-            <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>
+            <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
           <p className="text-navy-500 dark:text-navy-300 mt-6 max-w-xl mx-auto leading-relaxed">
@@ -52,11 +52,11 @@ export default function PromiseSection({ lang = "ko" as Lang }: { lang?: Lang })
                 transition={{ duration: 0.6, delay: idx * 0.15 }}
                 className="glass-card rounded-2xl p-8 text-center group"
               >
-                <div className="text-gold-500/40 text-base font-bold tracking-[0.3em] mb-4">
+                <div className="text-blue-500/40 text-base font-bold tracking-[0.3em] mb-4">
                   Promise {p.num}
                 </div>
-                <div className="w-16 h-16 mx-auto rounded-2xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center mb-6 group-hover:bg-gold-200 dark:group-hover:bg-gold-500/20 transition-colors">
-                  <Icon className="w-8 h-8 text-gold-700 dark:text-gold-400" />
+                <div className="w-16 h-16 mx-auto rounded-2xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center mb-6 group-hover:bg-blue-100 dark:group-hover:bg-blue-500/20 transition-colors">
+                  <Icon className="w-8 h-8 text-blue-700 dark:text-blue-400" />
                 </div>
                 <h3 className="text-navy-900 dark:text-white font-bold text-xl mb-4 font-serif">{p.title}</h3>
                 <p className="text-navy-500 dark:text-navy-300 text-base leading-relaxed">{p.desc}</p>

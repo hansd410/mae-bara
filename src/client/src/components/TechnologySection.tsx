@@ -47,7 +47,7 @@ export default function TechnologySection() {
         <img src={ARCTIC_BG} alt="" className="w-full h-full object-cover opacity-15 dark:opacity-25" />
         <div className="absolute inset-0 bg-gradient-to-b from-navy-900/90 via-navy-900/85 to-navy-900 dark:from-navy-950/90 dark:via-navy-950/80 dark:to-navy-950" />
       </div>
-      <div className="absolute top-0 right-0 w-96 h-96 bg-gold-500/[0.03] rounded-full blur-[100px]" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-500/[0.03] rounded-full blur-[100px]" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6">
         {/* Section Header */}
@@ -58,12 +58,12 @@ export default function TechnologySection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-400 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-400 text-base font-semibold tracking-[0.25em] uppercase">
             Technology — The Arctic Proof
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-white">
             데이터로 증명된{" "}
-            <span className="text-gold-400">기술적 우위</span>
+            <span className="text-blue-400">기술적 우위</span>
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
           <p className="text-navy-200 mt-6 max-w-2xl mx-auto leading-relaxed">
@@ -83,7 +83,7 @@ export default function TechnologySection() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10"
             >
-              <span className="text-gold-400 text-3xl md:text-4xl font-extrabold font-serif">
+              <span className="text-blue-400 text-3xl md:text-4xl font-extrabold font-serif">
                 {statsInView ? stat.display : "—"}
               </span>
               <div className="text-navy-300 text-base mt-2 tracking-wide">{stat.label}</div>
@@ -100,13 +100,13 @@ export default function TechnologySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: i * 0.15 }}
-              className="rounded-2xl p-8 text-center group bg-white/5 backdrop-blur-sm border border-white/10 hover:border-gold-500/30 transition-all"
+              className="rounded-2xl p-8 text-center group bg-white/5 backdrop-blur-sm border border-white/10 hover:border-blue-500/30 transition-all"
             >
-              <div className="w-16 h-16 mx-auto rounded-2xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center mb-6 group-hover:bg-gold-500/20 transition-colors">
-                <tech.icon className="w-8 h-8 text-gold-400" />
+              <div className="w-16 h-16 mx-auto rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center mb-6 group-hover:bg-blue-500/20 transition-colors">
+                <tech.icon className="w-8 h-8 text-blue-400" />
               </div>
               <h3 className="text-white font-bold text-xl mb-2">{tech.title}</h3>
-              <p className="text-gold-400 text-base font-semibold mb-4">{tech.subtitle}</p>
+              <p className="text-blue-400 text-base font-semibold mb-4">{tech.subtitle}</p>
               <p className="text-navy-200 text-base leading-relaxed">{tech.desc}</p>
             </motion.div>
           ))}
@@ -123,7 +123,7 @@ export default function TechnologySection() {
           <blockquote className="font-serif text-xl md:text-2xl text-navy-200 italic max-w-3xl mx-auto leading-relaxed">
             "북극항로는 우리가 하는 유일한 일이 아닙니다.
             <br />
-            <span className="text-gold-400 not-italic font-semibold">
+            <span className="text-blue-400 not-italic font-semibold">
               우리 기술의 수준을 증명하는 극한의 테스트베드
             </span>
             입니다."

@@ -107,7 +107,7 @@ export default function NameOriginSection({ lang = "ko" as Lang }: { lang?: Lang
         }}
       />
       {/* Glow — subtle in light, stronger in dark */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-400/[0.04] dark:bg-gold-500/[0.06] rounded-full blur-[100px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-400/[0.04] dark:bg-blue-500/[0.06] rounded-full blur-[100px]" />
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
         {/* Eyebrow + Headline */}
@@ -117,7 +117,7 @@ export default function NameOriginSection({ lang = "ko" as Lang }: { lang?: Lang
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
         >
-          <span className="text-gold-700 dark:text-gold-400 text-sm font-semibold tracking-[0.3em] uppercase">
+          <span className="text-blue-700 dark:text-blue-400 text-sm font-semibold tracking-[0.3em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
@@ -143,7 +143,7 @@ export default function NameOriginSection({ lang = "ko" as Lang }: { lang?: Lang
                 <span className="text-4xl md:text-5xl font-bold text-white leading-none">{c.hanja}</span>
               </div>
               {/* Korean / romanized */}
-              <div className="text-blue-700 dark:text-gold-400 text-xl md:text-2xl font-bold tracking-widest">{c.korean}</div>
+              <div className="text-blue-700 dark:text-blue-400 text-xl md:text-2xl font-bold tracking-widest">{c.korean}</div>
               {/* Meaning */}
               <div className="text-navy-600 dark:text-navy-200 text-sm font-medium">{c.meaning}</div>
               {/* Desc */}
@@ -158,7 +158,7 @@ export default function NameOriginSection({ lang = "ko" as Lang }: { lang?: Lang
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-14 text-lg md:text-xl text-navy-700 dark:text-white/80 leading-relaxed max-w-2xl mx-auto font-light italic border-l-4 border-blue-600/50 dark:border-gold-500/60 pl-6 text-left"
+          className="mt-14 text-lg md:text-xl text-navy-700 dark:text-white/80 leading-relaxed max-w-2xl mx-auto font-light italic border-l-4 border-blue-600/50 dark:border-blue-500/60 pl-6 text-left"
         >
           "{i.tagline}"
         </motion.p>

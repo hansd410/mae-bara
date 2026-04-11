@@ -30,12 +30,12 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-700 dark:text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
             {i.headline}{" "}
-            <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>
+            <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
             {i.headlineEnd}
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
@@ -60,8 +60,8 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
             {/* Two key concepts */}
             <div className="space-y-4">
               <div className="flex items-start gap-4 p-4 rounded-xl glass-card !transform-none !shadow-none hover:!transform-none hover:!shadow-none">
-                <div className="w-10 h-10 rounded-lg bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg className="w-5 h-5 text-gold-700 dark:text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg className="w-5 h-5 text-blue-700 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
@@ -73,8 +73,8 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
                 </div>
               </div>
               <div className="flex items-start gap-4 p-4 rounded-xl glass-card !transform-none !shadow-none hover:!transform-none hover:!shadow-none">
-                <div className="w-10 h-10 rounded-lg bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center shrink-0 mt-0.5">
-                  <svg className="w-5 h-5 text-gold-700 dark:text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="w-10 h-10 rounded-lg bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center shrink-0 mt-0.5">
+                  <svg className="w-5 h-5 text-blue-700 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg>
                 </div>
@@ -114,15 +114,15 @@ export default function AboutSection({ lang = "ko" as Lang }: { lang?: Lang }) {
                 >
                   <div className="flex items-start gap-5">
                     <div className="flex flex-col items-center gap-2 shrink-0">
-                      <span className="text-gold-500/60 text-base font-bold tracking-wider">{s.num}</span>
-                      <div className="w-12 h-12 rounded-xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center group-hover:bg-gold-200 dark:group-hover:bg-gold-500/20 transition-colors">
-                        <Icon className="w-6 h-6 text-gold-700 dark:text-gold-400" />
+                      <span className="text-blue-500/60 text-base font-bold tracking-wider">{s.num}</span>
+                      <div className="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-500/20 transition-colors">
+                        <Icon className="w-6 h-6 text-blue-700 dark:text-blue-400" />
                       </div>
                     </div>
                     <div>
                       <div className="flex items-center gap-3 mb-2 flex-wrap">
                         <h3 className="text-navy-900 dark:text-white font-bold text-lg">{s.title}</h3>
-                        <span className="px-2.5 py-0.5 bg-gold-100 dark:bg-gold-500/15 text-gold-700 dark:text-gold-400 text-[10px] font-bold rounded-full border border-gold-300 dark:border-gold-500/20 tracking-wider uppercase">
+                        <span className="px-2.5 py-0.5 bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400 text-[10px] font-bold rounded-full border border-blue-200 dark:border-blue-500/20 tracking-wider uppercase">
                           {s.highlight}
                         </span>
                       </div>

@@ -47,7 +47,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
 
   const langBtnClass = `flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
     isOnDarkBg
-      ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
+      ? "border-navy-600 hover:bg-navy-800/50 text-blue-400"
       : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
   }`;
 
@@ -55,7 +55,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/90 dark:bg-navy-950/95 backdrop-blur-xl shadow-lg border-b border-navy-200/50 dark:border-gold-500/10"
+          ? "bg-white/90 dark:bg-navy-950/95 backdrop-blur-xl shadow-lg border-b border-navy-200/50 dark:border-blue-500/10"
           : "bg-transparent"
       }`}
     >
@@ -76,8 +76,8 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
               href={link.href}
               className={`nav-link-anim text-sm font-medium transition-colors tracking-[0.12em] ${
                 isOnDarkBg
-                  ? "text-navy-100 hover:text-gold-400"
-                  : "text-navy-600 dark:text-navy-200 hover:text-gold-700 dark:hover:text-gold-400"
+                  ? "text-navy-100 hover:text-blue-400"
+                  : "text-navy-600 dark:text-navy-200 hover:text-blue-700 dark:hover:text-blue-400"
               }`}
             >
               {link.label}
@@ -108,10 +108,10 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
                     onClick={() => setLangOpen(false)}
                     className={`block px-4 py-2 text-xs font-bold tracking-wider transition-colors ${
                       opt.lang === lang
-                        ? "text-gold-500 bg-gold-50 dark:bg-gold-900/20"
+                        ? "text-blue-500 bg-blue-50 dark:bg-blue-900/20"
                         : isOnDarkBg
-                        ? "text-navy-200 hover:bg-navy-800 hover:text-gold-400"
-                        : "text-navy-500 dark:text-navy-300 hover:bg-navy-50 dark:hover:bg-navy-800 hover:text-gold-700 dark:hover:text-gold-400"
+                        ? "text-navy-200 hover:bg-navy-800 hover:text-blue-400"
+                        : "text-navy-500 dark:text-navy-300 hover:bg-navy-50 dark:hover:bg-navy-800 hover:text-blue-700 dark:hover:text-blue-400"
                     }`}
                   >
                     {opt.label}
@@ -126,13 +126,13 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             onClick={toggleTheme}
             className={`p-2 rounded-lg border transition-colors ${
               isOnDarkBg
-                ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
+                ? "border-navy-600 hover:bg-navy-800/50 text-blue-400"
                 : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800"
             }`}
             aria-label="Toggle dark mode"
           >
             {theme === "dark" ? (
-              <Sun className="w-4 h-4 text-gold-500" />
+              <Sun className="w-4 h-4 text-blue-500" />
             ) : (
               <Moon className={`w-4 h-4 ${isOnDarkBg ? "text-navy-200" : "text-navy-500"}`} />
             )}
@@ -146,7 +146,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
               onClick={() => setLangOpen((v) => !v)}
               className={`flex items-center gap-1 px-2 py-1.5 rounded-lg border text-xs font-bold tracking-wider transition-colors ${
                 isOnDarkBg
-                  ? "border-navy-600 hover:bg-navy-800/50 text-gold-400"
+                  ? "border-navy-600 hover:bg-navy-800/50 text-blue-400"
                   : "border-navy-200 dark:border-navy-700 hover:bg-navy-100 dark:hover:bg-navy-800 text-navy-500 dark:text-navy-300"
               }`}
               aria-label="Select language"
@@ -168,10 +168,10 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
                     onClick={() => setLangOpen(false)}
                     className={`block px-4 py-2 text-xs font-bold tracking-wider transition-colors ${
                       opt.lang === lang
-                        ? "text-gold-500 bg-gold-50 dark:bg-gold-900/20"
+                        ? "text-blue-500 bg-blue-50 dark:bg-blue-900/20"
                         : isOnDarkBg
-                        ? "text-navy-200 hover:bg-navy-800 hover:text-gold-400"
-                        : "text-navy-500 dark:text-navy-300 hover:bg-navy-50 dark:hover:bg-navy-800 hover:text-gold-700 dark:hover:text-gold-400"
+                        ? "text-navy-200 hover:bg-navy-800 hover:text-blue-400"
+                        : "text-navy-500 dark:text-navy-300 hover:bg-navy-50 dark:hover:bg-navy-800 hover:text-blue-700 dark:hover:text-blue-400"
                     }`}
                   >
                     {opt.label}
@@ -190,7 +190,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             aria-label="Toggle dark mode"
           >
             {theme === "dark" ? (
-              <Sun className="w-4 h-4 text-gold-500" />
+              <Sun className="w-4 h-4 text-blue-500" />
             ) : (
               <Moon className={`w-4 h-4 ${isOnDarkBg ? "text-navy-200" : "text-navy-500"}`} />
             )}
@@ -199,8 +199,8 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
             onClick={() => setIsOpen(!isOpen)}
             className={`transition-colors ${
               isOnDarkBg
-                ? "text-navy-100 hover:text-gold-400"
-                : "text-navy-600 dark:text-navy-200 hover:text-gold-700 dark:hover:text-gold-400"
+                ? "text-navy-100 hover:text-blue-400"
+                : "text-navy-600 dark:text-navy-200 hover:text-blue-700 dark:hover:text-blue-400"
             }`}
             aria-label="Toggle menu"
           >
@@ -221,7 +221,7 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
               key={link.href}
               href={link.href}
               onClick={() => setIsOpen(false)}
-              className="block text-sm font-medium text-navy-600 dark:text-navy-200 hover:text-gold-700 dark:hover:text-gold-400 transition-colors py-2"
+              className="block text-sm font-medium text-navy-600 dark:text-navy-200 hover:text-blue-700 dark:hover:text-blue-400 transition-colors py-2"
             >
               {link.label}
             </a>

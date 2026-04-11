@@ -205,12 +205,12 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-gold-700 dark:text-gold-500 text-base font-semibold tracking-[0.25em] uppercase">
+          <span className="text-blue-700 dark:text-blue-500 text-base font-semibold tracking-[0.25em] uppercase">
             {i.eyebrow}
           </span>
           <h2 className="font-serif text-3xl md:text-5xl font-bold mt-4 text-navy-900 dark:text-white">
             {i.headline}{" "}
-            <span className="text-gold-600 dark:text-gold-400">{i.headlineAccent}</span>
+            <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
             {i.headlineEnd}
           </h2>
           <div className="gold-line max-w-24 mx-auto mt-6" />
@@ -231,7 +231,7 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
             {/* Left: Profile Info */}
             <div className="w-full md:w-1/3 min-w-0">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-2xl overflow-hidden border border-gold-300 dark:border-gold-500/25 shadow-lg shadow-gold-500/10 shrink-0">
+                <div className="w-16 h-16 rounded-2xl overflow-hidden border border-blue-200 dark:border-blue-500/25 shadow-lg shadow-blue-500/10 shrink-0">
                   <img
                     src="/images/sangdo_han_profile.jpg"
                     alt="Han Sangdo"
@@ -240,12 +240,12 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                 </div>
                 <div>
                   <h3 className="text-navy-900 dark:text-white font-bold text-xl font-serif">{i.name}</h3>
-                  <p className="text-gold-700 dark:text-gold-400 text-base font-semibold">{i.role}</p>
+                  <p className="text-blue-700 dark:text-blue-400 text-base font-semibold">{i.role}</p>
                   <a
                     href="https://sites.google.com/site/hansd410/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-base mt-1 hover:text-gold-600 dark:hover:text-gold-400 transition-colors"
+                    className="inline-flex items-center gap-1 text-navy-400 dark:text-navy-500 text-base mt-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     <ExternalLink className="w-3 h-3" />
                     {lang === "zh" ? "个人主页" : lang === "en" ? "Profile Page" : "프로필 페이지"}
@@ -255,19 +255,19 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
 
               <div className="space-y-3 text-base">
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
-                  <GraduationCap className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
+                  <GraduationCap className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0 mt-0.5" />
                   <span className="break-words">POSTECH PhD ABD (NLP & Optimization)</span>
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
-                  <Trophy className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
+                  <Trophy className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0 mt-0.5" />
                   <span className="break-words">OpenAI GPT-5 Hackathon Global 1st</span>
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
-                  <BookOpen className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
+                  <BookOpen className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0 mt-0.5" />
                   <span className="break-words">CEO Business School {lang === "en" ? "Professor" : lang === "zh" ? "教授" : "교수"}</span>
                 </div>
                 <div className="flex items-start gap-2 text-navy-600 dark:text-navy-300">
-                  <Briefcase className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0 mt-0.5" />
+                  <Briefcase className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0 mt-0.5" />
                   <span className="break-words">Naver · TmaxAI · VRcrew · Waddle</span>
                 </div>
               </div>
@@ -315,16 +315,16 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
                       whileInView={{ opacity: 1, x: 0 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.5, delay: idx * 0.1 }}
-                      className="flex items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-navy-50/60 dark:bg-navy-800/20 border border-navy-200/40 dark:border-navy-700/20 hover:border-gold-400/50 dark:hover:border-gold-500/30 transition-all group overflow-hidden"
+                      className="flex items-center gap-2 sm:gap-3 p-2.5 sm:p-3 rounded-xl bg-navy-50/60 dark:bg-navy-800/20 border border-navy-200/40 dark:border-navy-700/20 hover:border-blue-400/50 dark:hover:border-blue-500/30 transition-all group overflow-hidden"
                     >
-                      <FileText className="w-4 h-4 text-gold-600 dark:text-gold-500 shrink-0" />
+                      <FileText className="w-4 h-4 text-blue-600 dark:text-blue-500 shrink-0" />
                       <div className="flex-1 min-w-0">
-                        <p className="text-navy-700 dark:text-navy-200 text-base sm:text-base font-medium truncate group-hover:text-gold-700 dark:group-hover:text-gold-400 transition-colors">
+                        <p className="text-navy-700 dark:text-navy-200 text-base sm:text-base font-medium truncate group-hover:text-blue-700 dark:group-hover:text-blue-400 transition-colors">
                           {lang === "zh" ? m.titleZh : lang === "en" ? m.titleEn : m.title}
                         </p>
                         <p className="text-navy-400 dark:text-navy-500 text-base">{lang === "zh" ? m.sourceZh : lang === "en" ? m.sourceEn : m.source}</p>
                       </div>
-                      <ExternalLink className="w-3.5 h-3.5 text-navy-300 dark:text-navy-600 group-hover:text-gold-500 transition-colors shrink-0" />
+                      <ExternalLink className="w-3.5 h-3.5 text-navy-300 dark:text-navy-600 group-hover:text-blue-500 transition-colors shrink-0" />
                     </motion.a>
                   ))}
                 </div>
@@ -347,10 +347,10 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
               } ${idx === 4 ? "md:col-span-2 lg:col-span-1" : ""}`}
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="w-11 h-11 rounded-xl bg-gold-100 dark:bg-gold-500/10 border border-gold-300 dark:border-gold-500/20 flex items-center justify-center group-hover:bg-gold-200 dark:group-hover:bg-gold-500/20 transition-colors">
-                  <d.icon className="w-5 h-5 text-gold-700 dark:text-gold-400" />
+                <div className="w-11 h-11 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-200 dark:border-blue-500/20 flex items-center justify-center group-hover:bg-blue-100 dark:group-hover:bg-blue-500/20 transition-colors">
+                  <d.icon className="w-5 h-5 text-blue-700 dark:text-blue-400" />
                 </div>
-                <span className="px-2.5 py-0.5 bg-gold-100 dark:bg-gold-500/15 text-gold-700 dark:text-gold-400 text-[10px] font-bold rounded-full border border-gold-300 dark:border-gold-500/20 tracking-wider">
+                <span className="px-2.5 py-0.5 bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400 text-[10px] font-bold rounded-full border border-blue-200 dark:border-blue-500/20 tracking-wider">
                   {d.highlight}
                 </span>
               </div>
