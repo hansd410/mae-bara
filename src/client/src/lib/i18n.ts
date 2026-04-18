@@ -124,7 +124,7 @@ const hero = {
     badge: "OpenAI 全球黑客马拉松冠军",
     headline1: "重新定义产业决策主权",
     headline2: "引领",
-    headlineAccent: "AX Standard",
+    headlineAccent: "AX 標準",
     sub1: "超越分析——通过处方型AI",
     subBold1: "确保利润",
     sub1end: "。",
@@ -1664,7 +1664,7 @@ const footer = {
     copyright: `© ${new Date().getFullYear()} Handaro AI. All rights reserved.`,
   },
   zh: {
-    tagline: "重新定义产业决策主权的AX Standard",
+    tagline: "重新定义产业决策主权的AX 標準",
     copyright: `© ${new Date().getFullYear()} Handaro AI. All rights reserved.`,
   },
   jp: {
