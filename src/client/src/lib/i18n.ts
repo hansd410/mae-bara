@@ -17,6 +17,7 @@ const nav = {
       { href: "#certification", label: "인증" },
       { href: "#assessment", label: "AX 진단" },
       { href: "#contact", label: "문의" },
+      { href: "/blog/", label: "블로그" },
     ],
     langSwitch: "EN",
     langSwitchHref: "/en",
