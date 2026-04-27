@@ -83,7 +83,7 @@ const hero = {
     sub1: "처방형 AI(Prescriptive AI)를 통해 분석을 넘어",
     subBold1: "이익을 확정",
     sub1end: "합니다.",
-    sub2: "한다로AI는 지능형 실행 지휘 체계(Instructional OS)를 구축하여",
+    sub2: "AX 도입을 통해 운영 비용을 절감하고 기업 AI 도입 ROI를 극대화합니다. 한다로AI는 지능형 실행 지휘 체계(Instructional OS)를 구축하여",
     sub3: "귀사의 현장에",
     subBold2: "직접 명령을 내리는 AI",
     sub3end: "를 공급합니다.",
@@ -163,7 +163,7 @@ const about = {
         num: "02",
         title: "Prescriptive, Not Predictive",
         highlight: "처방형 AI",
-        desc: "예측에 그치지 않고, 현장에 직접 명령을 내리는 AI. 분석이 아닌 이익을 확정합니다.",
+        desc: "예측에 그치지 않고, 현장에 직접 명령을 내리는 AI. 분석이 아닌 비용절감과 이익 확정을 실현합니다.",
       },
       {
         num: "03",
@@ -392,17 +392,17 @@ const promise = {
       {
         num: "01",
         title: "Diagnosis First",
-        desc: "서비스보다 진단이 우선합니다. 귀사의 현재 상태를 정밀하게 분석한 후, 가장 높은 ROI를 만들 수 있는 영역부터 제안합니다.",
+        desc: "서비스보다 진단이 우선합니다. 귀사의 현재 상태를 정밀하게 분석한 후, AI 전환 비용절감 효과가 가장 높은 ROI 영역부터 제안합니다.",
       },
       {
         num: "02",
         title: "Instructional Result",
-        desc: "분석 보고서가 아닌, 현장에서 바로 실행할 수 있는 구체적인 명령과 프로세스를 납품합니다.",
+        desc: "분석 보고서가 아닌, 현장에서 바로 실행할 수 있는 구체적인 명령과 프로세스를 납품합니다. 평균 20~40% 운영 비용 절감 목표를 함께 설계합니다.",
       },
       {
         num: "03",
         title: "ROI Guarantee",
-        desc: "성과가 없으면 의미가 없습니다. 한다로AI는 실질적인 결과로 신뢰를 증명합니다.",
+        desc: "성과가 없으면 의미가 없습니다. 기업 AI 도입 ROI를 수치로 증명하며, 한다로AI는 실질적인 비용절감 결과로 신뢰를 증명합니다.",
       },
     ],
   },
