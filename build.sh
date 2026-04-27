@@ -31,6 +31,8 @@ echo "▶ 새 빌드 파일 복사..."
 cp "$DIST_DIR"/*.svg "$REPO_ROOT"/ 2>/dev/null || true
 cp "$DIST_DIR"/assets/index-*.js "$ASSETS_DIR"/
 cp "$DIST_DIR"/assets/index-*.css "$ASSETS_DIR"/
+cp "$DIST_DIR"/sitemap.xml "$REPO_ROOT"/
+cp "$DIST_DIR"/robots.txt "$REPO_ROOT"/
 
 NEW_JS=$(ls "$DIST_DIR"/assets/index-*.js | xargs basename)
 NEW_CSS=$(ls "$DIST_DIR"/assets/index-*.css | xargs basename)

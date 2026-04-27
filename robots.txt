@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://handaroai.com/sitemap.xml
