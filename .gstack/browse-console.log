@@ -1,7 +1,21 @@
-[2026-03-31T05:24:13.944Z] [error] Failed to load resource: the server responded with a status of 404 (File not found)
-[2026-03-31T05:24:14.990Z] [warning] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation
-[2026-03-31T05:24:15.002Z] [warning] Unrecognized feature: 'web-share'.
-[2026-03-31T05:25:15.163Z] [warning] cdn.tailwindcss.com should not be used in production. To use Tailwind CSS in production, install it as a PostCSS plugin or use the Tailwind CLI: https://tailwindcss.com/docs/installation
-[2026-03-31T05:25:15.165Z] [warning] Unrecognized feature: 'web-share'.
-[2026-03-31T05:36:20.524Z] [error] Failed to load resource: net::ERR_INTERNET_DISCONNECTED
-[2026-03-31T05:52:55.257Z] [error] Failed to load resource: net::ERR_INTERNET_DISCONNECTED
+[2026-05-01T11:42:33.150Z] [error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[2026-05-01T11:42:33.323Z] [debug] [vite] connecting...
+[2026-05-01T11:42:33.323Z] [debug] [Manus] Debug collector initialized (no rrweb, UI events only)
+[2026-05-01T11:42:33.416Z] [debug] [vite] connected.
+[2026-05-01T11:42:33.526Z] [info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[2026-05-01T11:45:05.034Z] [debug] [vite] hot updated: /src/index.css
+[2026-05-01T11:45:05.034Z] [debug] [vite] hot updated: /src/components/Navigation.tsx
+[2026-05-01T11:45:09.601Z] [debug] [vite] hot updated: /src/index.css
+[2026-05-01T11:45:09.601Z] [debug] [vite] hot updated: /src/components/Navigation.tsx
+[2026-05-01T11:45:13.584Z] [debug] [vite] hot updated: /src/index.css
+[2026-05-01T11:45:13.584Z] [debug] [vite] hot updated: /src/components/Navigation.tsx
+[2026-05-01T11:50:49.169Z] [error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[2026-05-01T11:50:49.175Z] [debug] [vite] connecting...
+[2026-05-01T11:50:49.175Z] [debug] [Manus] Debug collector initialized (no rrweb, UI events only)
+[2026-05-01T11:50:49.181Z] [debug] [vite] connected.
+[2026-05-01T11:50:49.192Z] [info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[2026-05-01T11:58:22.755Z] [error] Failed to load resource: the server responded with a status of 404 (Not Found)
+[2026-05-01T11:58:22.759Z] [debug] [vite] connecting...
+[2026-05-01T11:58:22.759Z] [debug] [Manus] Debug collector initialized (no rrweb, UI events only)
+[2026-05-01T11:58:22.760Z] [debug] [vite] connected.
+[2026-05-01T11:58:22.767Z] [info] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
