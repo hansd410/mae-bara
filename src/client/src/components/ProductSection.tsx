@@ -17,6 +17,8 @@ import {
   Image,
   Megaphone,
   MessageSquare,
+  GraduationCap,
+  ClipboardCheck,
 } from "lucide-react";
 import { t, type Lang } from "@/lib/i18n";
 
@@ -34,6 +36,8 @@ const PRODUCT_HREFS: Record<string, string> = {
   "Thumb AI":       "https://thumbai.handaroai.com",
   "Auto Ad Copy":   "https://autoadcopy.handaroai.com",
   "Review2Insight": "https://review2insight.handaroai.com",
+  "LessonForge AI": "https://lessonforgeai.handaroai.com",
+  "QuizMaster AI":  "https://quizmasterai.handaroai.com",
 };
 
 /* ── Product data (bilingual) ── */
@@ -47,6 +51,8 @@ const products = {
     { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "영상 내용을 분석해 클릭률(CTR)이 가장 높을 썸네일 A/B 테스트용 3종을 자동 생성합니다. 유튜브 크리에이터 락인 효과를 제공합니다.", category: "영상·마케팅", tag: "New" },
     { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "상품 특성을 바탕으로 페이스북/인스타/구글 광고 카피 수백 개를 자동 생성합니다. 마케팅 에이전시 및 1인 셀러의 필수 도구입니다.", category: "마케팅", tag: "New" },
     { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "수만 개의 고객 리뷰를 분석해 제품 개선점과 마케팅 소구점을 자동 추출합니다. 셀러의 상품 기획 단계부터 데이터를 장악합니다.", category: "데이터 분석", tag: "New" },
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "주제·학년·차시만 입력하면 교안·슬라이드·퀴즈·활동지를 한 번에 자동 생성합니다. 2022 개정교육과정 표준 자동 매핑으로 교사의 수업 준비 시간을 90% 단축합니다.", category: "에듀테크", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "PDF·영상·문서를 업로드하면 객관식·서술형·빈칸채우기 문항을 자동 생성합니다. 블룸 분류체계 기반 난이도 설계와 스마트 오답 선지로 문항 은행을 즉시 구축합니다.", category: "에듀테크", tag: "New" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "글로벌 트렌드와 공급망 변수를 결합한 AI 예측 솔루션. 제조, 유통, 금융 분야의 수요 예측과 리스크 관리를 지원합니다.", category: "예측 분석" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "고객 행동과 취향을 실시간 분석하는 초개인화 마케팅 엔진. 이커머스, 미디어, 교육, 금융 분야에서 전환율을 극대화합니다.", category: "마케팅" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "보고를 넘어 실무를 수행하는 AI 자율 업무 에이전트. 기업 시스템과 직접 통신하여 인간 업무의 80%를 자동화합니다.", category: "업무 자동화" },
@@ -61,6 +67,8 @@ const products = {
     { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "Analyzes video content and auto-generates 3 A/B test thumbnails optimized for maximum click-through rate (CTR). Creates a lock-in effect for YouTube creators.", category: "Video Marketing", tag: "New" },
     { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "Auto-generates hundreds of Facebook/Instagram/Google ad copies based on product characteristics. An essential tool for marketing agencies and solo sellers.", category: "Marketing", tag: "New" },
     { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "Analyzes tens of thousands of customer reviews to automatically extract product improvement points and marketing insights. Dominates seller data from the product planning stage.", category: "Data Analytics", tag: "New" },
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "Enter a topic, grade, and lesson count to auto-generate lesson plans, slides, quizzes, and worksheets in one click. Auto-maps to curriculum standards and cuts teacher prep time by 90%.", category: "EdTech", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "Upload PDFs, videos, or documents to auto-generate multiple-choice, short-answer, and fill-in-the-blank questions. Bloom's Taxonomy-based difficulty tagging with smart distractor design builds an instant item bank.", category: "EdTech", tag: "New" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "An AI forecasting solution combining global trends with supply chain variables. Supports demand forecasting and risk management in manufacturing, distribution, and finance.", category: "Predictive Analytics" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "A hyper-personalization marketing engine that analyzes customer behavior and preferences in real-time. Maximizes conversion rates in e-commerce, media, education, and finance.", category: "Marketing" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "An AI autonomous task agent that goes beyond reporting to execute real work. Communicates directly with enterprise systems to automate 80% of human tasks.", category: "Task Automation" },
@@ -75,6 +83,8 @@ const products = {
     { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "分析视频内容，自动生成3款优化点击率(CTR)的A/B测试缩略图，提升YouTube创作者粘性。", category: "视频营销", tag: "New" },
     { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "基于产品特性，自动生成数百条Facebook/Instagram/Google广告文案，是营销代理和独立卖家的必备工具。", category: "营销", tag: "New" },
     { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "分析数万条客户评论，自动提取产品改进点和营销卖点，从商品规划阶段全面掌握数据。", category: "数据分析", tag: "New" },
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "只需输入主题、年级和课时，即可一键自动生成教案、幻灯片、测验和活动单。自动对应课程标准，将教师备课时间缩短90%。", category: "教育科技", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "上传PDF、视频或文档，自动生成选择题、问答题和填空题。基于布鲁姆分类法的难度标记和智能错误选项设计，瞬时构建题库。", category: "教育科技", tag: "New" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "结合全球趋势与供应链变量的AI预测解决方案。支持制造、分销、金融领域的需求预测和风险管理。", category: "预测分析" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "实时分析客户行为和偏好的超个性化营销引擎。在电商、媒体、教育、金融领域最大化转化率。", category: "营销" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "超越报告、执行实务的AI自主业务代理。直接与企业系统通信，自动化人类工作的80%。", category: "业务自动化" },
@@ -89,6 +99,8 @@ const products = {
     { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "動画内容を分析し、クリック率(CTR)が最も高いサムネイルA/Bテスト用3種を自動生成します。YouTubeクリエイターのロックイン効果を生み出します。", category: "動画マーケティング", tag: "New" },
     { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "商品特性をもとに、Facebook/Instagram/Google広告コピーを数百件自動生成します。マーケティングエージェンシーと個人セラーの必須ツールです。", category: "マーケティング", tag: "New" },
     { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "数万件の顧客レビューを分析し、製品改善点とマーケティング訴求点を自動抽出します。商品企画段階からデータを掌握します。", category: "データ分析", tag: "New" },
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "テーマ・学年・コマ数を入力するだけで、教案・スライド・クイズ・ワークシートをワンクリックで自動生成。教育課程標準への自動マッピングで、教師の授業準備時間を90%短縮します。", category: "エドテック", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "PDF・動画・文書をアップロードするだけで、選択式・記述式・穴埋め式問題を自動生成。ブルームの分類体系に基づく難易度設計とスマートな誤答選択肢で、問題バンクを即座に構築します。", category: "エドテック", tag: "New" },
     { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "グローバルトレンドとサプライチェーン変数を組み合わせたAI予測ソリューション。製造・流通・金融分野の需要予測とリスク管理を支援。", category: "予測分析" },
     { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "顧客の行動と喗帽をリアルタイム分析する超個性化マーケティングエンジン。イーコマース・メディア・教育・金融分野でコンバージョン率を最大化。", category: "マーケティング" },
     { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "報告を超えて実務を遅行するAI自律業務エージェント。企業システムと直接通信し、人間業務の80%を自動化。", category: "業務自動化" },
