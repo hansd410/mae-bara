@@ -68,7 +68,7 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
           >
             {i.headline1}
             <br />
-            {i.headline2} <span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
+            {i.headline2 ? <>{i.headline2} </> : null}<span className="text-blue-600 dark:text-blue-400">{i.headlineAccent}</span>
           </motion.h1>
 
           {/* Sub-headline */}
@@ -97,14 +97,14 @@ export default function HeroSection({ lang = "ko" as Lang }: { lang?: Lang }) {
             className="flex flex-wrap gap-4"
           >
             <a
-              href="#assessment"
+              href="#contact"
               className="group inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 text-white dark:text-navy-950 font-bold py-4 px-8 rounded-lg transition-all duration-300 shadow-lg shadow-blue-600/20 dark:shadow-blue-500/20 hover:shadow-blue-600/40 dark:hover:shadow-blue-500/40 text-base tracking-wide"
             >
               <span>{i.ctaPrimary}</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#about"
+              href="#product"
               className="inline-flex items-center gap-2 border border-navy-300 dark:border-navy-400/40 hover:border-blue-600/50 dark:hover:border-blue-500/50 text-navy-700 dark:text-navy-100 font-medium py-4 px-8 rounded-lg transition-all duration-300 text-base tracking-wide hover:bg-navy-100/50 dark:hover:bg-navy-800/30"
             >
               {i.ctaSecondary}

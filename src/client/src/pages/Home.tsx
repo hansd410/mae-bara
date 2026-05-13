@@ -1,7 +1,7 @@
 /*
- * Handaro AI AX Standard — Home Page
- * Design: Sovereign Command (Light default + Dark toggle)
- * Section Order: Hero → NameOrigin → About → Product → Founder → Promise → Ecosystem → Certification → Assessment → Contact
+ * Handaro AI — Home Page
+ * Narrative: AI 에이전트 팩토리 (Light default + Dark toggle)
+ * Section Order: Hero → NameOrigin → About(+3 competitive) → Product → Ecosystem(지휘 체계) → Founder(기술 증명) → Promise(3가지 약속) → Certification → Assessment → Contact
  */
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
@@ -24,9 +24,9 @@ export default function Home() {
       <NameOriginSection lang="ko" />
       <AboutSection lang="ko" />
       <ProductSection lang="ko" />
+      <EcosystemSection lang="ko" />
       <FounderSection lang="ko" />
       <PromiseSection lang="ko" />
-      <EcosystemSection lang="ko" />
       <CertificationSection lang="ko" />
       <AssessmentSection lang="ko" />
       <ContactSection lang="ko" />

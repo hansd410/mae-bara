@@ -23,9 +23,9 @@ export default function HomeEn() {
       <NameOriginSection lang="en" />
       <AboutSection lang="en" />
       <ProductSection lang="en" />
+      <EcosystemSection lang="en" />
       <FounderSection lang="en" />
       <PromiseSection lang="en" />
-      <EcosystemSection lang="en" />
       <CertificationSection lang="en" />
       <AssessmentSection lang="en" />
       <ContactSection lang="en" />

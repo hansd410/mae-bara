@@ -24,20 +24,26 @@ const PRODUCT_ITEMS: {
   tag?: string;
   category: Record<Lang, string>;
 }[] = [
-  { name: "Storyroll",       subtitle: "AI Video Generator",               href: "https://storyroll.handaroai.com",      tag: "New",        category: { ko: "영상 생성",        en: "Video Creation",       zh: "视频生成",        jp: "動画生成" } },
-  { name: "ManySeller",      subtitle: "AI Product Page Builder",          href: "https://manyseller.handaroai.com",     tag: "New",        category: { ko: "이커머스",          en: "E-commerce",           zh: "电商",            jp: "イーコマース" } },
-  { name: "True Draft",      subtitle: "AI Universal Document Auditor",    href: "https://truedraft.handaroai.com",                         category: { ko: "문서 자동화",       en: "Document Automation",  zh: "文件自动化",      jp: "文書自動化" } },
-  { name: "Viral Cut",       subtitle: "AI Short-Form Clip Extractor",     href: "https://viralcut.handaroai.com",       tag: "New",        category: { ko: "영상·숏폼",         en: "Video & Short-Form",   zh: "视频·短片",       jp: "動画・ショート" } },
-  { name: "Script2Podcast",  subtitle: "AI Blog-to-Podcast Converter",     href: "https://script2podcast.handaroai.com", tag: "New",        category: { ko: "오디오 콘텐츠",     en: "Audio Content",        zh: "音频内容",        jp: "オーディオコンテンツ" } },
-  { name: "Thumb AI",        subtitle: "AI CTR Thumbnail Generator",       href: "https://thumbai.handaroai.com",        tag: "New",        category: { ko: "영상·마케팅",       en: "Video Marketing",      zh: "视频营销",        jp: "動画マーケティング" } },
-  { name: "Auto Ad Copy",    subtitle: "AI Ad Copy Generator",             href: "https://autoadcopy.handaroai.com",     tag: "New",        category: { ko: "마케팅",            en: "Marketing",            zh: "营销",            jp: "マーケティング" } },
-  { name: "Review2Insight",  subtitle: "AI Review Analytics Engine",       href: "https://review2insight.handaroai.com", tag: "New",        category: { ko: "데이터 분석",       en: "Data Analytics",       zh: "数据分析",        jp: "データ分析" } },
-  { name: "LessonForge AI",  subtitle: "AI Lesson Plan Generator",         href: "https://lessonforgeai.handaroai.com",  tag: "New",        category: { ko: "에듀테크",          en: "EdTech",               zh: "教育科技",        jp: "エドテック" } },
-  { name: "QuizMaster AI",   subtitle: "AI Assessment Item Generator",     href: "https://quizmasterai.handaroai.com",   tag: "New",        category: { ko: "에듀테크",          en: "EdTech",               zh: "教育科技",        jp: "エドテック" } },
-  { name: "True Predict",    subtitle: "AI Demand & Logistics Forecaster",  href: "https://truepredict.handaroai.com",                       category: { ko: "예측 분석",         en: "Predictive Analytics", zh: "预测分析",        jp: "予測分析" } },
-  { name: "True Persona",    subtitle: "Hyper-Personalization Engine",     href: "https://truepersona.handaroai.com",                        category: { ko: "마케팅",            en: "Marketing",            zh: "营销",            jp: "マーケティング" } },
-  { name: "True Agent",      subtitle: "AI Autonomous Task Engine",        href: "https://trueagent.handaroai.com",                          category: { ko: "업무 자동화",       en: "Task Automation",      zh: "业务自动化",      jp: "業務自動化" } },
-  { name: "Handaro AI One",  subtitle: "Port Sync Orchestrator",           href: "https://one.handaroai.com",            tag: "Enterprise",  category: { ko: "물류·항만",         en: "Logistics & Port",     zh: "物流·港口",       jp: "物流・港湾" } },
+  // ── 콘텐츠 (B2C) ──
+  { name: "Storyroll",       subtitle: "AI Video Generator",               href: "https://storyroll.handaroai.com",      tag: "New",        category: { ko: "콘텐츠",            en: "Content",              zh: "内容",            jp: "コンテンツ" } },
+  { name: "Viral Cut",       subtitle: "AI Short-Form Extractor",          href: "https://viralcut.handaroai.com",       tag: "New",        category: { ko: "콘텐츠",            en: "Content",              zh: "内容",            jp: "コンテンツ" } },
+  { name: "Script2Podcast",  subtitle: "AI Blog-to-Podcast",               href: "https://script2podcast.handaroai.com", tag: "New",        category: { ko: "콘텐츠",            en: "Content",              zh: "内容",            jp: "コンテンツ" } },
+  { name: "Thumb AI",        subtitle: "AI CTR Thumbnail",                 href: "https://thumbai.handaroai.com",        tag: "New",        category: { ko: "콘텐츠",            en: "Content",              zh: "内容",            jp: "コンテンツ" } },
+  // ── 이커머스 (B2C) ──
+  { name: "ManySeller",      subtitle: "AI Product Page Builder",          href: "https://manyseller.handaroai.com",     tag: "New",        category: { ko: "이커머스",          en: "E-Commerce",           zh: "电商",            jp: "イーコマース" } },
+  { name: "Auto Ad Copy",    subtitle: "AI Ad Copy Generator",             href: "https://autoadcopy.handaroai.com",     tag: "New",        category: { ko: "이커머스",          en: "E-Commerce",           zh: "电商",            jp: "イーコマース" } },
+  { name: "Review2Insight",  subtitle: "AI Review Analytics Engine",       href: "https://review2insight.handaroai.com", tag: "New",        category: { ko: "이커머스",          en: "E-Commerce",           zh: "电商",            jp: "イーコマース" } },
+  // ── 에듀테크 (B2C) ──
+  { name: "LessonForge AI",  subtitle: "AI Lesson Plan Generator",         href: "https://lessonforgeai.handaroai.com",  tag: "New",        category: { ko: "에듀테크",          en: "EduTech",              zh: "教育科技",        jp: "エドテック" } },
+  { name: "QuizMaster AI",   subtitle: "AI Assessment Item Generator",     href: "https://quizmasterai.handaroai.com",   tag: "New",        category: { ko: "에듀테크",          en: "EduTech",              zh: "教育科技",        jp: "エドテック" } },
+  // ── 문서·업무 ──
+  { name: "True Draft",      subtitle: "AI Universal Document Auditor",    href: "https://truedraft.handaroai.com",                         category: { ko: "문서·업무",         en: "Task",                 zh: "文档·业务",       jp: "文書·業務" } },
+  { name: "True Agent",      subtitle: "AI Autonomous Task Engine",        href: "https://trueagent.handaroai.com",      tag: "Enterprise", category: { ko: "문서·업무",         en: "Task",                 zh: "文档·业务",       jp: "文書·業務" } },
+  // ── 예측·마케팅 (B2B) ──
+  { name: "True Predict",    subtitle: "AI Demand & Logistics Forecaster", href: "https://truepredict.handaroai.com",    tag: "Enterprise", category: { ko: "예측·마케팅",       en: "Predictive",           zh: "预测·营销",       jp: "予測·マーケティング" } },
+  { name: "True Persona",    subtitle: "Hyper-Personalization Engine",     href: "https://truepersona.handaroai.com",    tag: "Enterprise", category: { ko: "예측·마케팅",       en: "Predictive",           zh: "预测·营销",       jp: "予測·マーケティング" } },
+  // ── 물류·제조 (B2B / 플랫폼) ──
+  { name: "Handaro AI One",  subtitle: "Port Sync Orchestrator",           href: "https://one.handaroai.com",            tag: "Enterprise", category: { ko: "물류·제조",         en: "Logistics",            zh: "物流·制造",       jp: "物流·製造" } },
 ];
 
 const VIEW_ALL_LABEL: Record<Lang, string> = {
@@ -54,13 +60,25 @@ const LINEUP_HEADER_LABEL: Record<Lang, string> = {
   jp: "製品ラインアップ",
 };
 
+type ProductTab = "all" | "b2c" | "b2b";
+
 export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
   const i = t(lang).nav;
+  const tProd = t(lang).product;
   const [isOpen, setIsOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
   const [productOpen, setProductOpen] = useState(false);
   const [mobileProductOpen, setMobileProductOpen] = useState(false);
+  const [productTab, setProductTab] = useState<ProductTab>("all");
+  const [mobileProductTab, setMobileProductTab] = useState<ProductTab>("all");
   const [scrolled, setScrolled] = useState(false);
+
+  const filterByTab = (tab: ProductTab) =>
+    tab === "all"
+      ? PRODUCT_ITEMS
+      : tab === "b2b"
+      ? PRODUCT_ITEMS.filter((p) => p.tag === "Enterprise")
+      : PRODUCT_ITEMS.filter((p) => p.tag !== "Enterprise");
   const { theme, toggleTheme } = useTheme();
   const langRef = useRef<HTMLDivElement>(null);
   const mobileLangRef = useRef<HTMLDivElement>(null);
@@ -180,9 +198,36 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
                       </a>
                     </div>
 
+                    {/* B2C/B2B tabs */}
+                    <div className={`px-4 pt-3 pb-2 border-b flex items-center gap-1.5 ${
+                      isOnDarkBg ? "border-navy-700/60" : "border-navy-100 dark:border-navy-700/60"
+                    }`}>
+                      {(["all", "b2c", "b2b"] as ProductTab[]).map((tab) => {
+                        const isActive = productTab === tab;
+                        const label = tab === "all" ? tProd.tabAll : tab === "b2c" ? tProd.tabB2C : tProd.tabB2B;
+                        const activeClass = tab === "b2b"
+                          ? "bg-amber-50 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-500/30"
+                          : "bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-500/30";
+                        const idleClass = isOnDarkBg
+                          ? "text-navy-300 border-transparent hover:bg-navy-800"
+                          : "text-navy-500 dark:text-navy-300 border-transparent hover:bg-navy-50 dark:hover:bg-navy-800";
+                        return (
+                          <button
+                            key={tab}
+                            onClick={() => setProductTab(tab)}
+                            className={`px-2.5 py-1 rounded-md text-[11px] font-bold tracking-wide border transition-colors ${
+                              isActive ? activeClass : idleClass
+                            }`}
+                          >
+                            {label}
+                          </button>
+                        );
+                      })}
+                    </div>
+
                     {/* Product grid — 3 columns */}
                     <div className="p-4 grid grid-cols-3 gap-1.5">
-                      {PRODUCT_ITEMS.map((p) => (
+                      {filterByTab(productTab).map((p) => (
                         <a
                           key={p.name}
                           href={p.href}
@@ -206,8 +251,8 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
                               </span>
                             )}
                             {p.tag === "Enterprise" && (
-                              <span className="text-[9px] font-bold px-1 py-0.5 rounded-md bg-blue-500/15 text-blue-600 dark:text-blue-400 leading-none">
-                                ENT
+                              <span className="text-[9px] font-bold px-1 py-0.5 rounded-md bg-amber-500/15 text-amber-600 dark:text-amber-400 leading-none">
+                                B2B
                               </span>
                             )}
                           </div>
@@ -377,7 +422,30 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
                 </button>
                 {mobileProductOpen && (
                   <div className="pl-2 pb-1 space-y-1">
-                    {PRODUCT_ITEMS.map((p) => (
+                    {/* Mobile B2C/B2B tabs */}
+                    <div className="flex items-center gap-1.5 pb-2 mb-1 border-b border-navy-100 dark:border-navy-700/40">
+                      {(["all", "b2c", "b2b"] as ProductTab[]).map((tab) => {
+                        const isActive = mobileProductTab === tab;
+                        const label = tab === "all" ? tProd.tabAll : tab === "b2c" ? tProd.tabB2C : tProd.tabB2B;
+                        const activeClass = tab === "b2b"
+                          ? "bg-amber-50 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-200 dark:border-amber-500/30"
+                          : "bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-500/30";
+                        return (
+                          <button
+                            key={tab}
+                            onClick={() => setMobileProductTab(tab)}
+                            className={`px-2.5 py-1 rounded-md text-[11px] font-bold tracking-wide border transition-colors ${
+                              isActive
+                                ? activeClass
+                                : "text-navy-500 dark:text-navy-300 border-transparent hover:bg-navy-50 dark:hover:bg-navy-800"
+                            }`}
+                          >
+                            {label}
+                          </button>
+                        );
+                      })}
+                    </div>
+                    {filterByTab(mobileProductTab).map((p) => (
                       <a
                         key={p.name}
                         href={p.href}
@@ -398,9 +466,9 @@ export default function Navigation({ lang = "ko" as Lang }: { lang?: Lang }) {
                           <span className={`text-[9px] font-bold px-1.5 py-0.5 rounded-md leading-none ${
                             p.tag === "New"
                               ? "bg-emerald-500/15 text-emerald-600 dark:text-emerald-400"
-                              : "bg-blue-500/15 text-blue-600 dark:text-blue-400"
+                              : "bg-amber-500/15 text-amber-600 dark:text-amber-400"
                           }`}>
-                            {p.tag === "Enterprise" ? "ENT" : "NEW"}
+                            {p.tag === "Enterprise" ? "B2B" : "NEW"}
                           </span>
                         )}
                       </a>
