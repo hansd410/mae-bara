@@ -10,12 +10,12 @@ export default function ContactSection({ lang = "ko" as Lang }: { lang?: Lang })
   const i = t(lang).contact;
 
   const descText = lang === "zh"
-    ? <>您的数据可能正在错失收益机会。Handaro AI的OpenAI黑客马拉松全球冠军专家将免费进行审查(Audit)。<br />Handaro AI用切实的结果来证明信任。</>
+    ? <>一位专家无法承担的工作，由 15 个 AI 智能体承担。<br />单一积分驱动整合阵列，以招聘一人所需的时间引入。每月都有新的智能体加入，您的业务可覆盖范围持续扩展。</>
     : lang === "en"
-    ? <>Your data could be generating revenue. Our OpenAI Hackathon global-winning experts will perform a free audit.<br />Handaro AI proves its trust through tangible outcomes.</>
+    ? <>What one specialist can't cover, 15 AI agents do.<br />An integrated lineup running on a single credit — adopt it in the time it takes to hire one person. Every month, new agents join — widening the surface area your business can cover.</>
     : lang === "jp"
-    ? <>貴社のデータが収益になり得るか、OpenAIハッカソングローバル優勝専門家が無料で監査（Audit）を実施します。<br />Handaro AIは実質的な結果で信頼を証明します。</>
-    : <>귀사의 데이터가 수익이 될 수 있는지, OpenAI 해커톤 글로벌 우승 전문가가 무료로 감사(Audit)를 수행합니다.<br />한다로AI는 실질적인 결과로 신뢰를 증명합니다.</>;
+    ? <>一人の専門家では担えない仕事を、15のAIエージェントが担います。<br />ひとつのクレジットで動く統合ラインアップを、一人を採用する時間で導入できます。毎月新しいエージェントが加わり、貴社がカバーできる領域が広がり続けます。</>
+    : <>한 명의 전문가가 감당할 수 없는 일을, 15개의 AI 에이전트가 합니다.<br />단일 크레딧으로 작동하는 통합 라인업을, 한 명을 채용하는 시간에 도입하세요. 매달 새로운 에이전트가 합류해 귀사의 라인업이 계속 넓어집니다.</>;
 
   return (
     <section id="contact" className="relative py-24 md:py-32 overflow-hidden">

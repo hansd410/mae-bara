@@ -22,9 +22,9 @@ export default function HomeJp() {
       <NameOriginSection lang="jp" />
       <AboutSection lang="jp" />
       <ProductSection lang="jp" />
+      <EcosystemSection lang="jp" />
       <FounderSection lang="jp" />
       <PromiseSection lang="jp" />
-      <EcosystemSection lang="jp" />
       <CertificationSection lang="jp" />
       <AssessmentSection lang="jp" />
       <ContactSection lang="jp" />

@@ -43,68 +43,92 @@ const PRODUCT_HREFS: Record<string, string> = {
 /* ── Product data (bilingual) ── */
 const products = {
   ko: [
-    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "텍스트를 입력하면 AI가 영상을 만듭니다. 5단계 자동 파이프라인으로 영상 클립·나레이션·더빙까지 원클릭 완성.", category: "영상 생성", tag: "New" },
-    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "상품명 하나로 팔리는 상세페이지를 30초 만에 완성. AI 카피라이팅·디자인·상품 이미지까지 자동 생성.", category: "이커머스", tag: "New" },
-    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "Vision AI 기반 문서 검증 시스템. 표, 도면, 수치 데이터의 완벽한 정합성 분석으로 모든 산업의 규격 문서를 자동 감사합니다.", category: "문서 자동화" },
-    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Clip Extractor", desc: "긴 유튜브 영상을 분석해 틱톡/릴스용 숏폼을 자동 추출하고 자막까지 생성합니다. 종량제 크레딧으로 Storyroll 사용자의 숏폼 제작 수요를 흡수합니다.", category: "영상·숏폼", tag: "New" },
-    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast Converter", desc: "블로그 글이나 기사를 대화형 팟캐스트 오디오로 자동 변환합니다. 오디오 콘텐츠 시장으로의 영역을 확장합니다.", category: "오디오 콘텐츠", tag: "New" },
-    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "영상 내용을 분석해 클릭률(CTR)이 가장 높을 썸네일 A/B 테스트용 3종을 자동 생성합니다. 유튜브 크리에이터 락인 효과를 제공합니다.", category: "영상·마케팅", tag: "New" },
-    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "상품 특성을 바탕으로 페이스북/인스타/구글 광고 카피 수백 개를 자동 생성합니다. 마케팅 에이전시 및 1인 셀러의 필수 도구입니다.", category: "마케팅", tag: "New" },
-    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "수만 개의 고객 리뷰를 분석해 제품 개선점과 마케팅 소구점을 자동 추출합니다. 셀러의 상품 기획 단계부터 데이터를 장악합니다.", category: "데이터 분석", tag: "New" },
-    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "주제·학년·차시만 입력하면 교안·슬라이드·퀴즈·활동지를 한 번에 자동 생성합니다. 2022 개정교육과정 표준 자동 매핑으로 교사의 수업 준비 시간을 90% 단축합니다.", category: "에듀테크", tag: "New" },
-    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "PDF·영상·문서를 업로드하면 객관식·서술형·빈칸채우기 문항을 자동 생성합니다. 블룸 분류체계 기반 난이도 설계와 스마트 오답 선지로 문항 은행을 즉시 구축합니다.", category: "에듀테크", tag: "New" },
-    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "글로벌 트렌드와 공급망 변수를 결합한 AI 예측 솔루션. 제조, 유통, 금융 분야의 수요 예측과 리스크 관리를 지원합니다.", category: "예측 분석" },
-    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "고객 행동과 취향을 실시간 분석하는 초개인화 마케팅 엔진. 이커머스, 미디어, 교육, 금융 분야에서 전환율을 극대화합니다.", category: "마케팅" },
-    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "보고를 넘어 실무를 수행하는 AI 자율 업무 에이전트. 기업 시스템과 직접 통신하여 인간 업무의 80%를 자동화합니다.", category: "업무 자동화" },
-    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "항만 지능 운영체제. 처방형 AI(Prescriptive AI)를 통해 분석을 넘어 이익을 확정하는 Decision-as-a-Service를 제공합니다.", category: "물류·항만", tag: "Enterprise" },
+    // ── 콘텐츠 ──
+    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "텍스트 입력만으로 영상 클립·나레이션·더빙까지 원클릭으로 생성하는 영상 제작 에이전트.", category: "콘텐츠", tag: "New" },
+    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Extractor", desc: "긴 유튜브 영상을 틱톡·릴스용 숏폼으로 자동 추출하고 자막까지 입히는 숏폼 에이전트.", category: "콘텐츠", tag: "New" },
+    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast", desc: "블로그 글이나 기사를 대화형 팟캐스트 오디오로 자동 변환하는 오디오 콘텐츠 에이전트.", category: "콘텐츠", tag: "New" },
+    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail", desc: "영상 내용을 분석해 클릭률(CTR)이 가장 높을 썸네일 3종을 동시 생성하는 썸네일 최적화 에이전트.", category: "콘텐츠", tag: "New" },
+    // ── 이커머스 ──
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "상품명 하나로 상세페이지·카피·디자인을 30초 만에 완성하는 셀링 자동화 에이전트.", category: "이커머스", tag: "New" },
+    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "상품 특성을 바탕으로 페이스북·인스타·구글 광고 카피 수백 개를 자동 생성하는 광고 카피 에이전트.", category: "이커머스", tag: "New" },
+    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "수만 개의 고객 리뷰를 분석해 제품 개선점과 마케팅 소구점을 자동 추출하는 리뷰 분석 에이전트.", category: "이커머스", tag: "New" },
+    // ── 에듀테크 ──
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "주제·학년만 입력하면 교안·슬라이드·퀴즈를 자동 매핑하여 수업 준비 시간을 90% 단축하는 교안 제작 에이전트.", category: "에듀테크", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "PDF·문서를 업로드하면 난이도별 객관식·서술형 문항을 무한 생성하는 문항 은행 에이전트.", category: "에듀테크", tag: "New" },
+    // ── 문서·업무 ──
+    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "Vision AI 기반으로 표·도면·수치 데이터의 정합성을 자동 분석하는 규격 문서 감사 에이전트.", category: "문서·업무" },
+    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "보고가 아닌 실무를 직접 수행합니다. 기업 시스템과 직접 통신해 반복 업무의 80%를 자동화하는 자율 업무 에이전트.", category: "문서·업무", tag: "Enterprise" },
+    // ── 예측·마케팅 ──
+    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "글로벌 트렌드와 공급망 변수를 결합해 수요를 예측하고 리스크를 방어하는 수요 예측 에이전트.", category: "예측·마케팅", tag: "Enterprise" },
+    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "고객 행동과 취향을 실시간 분석해 전환율을 극대화하는 초개인화 에이전트.", category: "예측·마케팅", tag: "Enterprise" },
+    // ── 물류·제조 (플랫폼 허브) ──
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "15개 AI 서비스를 하나의 크레딧으로 연동하는 통합 플랫폼이자, 항만 지능 운영체제로 작동하는 허브.", category: "물류·제조", tag: "Enterprise" },
   ],
   en: [
-    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "Type text, and AI creates your video. A 5-step pipeline auto-generates clips, narration, and dubbing in one click.", category: "Video Creation", tag: "New" },
-    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "Build a high-converting product detail page in 30 seconds. AI auto-generates copywriting, design, and product images.", category: "E-commerce", tag: "New" },
-    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "A Vision AI-powered document verification system. Automatically audits regulatory documents across all industries with perfect consistency analysis of tables, drawings, and numerical data.", category: "Document Automation" },
-    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Clip Extractor", desc: "Analyzes long YouTube videos and auto-extracts short-form clips for TikTok/Reels with automatic subtitle generation. Pay-per-credit model captures Storyroll users' short-form demand.", category: "Video & Short-Form", tag: "New" },
-    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast Converter", desc: "Automatically converts blog posts and articles into conversational podcast audio. Expands reach into the growing audio content market.", category: "Audio Content", tag: "New" },
-    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "Analyzes video content and auto-generates 3 A/B test thumbnails optimized for maximum click-through rate (CTR). Creates a lock-in effect for YouTube creators.", category: "Video Marketing", tag: "New" },
-    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "Auto-generates hundreds of Facebook/Instagram/Google ad copies based on product characteristics. An essential tool for marketing agencies and solo sellers.", category: "Marketing", tag: "New" },
-    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "Analyzes tens of thousands of customer reviews to automatically extract product improvement points and marketing insights. Dominates seller data from the product planning stage.", category: "Data Analytics", tag: "New" },
-    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "Enter a topic, grade, and lesson count to auto-generate lesson plans, slides, quizzes, and worksheets in one click. Auto-maps to curriculum standards and cuts teacher prep time by 90%.", category: "EdTech", tag: "New" },
-    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "Upload PDFs, videos, or documents to auto-generate multiple-choice, short-answer, and fill-in-the-blank questions. Bloom's Taxonomy-based difficulty tagging with smart distractor design builds an instant item bank.", category: "EdTech", tag: "New" },
-    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "An AI forecasting solution combining global trends with supply chain variables. Supports demand forecasting and risk management in manufacturing, distribution, and finance.", category: "Predictive Analytics" },
-    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "A hyper-personalization marketing engine that analyzes customer behavior and preferences in real-time. Maximizes conversion rates in e-commerce, media, education, and finance.", category: "Marketing" },
-    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "An AI autonomous task agent that goes beyond reporting to execute real work. Communicates directly with enterprise systems to automate 80% of human tasks.", category: "Task Automation" },
-    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "A port intelligence operating system. Delivers Decision-as-a-Service through Prescriptive AI that goes beyond analysis to lock in profits.", category: "Logistics & Port", tag: "Enterprise" },
+    // ── Content ──
+    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "A video production agent. Type text and instantly generate clips, narration, and dubbing in one click.", category: "Content", tag: "New" },
+    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Extractor", desc: "A short-form agent. Auto-extracts TikTok/Reels-ready clips from long YouTube videos and burns in subtitles.", category: "Content", tag: "New" },
+    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast", desc: "An audio content agent. Auto-converts blog posts and articles into conversational podcast audio.", category: "Content", tag: "New" },
+    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail", desc: "A thumbnail optimization agent. Analyzes video content and generates 3 high-CTR thumbnails in parallel.", category: "Content", tag: "New" },
+    // ── E-Commerce ──
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "A selling automation agent. Builds a complete product detail page, copy, and design from a single product name in 30 seconds.", category: "E-Commerce", tag: "New" },
+    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "An ad copy agent. Auto-generates hundreds of Facebook, Instagram, and Google ad copies based on product traits.", category: "E-Commerce", tag: "New" },
+    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "A review analytics agent. Analyzes tens of thousands of customer reviews to auto-extract product improvements and marketing angles.", category: "E-Commerce", tag: "New" },
+    // ── EduTech ──
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "A lesson plan agent. Enter topic and grade — plans, slides, and quizzes auto-mapped, cutting prep time by 90%.", category: "EduTech", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "An item bank agent. Upload PDFs or documents to generate unlimited multiple-choice and short-answer questions by difficulty.", category: "EduTech", tag: "New" },
+    // ── Task ──
+    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "A document audit agent. Vision-AI-based consistency analysis across tables, drawings, and numerical data.", category: "Task" },
+    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "An autonomous work agent. Communicates directly with enterprise systems to automate up to 80% of repetitive tasks.", category: "Task", tag: "Enterprise" },
+    // ── Predictive ──
+    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "A demand forecasting agent. Combines global trends with supply chain variables to forecast demand and manage risk.", category: "Predictive", tag: "Enterprise" },
+    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "A hyper-personalization agent. Analyzes customer behavior and preferences in real-time to maximize conversion.", category: "Predictive", tag: "Enterprise" },
+    // ── Logistics & Manufacturing (Platform Hub) ──
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "An integration platform linking all 15 AI services under one unified credit, also running as a port intelligence OS.", category: "Logistics", tag: "Enterprise" },
   ],
   zh: [
-    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "输入文字，AI自动生成视频。五步流水线一键完成视频片段、旁白与配音。", category: "视频生成", tag: "New" },
-    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "只需输入商品名称，30秒完成高转化率商品详情页。AI自动生成文案、设计与商品图片。", category: "电商", tag: "New" },
-    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "基于Vision AI的文件验证系统。通过对表格、图纸、数值数据的完美一致性分析，自动审计各行业的规格文件。", category: "文件自动化" },
-    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Clip Extractor", desc: "分析长YouTube视频，自动提取适合TikTok/Reels的短视频片段并生成字幕。按量付费模式承接Storyroll用户的短片制作需求。", category: "视频·短片", tag: "New" },
-    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast Converter", desc: "将博客文章或新闻稿自动转换为对话式播客音频，向音频内容市场拓展。", category: "音频内容", tag: "New" },
-    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "分析视频内容，自动生成3款优化点击率(CTR)的A/B测试缩略图，提升YouTube创作者粘性。", category: "视频营销", tag: "New" },
-    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "基于产品特性，自动生成数百条Facebook/Instagram/Google广告文案，是营销代理和独立卖家的必备工具。", category: "营销", tag: "New" },
-    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "分析数万条客户评论，自动提取产品改进点和营销卖点，从商品规划阶段全面掌握数据。", category: "数据分析", tag: "New" },
-    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "只需输入主题、年级和课时，即可一键自动生成教案、幻灯片、测验和活动单。自动对应课程标准，将教师备课时间缩短90%。", category: "教育科技", tag: "New" },
-    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "上传PDF、视频或文档，自动生成选择题、问答题和填空题。基于布鲁姆分类法的难度标记和智能错误选项设计，瞬时构建题库。", category: "教育科技", tag: "New" },
-    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "结合全球趋势与供应链变量的AI预测解决方案。支持制造、分销、金融领域的需求预测和风险管理。", category: "预测分析" },
-    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "实时分析客户行为和偏好的超个性化营销引擎。在电商、媒体、教育、金融领域最大化转化率。", category: "营销" },
-    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "超越报告、执行实务的AI自主业务代理。直接与企业系统通信，自动化人类工作的80%。", category: "业务自动化" },
-    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "港口智能操作系统。通过处方型·AI（Prescriptive AI）提供超越分析、确定利益的Decision-as-a-Service。", category: "物流·港口", tag: "Enterprise" },
+    // ── 内容 ──
+    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "视频制作智能体。仅凭文字输入，即可一键生成视频片段、旁白与配音。", category: "内容", tag: "New" },
+    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Extractor", desc: "短视频智能体。从长 YouTube 视频中自动抽取 TikTok/Reels 短片，并自动加字幕。", category: "内容", tag: "New" },
+    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast", desc: "音频内容智能体。将博客文章或新闻稿自动转换为对话式播客音频。", category: "内容", tag: "New" },
+    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail", desc: "缩略图优化智能体。分析视频内容，同时生成 3 款点击率最高的缩略图。", category: "内容", tag: "New" },
+    // ── 电商 ──
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "销售自动化智能体。仅凭一个商品名，30 秒完成详情页、文案与设计。", category: "电商", tag: "New" },
+    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "广告文案智能体。基于产品特性，自动生成数百条 Facebook、Instagram、Google 广告文案。", category: "电商", tag: "New" },
+    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "评论分析智能体。分析数万条客户评论，自动提取产品改进点与营销卖点。", category: "电商", tag: "New" },
+    // ── 教育科技 ──
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "教案智能体。输入主题与年级，即可自动生成教案、幻灯片、测验，备课时间缩短 90%。", category: "教育科技", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "题库智能体。上传 PDF·文档即可按难度无限生成选择题与简答题。", category: "教育科技", tag: "New" },
+    // ── 文档·业务 ──
+    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "文档审计智能体。基于 Vision AI，对表格、图纸、数值数据的一致性进行自动分析。", category: "文档·业务" },
+    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "自主业务智能体。直接与企业系统通讯，将重复性业务的 80% 自动化。", category: "文档·业务", tag: "Enterprise" },
+    // ── 预测·营销 ──
+    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "需求预测智能体。结合全球趋势与供应链变量，预测需求并管理风险。", category: "预测·营销", tag: "Enterprise" },
+    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "超个性化智能体。实时分析客户行为与偏好，最大化转化率。", category: "预测·营销", tag: "Enterprise" },
+    // ── 物流·制造（平台中枢）──
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "以一份通用积分连动 15 项 AI 服务的整合平台，同时作为港口智能操作系统运行。", category: "物流·制造", tag: "Enterprise" },
   ],
   jp: [
-    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "テキストを入力するだけでAIが動画を作成。5ステップ自動パイプラインで動画クリップ・ナレーション・吹替えまでワンクリック完成。", category: "動画生成", tag: "New" },
-    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "商品名ひとつで売れる商品詳細ページを、30秒で完成。AIコピーライティング・デザイン・商品画像まで自動生成。", category: "イーコマース", tag: "New" },
-    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "Vision AIベースの文書検証システム。表・図面・数値データの完全整合性分析で、あらゆる産業の規格文書を自動監査します。", category: "文書自動化" },
-    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Clip Extractor", desc: "長いYouTube動画を分析し、TikTok/Reels用ショート動画を自動抽出・字幕生成します。従量制クレジットでStoryrollユーザーの短尺コンテンツ需要を取り込みます。", category: "動画・ショート", tag: "New" },
-    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast Converter", desc: "ブログ記事やニュースを会話形式のポッドキャスト音声に自動変換します。オーディオコンテンツ市場への領域拡大を実現します。", category: "オーディオコンテンツ", tag: "New" },
-    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail Generator", desc: "動画内容を分析し、クリック率(CTR)が最も高いサムネイルA/Bテスト用3種を自動生成します。YouTubeクリエイターのロックイン効果を生み出します。", category: "動画マーケティング", tag: "New" },
-    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "商品特性をもとに、Facebook/Instagram/Google広告コピーを数百件自動生成します。マーケティングエージェンシーと個人セラーの必須ツールです。", category: "マーケティング", tag: "New" },
-    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "数万件の顧客レビューを分析し、製品改善点とマーケティング訴求点を自動抽出します。商品企画段階からデータを掌握します。", category: "データ分析", tag: "New" },
-    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "テーマ・学年・コマ数を入力するだけで、教案・スライド・クイズ・ワークシートをワンクリックで自動生成。教育課程標準への自動マッピングで、教師の授業準備時間を90%短縮します。", category: "エドテック", tag: "New" },
-    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "PDF・動画・文書をアップロードするだけで、選択式・記述式・穴埋め式問題を自動生成。ブルームの分類体系に基づく難易度設計とスマートな誤答選択肢で、問題バンクを即座に構築します。", category: "エドテック", tag: "New" },
-    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "グローバルトレンドとサプライチェーン変数を組み合わせたAI予測ソリューション。製造・流通・金融分野の需要予測とリスク管理を支援。", category: "予測分析" },
-    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "顧客の行動と喗帽をリアルタイム分析する超個性化マーケティングエンジン。イーコマース・メディア・教育・金融分野でコンバージョン率を最大化。", category: "マーケティング" },
-    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "報告を超えて実務を遅行するAI自律業務エージェント。企業システムと直接通信し、人間業務の80%を自動化。", category: "業務自動化" },
-    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "港湾インテリジェントOS。処方型 AI（Prescriptive AI）により分析を超えて利益を確定するDecision-as-a-Serviceを提供。", category: "物流・港湾", tag: "Enterprise" },
+    // ── コンテンツ ──
+    { icon: Video, name: "Storyroll", subtitle: "AI Video Generator", desc: "動画制作エージェント。テキスト入力だけで、動画クリップ・ナレーション・吹替までワンクリックで生成。", category: "コンテンツ", tag: "New" },
+    { icon: Scissors, name: "Viral Cut", subtitle: "AI Short-Form Extractor", desc: "ショート動画エージェント。長尺の YouTube 動画から TikTok/Reels 用ショート動画を自動抽出し、字幕まで付与。", category: "コンテンツ", tag: "New" },
+    { icon: Mic, name: "Script2Podcast", subtitle: "AI Blog-to-Podcast", desc: "音声コンテンツエージェント。ブログ記事やニュースを会話形式のポッドキャスト音声に自動変換。", category: "コンテンツ", tag: "New" },
+    { icon: Image, name: "Thumb AI", subtitle: "AI CTR Thumbnail", desc: "サムネイル最適化エージェント。動画内容を分析し、最も CTR が高いサムネイル 3 種を同時生成。", category: "コンテンツ", tag: "New" },
+    // ── イーコマース ──
+    { icon: Store, name: "ManySeller", subtitle: "AI Product Page Builder", desc: "販売自動化エージェント。商品名ひとつで、詳細ページ・コピー・デザインを 30 秒で完成。", category: "イーコマース", tag: "New" },
+    { icon: Megaphone, name: "Auto Ad Copy", subtitle: "AI Ad Copy Generator", desc: "広告コピーエージェント。商品特性をもとに、Facebook・Instagram・Google 広告コピーを数百件自動生成。", category: "イーコマース", tag: "New" },
+    { icon: MessageSquare, name: "Review2Insight", subtitle: "AI Review Analytics Engine", desc: "レビュー分析エージェント。数万件の顧客レビューを分析し、製品改善点とマーケティング訴求点を自動抽出。", category: "イーコマース", tag: "New" },
+    // ── エドテック ──
+    { icon: GraduationCap, name: "LessonForge AI", subtitle: "AI Lesson Plan Generator", desc: "教材エージェント。テーマと学年を入力するだけで、教案・スライド・クイズを自動マッピング。授業準備を 90% 短縮。", category: "エドテック", tag: "New" },
+    { icon: ClipboardCheck, name: "QuizMaster AI", subtitle: "AI Assessment Item Generator", desc: "問題バンクエージェント。PDF・文書をアップロードすれば、難易度別の選択式・記述式問題を無限生成。", category: "エドテック", tag: "New" },
+    // ── 文書·業務 ──
+    { icon: FileSearch, name: "True Draft", subtitle: "AI Universal Document Auditor", desc: "文書監査エージェント。Vision AI で表・図面・数値データの整合性を自動分析。", category: "文書·業務" },
+    { icon: Bot, name: "True Agent", subtitle: "AI Autonomous Task Engine", desc: "自律業務エージェント。企業システムと直接通信し、定型業務の最大 80% を自動化。", category: "文書·業務", tag: "Enterprise" },
+    // ── 予測·マーケティング ──
+    { icon: BarChart3, name: "True Predict", subtitle: "AI Demand & Logistics Forecaster", desc: "需要予測エージェント。グローバルトレンドとサプライチェーン変数を結合し、需要を予測しリスクを管理。", category: "予測·マーケティング", tag: "Enterprise" },
+    { icon: Users, name: "True Persona", subtitle: "Hyper-Personalization Engine", desc: "超個性化エージェント。顧客行動と嗜好をリアルタイム分析し、コンバージョン率を最大化。", category: "予測·マーケティング", tag: "Enterprise" },
+    // ── 物流·製造（プラットフォーム・ハブ）──
+    { icon: Anchor, name: "Handaro AI One", subtitle: "Port Sync Orchestrator", desc: "15 の AI サービスをひとつのクレジットで連動させる統合プラットフォーム。港湾インテリジェント OS としても稼働。", category: "物流·製造", tag: "Enterprise" },
   ],
 };
 
@@ -153,9 +177,14 @@ export default function ProductSection({ lang = "ko" as Lang }: { lang?: Lang })
                 <span className="px-2.5 py-0.5 bg-navy-100 dark:bg-navy-700/30 text-navy-500 dark:text-navy-400 text-[10px] font-semibold rounded-full">
                   {product.category}
                 </span>
-                {product.tag && (
+                {product.tag === "Enterprise" && (
+                  <span className="px-2.5 py-0.5 bg-amber-50 dark:bg-amber-500/15 text-amber-700 dark:text-amber-400 text-[10px] font-bold rounded-full border border-amber-200 dark:border-amber-500/30 tracking-wider">
+                    B2B · Enterprise
+                  </span>
+                )}
+                {product.tag === "New" && (
                   <span className="px-2.5 py-0.5 bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-400 text-[10px] font-semibold rounded-full border border-blue-100 dark:border-blue-500/20">
-                    {product.tag}
+                    New
                   </span>
                 )}
               </div>
@@ -168,15 +197,37 @@ export default function ProductSection({ lang = "ko" as Lang }: { lang?: Lang })
               <p className="text-blue-600 dark:text-blue-400 text-base font-medium mb-3">{product.subtitle}</p>
               <p className="text-navy-500 dark:text-navy-400 text-base leading-relaxed mb-5 flex-1">{product.desc}</p>
 
-              <a
-                href={PRODUCT_HREFS[product.name] ?? "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-blue-700 dark:text-blue-400 text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-auto"
-              >
-                {i.viewBtn}
-                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
-              </a>
+              {product.tag === "Enterprise" ? (
+                <div className="flex items-center gap-3 mt-auto pt-1 border-t border-navy-100 dark:border-navy-700/40 flex-wrap">
+                  <a
+                    href={PRODUCT_HREFS[product.name] ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-blue-700 dark:text-blue-400 text-sm font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors pt-3"
+                  >
+                    {i.visitBtn}
+                    <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </a>
+                  <span className="text-navy-300 dark:text-navy-600 text-sm pt-3">·</span>
+                  <a
+                    href={`mailto:info@handaro.ai?subject=${encodeURIComponent(`${i.consultSubject} ${product.name}`)}&body=${encodeURIComponent(`${i.consultGreeting}${i.consultBody}${product.name}${i.consultRequest}${i.consultFooter}`)}`}
+                    className="flex items-center gap-1 text-amber-700 dark:text-amber-400 text-sm font-semibold hover:text-amber-800 dark:hover:text-amber-300 transition-colors pt-3"
+                  >
+                    {i.consultBtn}
+                    <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+                  </a>
+                </div>
+              ) : (
+                <a
+                  href={PRODUCT_HREFS[product.name] ?? "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-blue-700 dark:text-blue-400 text-base font-semibold hover:text-blue-800 dark:hover:text-blue-300 transition-colors mt-auto"
+                >
+                  {i.viewBtn}
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
+                </a>
+              )}
             </motion.div>
           ))}
         </div>

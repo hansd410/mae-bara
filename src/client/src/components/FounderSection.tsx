@@ -218,19 +218,19 @@ export default function FounderSection({ lang = "ko" as Lang }: { lang?: Lang })
   const i = t(lang).founder;
   const diffs = differentiators[lang];
   const quote = lang === "en"
-    ? { text: "Technology isn't about proving — it's about showing results.\nHandaro AI proves your AX with numbers.", author: "— Sangdo Han, CEO & Founder" }
+    ? { text: "Technology isn't about proving — it's about showing results.\nHandaro AI's agents will show that result with numbers, in your operations.", author: "— Sangdo Han, CEO & Founder" }
     : lang === "zh"
-    ? { text: "技术不是用来证明的，而是用结果来展示的。\nHandaro AI用数字证明您的AX价值。", author: "— 韩相度，CEO & Founder" }
+    ? { text: "技术不是用来证明的，而是用结果展示的。\nHandaro AI 的智能体将在贵公司的业务中以数字呈现结果。", author: "— 韩相度，CEO & Founder" }
     : lang === "jp"
-    ? { text: "技術は証明するものではなく、結果で示すものです。\nHandaro AIは貴社のAXを数字で証明します。", author: "— ハン・サンド，CEO & Founder" }
-    : { text: "기술은 증명하는 것이 아니라 결과로 보여주는 것입니다.\n한다로AI는 귀사의 AX를 숫자로 증명합니다.", author: "— 한상도, CEO & Founder" };
+    ? { text: "技術は証明するものではなく、結果で示すものです。\nHandaro AI のエージェントが、貴社の現場で数字でその結果を示します。", author: "— ハン・サンド，CEO & Founder" }
+    : { text: "기술은 증명하는 것이 아니라 결과로 보여주는 것입니다.\n한다로AI의 에이전트들은 귀사의 현장에서 숫자로 결과를 보여드립니다.", author: "— 한상도, CEO & Founder" };
   const subtitle = lang === "en"
-    ? "Led directly by CEO Sangdo Han. The only AX partner combining world-class technology, real-world experience, and deep research capabilities."
+    ? "The only partner combining world-class technology, hands-on industry experience, and deep research. Every AI agent is built on this foundation."
     : lang === "zh"
-    ? "由CEO韩相度亲自带领的团队。将世界顶级技术实力、实战经验与研究能力融为一体的唯一AX合作伙伴。"
+    ? "汇聚世界顶级技术力、实战经验与研究能力的唯一伙伴。每一个 AI 智能体都构建于此基础之上。"
     : lang === "jp"
-    ? "CEO ハン・サンドが直接率いるチーム。世界最高水準の技術力・実務経験・研究能力を兼ね備えた唯一のAXパートナーです。"
-    : "CEO 한상도가 직접 이끄는 팀. 세계 최고 수준의 기술력과 실전 경험, 그리고 연구 역량이 하나로 결합된 유일한 AX 파트너입니다.";
+    ? "世界最高水準の技術力、現場経験、そして研究力を兼ね備えた唯一のパートナー。すべてのAIエージェントはこの基盤の上に作られます。"
+    : "세계 최고 수준의 기술력과 실무 경험, 그리고 연구 역량이 결합된 유일한 파트너. 모든 AI 에이전트는 이 기반 위에서 만들어집니다.";
 
   return (
     <section id="founder" className="relative py-24 md:py-32 overflow-hidden">
